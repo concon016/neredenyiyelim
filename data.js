@@ -212,7 +212,12 @@ const MEKANLAR = [
     alinti: "\"Burak Usta'nın et üzerine gösterisini izlemek başlı başına bir deneyim.\"",
     neden: "Viral Instagram videolarıyla dünya çapında tanınan Burak Özdemir'in restoranı; et kesme ve servis şovuyla hem yerli hem yabancı ziyaretçilerin Google'da en çok aradığı İstanbul adreslerinden biri.",
     menu: ["Tomahawk Steak", "Kuzu Pirzola", "Lahmacun", "Baklavalı Dondurma"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Aylin V.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Recep V.", puan: 4, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Emre G.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+    ],
   },
   {
     id: "pandeli", il: "istanbul", ad: "Pandeli", kategori: "Osmanlı Mutfağı",
@@ -223,7 +228,12 @@ const MEKANLAR = [
     alinti: "\"Yüzyıldan uzun süredir aynı çatı altında — tarih kokan bir sofra.\"",
     neden: "1901'de açılan, mavi çinileriyle tanınan bu tarihi lokanta Mısır Çarşısı'nın hemen üzerinde; levrek buğulaması ve hünkar beğendiyle uzun süredir İstanbul'un klasikleşmiş adreslerinden.",
     menu: ["Pandeli Usulü Levrek", "Hünkar Beğendi", "Patlıcan Böreği", "İrmik Helvası"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Hande Z.", puan: 4, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Onur B.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Kerem S.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Emirhan Ç.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+    ],
   },
   {
     id: "hamdi-restaurant", il: "istanbul", ad: "Hamdi Restaurant", kategori: "Kebap & Izgara",
@@ -234,7 +244,12 @@ const MEKANLAR = [
     alinti: "\"Terastan Haliç manzarası eşliğinde fıstıklı kebap — İstanbul klasiği.\"",
     neden: "Haliç'e nazır terasıyla ve imzası haline gelen fıstıklı kebabıyla uzun yıllardır turist ve yerel halkın ortak favorisi.",
     menu: ["Fıstıklı Kebap", "Beyti Sarma", "Ali Nazik", "Fırın Sütlaç"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Selen A.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Burak H.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Erhan B.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Hande Z.", puan: 4, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+    ],
   },
   {
     id: "balikci-sabahattin", il: "istanbul", ad: "Balıkçı Sabahattin", kategori: "Deniz Ürünleri",
@@ -245,7 +260,12 @@ const MEKANLAR = [
     alinti: "\"Meze arabasından seçim yapmak bile bu mekanın en keyifli anlarından biri.\"",
     neden: "Ahırkapı'nın tarihi sokağındaki ahşap konağında, meze arabası servisi ve günlük balık seçenekleriyle uzun yıllardır süregelen bir aile geleneği.",
     menu: ["Meze Arabasından Seçmeler", "Levrek Buğulama", "Kalamar Tava", "Ahtapot Izgara"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Aylin V.", puan: 4, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Hande Z.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Aylin D.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Emre G.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+    ],
   },
   {
     id: "turk-fatih-tutak", il: "istanbul", ad: "TURK Fatih Tutak", kategori: "Fine Dining", michelin: true, yildiz: 2,
@@ -256,7 +276,12 @@ const MEKANLAR = [
     alinti: "\"Anadolu'nun unutulmuş tatlarını modern tekniklerle yeniden yorumluyor.\"",
     neden: "Şef Fatih Tutak'ın imzasını taşıyan bu restoran, Anadolu mutfağının köklerini modern gastronomi tekniğiyle buluşturarak Türkiye'nin ilk 2 Michelin yıldızlı restoranı unvanını kazandı.",
     menu: ["Sezonluk Tadım Menüsü", "Odun Ateşinde Deniz Ürünleri", "Anadolu Otlarıyla Ekmek", "Şef İkramı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Sedat M.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Cem A.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Furkan T.", puan: 4, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Kübra S.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+    ],
   },
   {
     id: "neolokal", il: "istanbul", ad: "Neolokal", kategori: "Modern Anadolu Mutfağı", michelin: true, yildiz: 1,
@@ -267,7 +292,12 @@ const MEKANLAR = [
     alinti: "\"Anadolu'nun unutulan tohum ve ürünlerini tabağa taşıyan bir mutfak anlayışı.\"",
     neden: "Şef Maksut Aşkar'ın Anadolu'nun yerel üretici ağlarından beslenen mutfağıyla 1 Michelin yıldızı kazanan Neolokal, SALT Galata'nın terasından Galata Kulesi manzarasıyla da öne çıkıyor.",
     menu: ["Mevsim Sebzeleriyle Karışık Meze", "Odun Fırınında Kuzu", "Yöresel Peynir Tabağı", "Şef Tatlısı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Mert Y.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Ebru L.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "İlyas D.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Ayşe B.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+    ],
   },
 
   {
@@ -279,7 +309,12 @@ const MEKANLAR = [
     alinti: "\"Gün batımında çatı katından Haliç manzarası eşliğinde unutulmaz bir sofra.\"",
     neden: "Şef Mehmet Gürs'ün imzasını taşıyan Mikla, Türk ve İskandinav mutfağını harmanlayan menüsü ve eşsiz şehir manzarasıyla uzun yıllardır dünyanın en iyi restoranları listelerinde yer alıyor.",
     menu: ["Mevsim Tadım Menüsü", "Odun Ateşinde Balık", "Zeytinyağlı Deniz Mahsulleri", "Şef İkramı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Serkan P.", puan: 4, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "İpek O.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Melis R.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Volkan Ç.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+    ],
   },
   {
     id: "topaz", il: "istanbul", ad: "Topaz Restaurant", kategori: "Fine Dining Türk Mutfağı",
@@ -290,7 +325,12 @@ const MEKANLAR = [
     alinti: "\"Türk mutfağını fine dining zarafetiyle sunan öncü mekanlardan biri.\"",
     neden: "2007'de açılan Topaz, şef Tevfik Alparslan yönetiminde Türk mutfağını modern fine dining sunumuyla buluşturan, Michelin Rehberi'nde de yer alan şehrin köklü adreslerinden.",
     menu: ["Mercimek Çorbası Füzyonu", "Kuzu Tandır", "Zeytinyağlı Enginar", "İncir Tatlısı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ozan F.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Gül T.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Recep V.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Mert Y.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
   },
   {
     id: "ruya", il: "istanbul", ad: "Rüya", kategori: "Anadolu Mutfağı Fine Dining",
@@ -301,7 +341,12 @@ const MEKANLAR = [
     alinti: "\"Anadolu'nun dört bir yanından tatları saray zarafetiyle tabağa taşıyorlar.\"",
     neden: "Çırağan Palace Kempinski bünyesindeki Rüya, Karadeniz'den Akdeniz'e uzanan Anadolu mutfağı mirasını modern tekniklerle yorumluyor.",
     menu: ["Karadeniz Usulü Hamsi", "Güneydoğu Usulü Kuzu", "Ege Otları Salatası", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Aylin D.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Barış K.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+      { ad: "Serkan P.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Aslı M.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+    ],
   },
   {
     id: "inci-pastanesi", il: "istanbul", ad: "İnci Pastanesi", kategori: "Tatlı & Pastane",
@@ -312,7 +357,12 @@ const MEKANLAR = [
     alinti: "\"Profiterolü olmadan Beyoğlu'ndan geçmiş sayılmazsınız.\"",
     neden: "Yaklaşık 70 yıldır aynı reçeteyle hazırlanan profiterolüyle Beyoğlu'nun en meşhur ve en çok yorum alan tatlıcılarından.",
     menu: ["Profiterol", "Ekler", "Draje Şeker", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Buse Y.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Ayşe B.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Aslı M.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Onur B.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+    ],
   },
   {
     id: "hafiz-mustafa", il: "istanbul", ad: "Hafız Mustafa 1864", kategori: "Tatlı & Baklava",
@@ -323,7 +373,12 @@ const MEKANLAR = [
     alinti: "\"160 yılı aşkın tecrübe her lokmada hissediliyor.\"",
     neden: "1864'te kurulan Hafız Mustafa, baklava ve lokum başta olmak üzere geleneksel Osmanlı tatlılarını günümüze taşıyan İstanbul'un en köklü tatlıcılarından.",
     menu: ["Fıstıklı Baklava", "Cevizli Lokum", "Kazandibi", "Osmanlı Şerbeti"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ebru L.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+      { ad: "Kübra S.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Gamze L.", puan: 4, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "İpek O.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+    ],
   },
   {
     id: "baylan-pastanesi", il: "istanbul", ad: "Baylan Pastanesi", kategori: "Tatlı & Pastane",
@@ -334,7 +389,12 @@ const MEKANLAR = [
     alinti: "\"Kup Griye'yi tatmadan Kadıköy'den ayrılmayın.\"",
     neden: "1919'da kurulan Baylan, imzası haline gelen Kup Griye dondurması ile İstanbul'un en eski pastanelerinden biri olarak kuşaklardır hizmet veriyor.",
     menu: ["Kup Griye", "Frambuazlı Pasta", "Marron Glace", "Filtre Kahve"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Damla K.", puan: 4, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Recep V.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Ammar H.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Selen A.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+    ],
   },
   {
     id: "savoy-pastanesi", il: "istanbul", ad: "Savoy Pastanesi", kategori: "Tatlı & Pastane",
@@ -345,7 +405,12 @@ const MEKANLAR = [
     alinti: "\"Nişantaşı'nda yürüyüş molası için ilk akla gelen adres.\"",
     neden: "1950'lerden bu yana Nişantaşı'nda hizmet veren Savoy, en meşhur lezzeti milföy pastasıyla semtin değişmeyen klasiklerinden.",
     menu: ["Milföy Pasta", "Çikolatalı Supreme", "Kruvasan", "Filtre Kahve"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kerem S.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Hakan İ.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Yusuf B.", puan: 4, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Fadime R.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+    ],
   },
   {
     id: "bebek-badem-ezmesi", il: "istanbul", ad: "Meşhur Bebek Badem Ezmesi", kategori: "Tatlı",
@@ -356,7 +421,12 @@ const MEKANLAR = [
     alinti: "\"Bebek sahilinde yürürken kokusuna kayıtsız kalamayacağınız bir dükkan.\"",
     neden: "1904 yılından bu yana Bebek sahilinde badem ezmesi üreten bu küçük dükkan, İstanbul'un en eski ve en sevilen tatlı adreslerinden.",
     menu: ["Klasik Badem Ezmesi", "Çikolatalı Badem Ezmesi", "Fıstıklı Badem Ezmesi", "Hediyelik Kutu"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Aslı M.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+      { ad: "Ammar H.", puan: 4, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Melis R.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Gizem A.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+    ],
   },
   {
     id: "kiztasi-muhallebicisi", il: "istanbul", ad: "Kıztaşı Muhallebicisi", kategori: "Tatlı & Muhallebi",
@@ -367,7 +437,12 @@ const MEKANLAR = [
     alinti: "\"Sade ama unutulmaz — İstanbul muhallebiciliğinin yaşayan örneği.\"",
     neden: "1952'de Fatih'te açılan bu küçük muhallebici, günlük taze hazırlanan sütlü tatlılarıyla kuşaklardır aynı mahallede hizmet veriyor.",
     menu: ["Muhallebi", "Kazandibi", "Sütlaç", "Tavuk Göğsü"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Melis R.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Fatih K.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Reyhan K.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Nurcan Y.", puan: 4, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+    ],
   },
   {
     id: "emek-kafe", il: "istanbul", ad: "Emek Kafe", kategori: "Kahvaltı",
@@ -378,7 +453,12 @@ const MEKANLAR = [
     alinti: "\"Yeniköy'de sabah kahvaltısı denince akla ilk gelen yer.\"",
     neden: "1965'te açılan Emek Kafe, Boğaz'a yakın konumu ve uzun yıllardır değişmeyen sade kahvaltı menüsüyle semtin klasik adreslerinden.",
     menu: ["Serpme Kahvaltı", "Menemen", "Sıcak Sahanda Sucuk", "Çay"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Mert Y.", puan: 4, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Ceren F.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Timur A.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Gamze L.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+    ],
   },
   {
     id: "yumma", il: "istanbul", ad: "Yumma", kategori: "Kahvaltı",
@@ -389,7 +469,12 @@ const MEKANLAR = [
     alinti: "\"Sofra o kadar dolu ki nereden başlayacağınızı şaşırıyorsunuz.\"",
     neden: "Çanakkale peynirinden Hatay zeytinine onlarca yöresel ürünü aynı sofrada buluşturan Yumma, kısa sürede İstanbul'un en sevilen serpme kahvaltı adreslerinden biri oldu.",
     menu: ["Yumma Serpme Kahvaltı", "Sac Böreği", "Bal Kaymak", "Domates Reçeli"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ammar H.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Gül T.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Hakan İ.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Berkay N.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
   },
   {
     id: "cinaralti-cay-bahcesi", il: "istanbul", ad: "Tarihi Çınaraltı Çay Bahçesi", kategori: "Çay Bahçesi",
@@ -400,7 +485,12 @@ const MEKANLAR = [
     alinti: "\"Çengelköy böreği ile çayın buluştuğu en keyifli sahil köşesi.\"",
     neden: "Devasa çınar ağacının altında, Boğaz manzarasına karşı çay içilen bu tarihi bahçe, yanı başındaki Çengelköy Börekçisi'nden alınan böreklerle tamamlanan bir İstanbul klasiği.",
     menu: ["Çay (Semaver)", "Çengelköy Böreği", "Simit", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceren F.", puan: 4, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Tuğba E.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Kerem S.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+    ],
   },
   {
     id: "tarihi-subasi", il: "istanbul", ad: "Tarihi Subaşı Lokantası", kategori: "Esnaf Lokantası",
@@ -411,7 +501,12 @@ const MEKANLAR = [
     alinti: "\"Patlıcan yemeklerinin adresi denince akla ilk burası gelir.\"",
     neden: "1956'da açılan Subaşı, patlıcan ve kuzu yemekleriyle Sirkeci'nin en köklü esnaf lokantalarından biri olarak varlığını sürdürüyor.",
     menu: ["Patlıcan Musakka", "Kuzu Haşlama", "Zeytinyağlı Taze Fasulye", "İrmik Helvası"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Sedat M.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Sena Y.", puan: 4, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Zeynep T.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+    ],
   },
   {
     id: "haci-abdullah", il: "istanbul", ad: "Hacı Abdullah Lokantası", kategori: "Geleneksel Türk Mutfağı",
@@ -422,7 +517,12 @@ const MEKANLAR = [
     alinti: "\"Girişteki renkli turşu kavanozları bile başlı başına bir gösteri.\"",
     neden: "1888'de kurulan Hacı Abdullah, çorbaları ve haşlamalarıyla İstanbul'un en eski ve en itibarlı geleneksel lokantalarından.",
     menu: ["Ev Usulü Çorba", "Kuru Fasulye", "Zeytinyağlı Yaprak Sarma", "Vişneli Ekmek Kadayıfı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nil D.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Volkan Ç.", puan: 4, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Nurcan Y.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+    ],
   },
   {
     id: "gunaydin", il: "istanbul", ad: "Günaydın", kategori: "Kebap & Izgara",
@@ -433,7 +533,12 @@ const MEKANLAR = [
     alinti: "\"Küçük bir kasap dükkanından bugünün en sevilen et zincirine.\"",
     neden: "İstanbul'da küçük bir kasap dükkanı olarak başlayan Günaydın, et seçiminden pişirmeye titizliğiyle şehrin en tanınan kebap adreslerinden biri haline geldi.",
     menu: ["Adana Kebap", "Kuzu Pirzola", "Et Sote", "Fıstıklı Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Melis R.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Uğur D.", puan: 4, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Mert Y.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Fatih K.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+    ],
   },
   {
     id: "karakoy-lokantasi", il: "istanbul", ad: "Karaköy Lokantası", kategori: "Meyhane & Meze",
@@ -444,7 +549,12 @@ const MEKANLAR = [
     alinti: "\"Meze tabağı geldiğinde masada yer kalmıyor, o kadar bereketli.\"",
     neden: "Karaköy'ün en tanınan meyhanelerinden biri olan bu mekan, günlük hazırlanan meze çeşitleri ve klasik lokanta atmosferiyle uzun yıllardır aynı popülerliği koruyor.",
     menu: ["Soğuk Meze Çeşitleri", "Levrek Buğulama", "Kalamar Tava", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "İlyas D.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Derya S.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Emre G.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Furkan T.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+    ],
   },
   {
     id: "ciya-sofrasi", il: "istanbul", ad: "Çiya Sofrası", kategori: "Anadolu Mutfağı",
@@ -455,7 +565,12 @@ const MEKANLAR = [
     alinti: "\"Anadolu'nun en ücra köşelerindeki tarifleri İstanbul'a taşıyorlar.\"",
     neden: "Şef Musa Dağdeviren'in Anadolu'nun dört bir yanından derlediği unutulmaya yüz tutmuş tarifleri sofraya taşıyan Çiya, Kadıköy'ün en çok konuşulan adreslerinden.",
     menu: ["Günün Anadolu Yemeği", "Mualla Kebabı", "Kısır Çeşitleri", "Künefe"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ozan F.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Derya S.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Hande Z.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Hakan İ.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+    ],
   },
   {
     id: "ficcin", il: "istanbul", ad: "Ficcin", kategori: "Çerkes Mutfağı",
@@ -466,7 +581,12 @@ const MEKANLAR = [
     alinti: "\"İstiklal'in arka sokağında saklı bir Çerkes mutfağı hazinesi.\"",
     neden: "İstiklal Caddesi'nin arka sokaklarında, Çerkes mutfağının nadir bulunan lezzetlerini sunan Ficcin, uzun yıllardır sadık bir müşteri kitlesine sahip.",
     menu: ["Ficcin (Etli/Etsiz)", "Çerkes Tavuğu", "Şiveydiz", "Ev Yapımı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ozan F.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Tuğba E.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Ceren F.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+    ],
   },
   {
     id: "zubeyir-ocakbasi", il: "istanbul", ad: "Zübeyir Ocakbaşı", kategori: "Ocakbaşı & Kebap",
@@ -477,7 +597,12 @@ const MEKANLAR = [
     alinti: "\"Ocak başında ustaların elinden çıkan her şiş ayrı lezzet.\"",
     neden: "Beyoğlu'nun arka sokaklarında klasik ocakbaşı kültürünü yaşatan Zübeyir, hem yerli hem yabancı birçok ünlünün de uğrak noktası.",
     menu: ["Kuzu Şiş", "Ciğer Şiş", "Közlenmiş Patlıcan Salatası", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Selin Ö.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Sedat M.", puan: 4, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "Ebru L.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Aylin D.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+    ],
   },
   {
     id: "sunset-grill-bar", il: "istanbul", ad: "Sunset Grill & Bar", kategori: "Fine Dining & Manzara",
@@ -488,7 +613,12 @@ const MEKANLAR = [
     alinti: "\"Boğaz'ın en güzel gün batımı manzarasına sahip teraslardan biri.\"",
     neden: "Ulus tepesinden Boğaz'a hakim konumuyla Sunset Grill & Bar, geniş şarap menüsü ve modern mutfağıyla özel akşam yemekleri için tercih ediliyor.",
     menu: ["Izgara Levrek", "Wagyu Antrikot", "Deniz Mahsulleri Salatası", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Alperen Y.", puan: 4, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Tolga E.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Ayşe B.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Kübra S.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+    ],
   },
   {
     id: "karakoy-gulluoglu", il: "istanbul", ad: "Karaköy Güllüoğlu", kategori: "Baklava & Tatlı",
@@ -499,7 +629,12 @@ const MEKANLAR = [
     alinti: "\"Karaköy'e gelip buradan baklava almadan geçmek imkansız.\"",
     neden: "Gaziantep usulü baklava geleneğini İstanbul'a taşıyan Karaköy Güllüoğlu, kuşaklardır aynı kalitedeki üretimiyle şehrin en tanınan baklavacılarından.",
     menu: ["Fıstıklı Baklava", "Havuç Dilimi", "Şöbiyet", "Kuru Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Barış K.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Hakan İ.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Tuğba E.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Aylin V.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+    ],
   },
   {
     id: "van-kahvalti-evi", il: "istanbul", ad: "Van Kahvaltı Evi", kategori: "Kahvaltı",
@@ -510,7 +645,12 @@ const MEKANLAR = [
     alinti: "\"Van'ın kahvaltı kültürünü olduğu gibi İstanbul'a taşımışlar.\"",
     neden: "Kadıköy'ün dar sokağında, otantik Van usulü kahvaltı kültürünü yaşatan bu küçük mekan, hafta sonları uzun kuyruklar oluşturacak kadar popüler.",
     menu: ["Van Usulü Serpme Kahvaltı", "Otlu Peynir", "Kaymak Bal", "Çay"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Gizem A.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Fadime R.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Pınar C.", puan: 4, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Ceyda P.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
   },
   {
     id: "kronotrop", il: "istanbul", ad: "Kronotrop", kategori: "Üçüncü Nesil Kahve",
@@ -521,7 +661,12 @@ const MEKANLAR = [
     alinti: "\"İstanbul'da specialty kahve denince akla ilk gelen isimlerden.\"",
     neden: "Kendi kavurduğu özel çekirdeklerle çalışan Kronotrop, üçüncü nesil kahve akımının İstanbul'daki öncülerinden biri olarak kabul ediliyor.",
     menu: ["V60 Filtre Kahve", "Flat White", "Soğuk Demleme", "Brownie"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Metin U.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Hakan İ.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Nurcan Y.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Gizem A.", puan: 4, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
   },
   {
     id: "walters-coffee", il: "istanbul", ad: "Walter's Coffee Roastery", kategori: "Tema Kahve",
@@ -532,7 +677,12 @@ const MEKANLAR = [
     alinti: "\"Kapıdan girer girmez kendinizi Alice'in dünyasında buluyorsunuz.\"",
     neden: "Alice Harikalar Diyarı temalı dekoruyla kısa sürede sosyal medyada viral olan Walter's, hem dekoru hem kendi kavrulmuş kahvesiyle Kadıköy'ün en çok ziyaret edilen kahvecilerinden.",
     menu: ["Filtre Kahve", "Latte", "Cheesecake", "Kurabiye Çeşitleri"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Gamze L.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Sedat M.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Selin Ö.", puan: 4, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "Tolga E.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+    ],
   },
   {
     id: "mandabatmaz", il: "istanbul", ad: "Mandabatmaz", kategori: "Türk Kahvesi",
@@ -543,7 +693,12 @@ const MEKANLAR = [
     alinti: "\"Köpüğü kaşıkla yenecek kıvamda — İstanbul'un en iyi Türk kahvesi tartışmasız burada.\"",
     neden: "İstiklal Caddesi'nin arka sokağındaki bu küçük dükkan, yoğun köpüklü Türk kahvesiyle şehrin en efsanevi kahve duraklarından biri haline geldi.",
     menu: ["Türk Kahvesi (Sade)", "Türk Kahvesi (Az Şekerli)", "Lokum", "Su"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceyda P.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Gizem A.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Berkay N.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Ayşe B.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+    ],
   },
   {
     id: "fazil-bey-turk-kahvesi", il: "istanbul", ad: "Fazıl Bey'in Türk Kahvesi", kategori: "Türk Kahvesi",
@@ -554,7 +709,12 @@ const MEKANLAR = [
     alinti: "\"Kadıköy'de kahve molası denince akla ilk gelen isim.\"",
     neden: "Kendi kavurduğu çekirdeklerle hazırladığı Türk kahvesiyle tanınan Fazıl Bey, Kadıköy'ün en uzun kuyruklu ama en sadık müşteri kitlesine sahip mekanlarından.",
     menu: ["Türk Kahvesi", "Osmanlı Kahvesi", "Lokum Tabağı", "Bademli Kurabiye"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Volkan Ç.", puan: 4, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Barış K.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+      { ad: "Onur B.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Ebru L.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+    ],
   },
   {
     id: "develi-restaurant", il: "istanbul", ad: "Develi Restaurant", kategori: "Kebap & Izgara",
@@ -565,7 +725,12 @@ const MEKANLAR = [
     alinti: "\"Fıstıklı künefesi bile kebap kadar konuşuluyor.\"",
     neden: "1912'de Samatya'da açılan Develi, geniş kebap ve künefe menüsüyle İstanbul'un en köklü Güneydoğu mutfağı adreslerinden biri.",
     menu: ["Fıstıklı Kebap", "Ali Nazik", "Katmer", "Fıstıklı Künefe"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Cem A.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Serkan P.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "Fatih K.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Nazan İ.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
   },
   {
     id: "beyti-restaurant", il: "istanbul", ad: "Beyti Restaurant", kategori: "Kebap & Izgara",
@@ -576,7 +741,12 @@ const MEKANLAR = [
     alinti: "\"Beyti kebabının doğduğu ve dünyaca tanındığı yer.\"",
     neden: "1945'te açılan Beyti, adını taşıyan ve dünya çapında tanınan Beyti kebabıyla onlarca yıldır devlet konuklarını ve gurmeleri ağırlıyor.",
     menu: ["Beyti Kebap", "Kuzu Pirzola", "Humus", "Kadayıf Dolması"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "İlyas D.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Hande Z.", puan: 4, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Fadime R.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Cem A.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+    ],
   },
   {
     id: "kanaat-lokantasi", il: "istanbul", ad: "Kanaat Lokantası", kategori: "Esnaf Lokantası",
@@ -587,7 +757,12 @@ const MEKANLAR = [
     alinti: "\"Vitrindeki onlarca çeşit arasında seçim yapmak asıl zorluk.\"",
     neden: "1933'te açılan Kanaat, geniş günlük yemek çeşitleriyle Üsküdar'ın en köklü ve en sevilen esnaf lokantalarından.",
     menu: ["Günün Yemeği + Pilav", "Zeytinyağlı Çeşitleri", "İrmik Helvası", "Kazandibi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kaan T.", puan: 4, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Onur B.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "İpek O.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Damla K.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
   },
   {
     id: "borsa-restaurant", il: "istanbul", ad: "Borsa Restaurant", kategori: "Türk Mutfağı",
@@ -598,7 +773,12 @@ const MEKANLAR = [
     alinti: "\"Klasik Türk mutfağını hiç taviz vermeden şık bir sofrada sunuyorlar.\"",
     neden: "Onlarca yıldır hizmet veren Borsa Restaurant, klasik Türk mutfağı tariflerini şık ve modern bir atmosferde sunan güvenilir adreslerden.",
     menu: ["Hünkar Beğendi", "Kuzu Tandır", "Zeytinyağlılar", "Kazandibi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Mert Y.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Derya S.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Deniz A.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Gamze L.", puan: 4, yorum: "Her detayında bir özen hissediliyor." },
+    ],
   },
   {
     id: "deraliye", il: "istanbul", ad: "Deraliye Ottoman Cuisine", kategori: "Osmanlı Sarayı Mutfağı",
@@ -609,7 +789,12 @@ const MEKANLAR = [
     alinti: "\"Osmanlı saray mutfağının nadir tariflerini günümüze taşıyorlar.\"",
     neden: "Sultanahmet'in kalbinde, Osmanlı saray mutfağının arşiv tariflerini yeniden yorumlayan Deraliye, tarih meraklıları için özel bir sofra sunuyor.",
     menu: ["Saray Kebabı", "Hünkar Beğendi", "Zerde", "Osmanlı Şerbeti"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Alperen Y.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Cem A.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Ceyda P.", puan: 4, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Gamze L.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+    ],
   },
   {
     id: "matbah-restaurant", il: "istanbul", ad: "Matbah Restaurant", kategori: "Osmanlı Sarayı Mutfağı",
@@ -620,7 +805,12 @@ const MEKANLAR = [
     alinti: "\"Topkapı Sarayı mutfağının arşivinden çıkma tarifler tabağa geliyor.\"",
     neden: "Topkapı Sarayı mutfak arşivinden derlenen tariflerle çalışan Matbah, Sultanahmet'te Osmanlı gastronomisini yaşatan özel adreslerden.",
     menu: ["Sultan Sofrası Kebabı", "Zerde Tatlısı", "Mercimek Köftesi", "Osmanlı Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Barış K.", puan: 4, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Zeynep T.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Volkan Ç.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Uğur D.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+    ],
   },
   {
     id: "ulus-29", il: "istanbul", ad: "Ulus 29", kategori: "Fine Dining & Manzara",
@@ -631,7 +821,12 @@ const MEKANLAR = [
     alinti: "\"Akşam yemeğinden sonra dans pistine geçebileceğiniz nadir mekanlardan.\"",
     neden: "Ulus tepesindeki bu köklü mekan, Boğaz manzarası eşliğinde uluslararası mutfağı ve gece hayatını bir araya getiriyor.",
     menu: ["Wagyu Antrikot", "Deniz Mahsulleri Tabağı", "Ahtapot Izgara", "Çikolatalı Suflenin"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Tolga E.", puan: 4, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+      { ad: "Gizem A.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Fatih K.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Derya S.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+    ],
   },
   {
     id: "5-kat", il: "istanbul", ad: "5. Kat", kategori: "Fine Dining & Manzara",
@@ -642,7 +837,12 @@ const MEKANLAR = [
     alinti: "\"Cihangir'in bohem ruhunu Boğaz manzarasıyla birleştiren nadir yerlerden.\"",
     neden: "Cihangir'in tepesinde, Boğaz'a nazır terasıyla uzun yıllardır sanatçı ve yazarların uğrak noktası olan 5. Kat, samimi atmosferiyle öne çıkıyor.",
     menu: ["Ev Usulü Makarna", "Izgara Levrek", "Karides Güveç", "Çikolatalı Tart"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceyda P.", puan: 4, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Reyhan K.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Serkan P.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+      { ad: "İlyas D.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+    ],
   },
   {
     id: "lokanta-maya", il: "istanbul", ad: "Lokanta Maya", kategori: "Modern Türk Mutfağı",
@@ -653,7 +853,12 @@ const MEKANLAR = [
     alinti: "\"Anneannenin tariflerini modern bir sunumla buluşturuyorlar.\"",
     neden: "Şef Didem Şenol'un öncülüğünde açılan Lokanta Maya, geleneksel Türk tariflerini modern tekniklerle yeniden yorumlayarak Karaköy'ün gastronomi sahnesine öncülük etti.",
     menu: ["Zeytinyağlı Enginar", "Levrek Tartar", "Mantı", "Kazandibi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nazan İ.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "İlyas D.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Serkan P.", puan: 4, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "Kübra S.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+    ],
   },
   {
     id: "meze-lemon-tree", il: "istanbul", ad: "Meze by Lemon Tree", kategori: "Modern Meze",
@@ -664,7 +869,12 @@ const MEKANLAR = [
     alinti: "\"Klasik mezeyi fine dining tabağına taşıyan nadir mekanlardan.\"",
     neden: "Geleneksel meze kültürünü modern sunum teknikleriyle yeniden yorumlayan Meze by Lemon Tree, Beyoğlu'nun şık akşam yemeği adreslerinden.",
     menu: ["Modern Meze Tabağı", "Ahtapot Carpaccio", "Karides Güveç", "Şarap (Kadeh)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Onur B.", puan: 4, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Ceren F.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Rıdvan Ş.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Tuğba E.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+    ],
   },
   {
     id: "cengelkoy-borekcisi", il: "istanbul", ad: "Çengelköy Börekçisi", kategori: "Börek",
@@ -675,7 +885,12 @@ const MEKANLAR = [
     alinti: "\"Sabahın erken saatinde sıcak böreği kapmak için kuyruk oluyor.\"",
     neden: "Çengelköy sahilindeki bu küçük dükkan, günlük taze pişirdiği börekleriyle hem yerel halkın hem ziyaretçilerin sabah rutini haline geldi.",
     menu: ["Peynirli Börek", "Kıymalı Börek", "Ispanaklı Börek", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Sibel N.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Ebru L.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Uğur D.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+    ],
   },
   {
     id: "datli-maya", il: "istanbul", ad: "Datlı Maya", kategori: "Fırın & Kahvaltı",
@@ -686,7 +901,12 @@ const MEKANLAR = [
     alinti: "\"Ekmeğinin kokusu sokağa taşıyor — Karaköy'ün organik fırın durağı.\"",
     neden: "Ekşi mayalı ekmekleri ve organik fırın ürünleriyle tanınan Datlı Maya, Karaköy'de sade ama kaliteli bir kahvaltı deneyimi sunuyor.",
     menu: ["Ekşi Maya Ekmek Sepeti", "Organik Peynir Tabağı", "Zeytin Çeşitleri", "Filtre Kahve"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Barış K.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Ammar H.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "Buse Y.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Cem A.", puan: 4, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+    ],
   },
   {
     id: "antiochia-concept", il: "istanbul", ad: "Antiochia Concept", kategori: "Hatay Mutfağı",
@@ -697,7 +917,12 @@ const MEKANLAR = [
     alinti: "\"Antakya'nın baharat dolu mutfağını İstanbul'a taşıyan nadir adreslerden.\"",
     neden: "Hatay mutfağının zengin baharat kültürünü ve kebap çeşitlerini İstanbul'a taşıyan Antiochia Concept, künefesiyle de dikkat çekiyor.",
     menu: ["Katmerli Antakya Kebabı", "Humus", "Kaytaz Böreği", "Antakya Künefesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "İpek O.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Ceren F.", puan: 4, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Emirhan Ç.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Volkan Ç.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   {
     id: "tarihi-sultanahmet-koftecisi", il: "istanbul", ad: "Tarihi Sultanahmet Köftecisi", kategori: "Köfte",
@@ -708,7 +933,12 @@ const MEKANLAR = [
     alinti: "\"Eminönü'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tarihi Sultanahmet Köftecisi, Eminönü bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle İstanbul'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Recep V.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Gül T.", puan: 4, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Aylin V.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Sedat M.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+    ],
   },
   {
     id: "tarihi-sariyer-borekcisi", il: "istanbul", ad: "Tarihi Sarıyer Börekçisi", kategori: "Börek",
@@ -719,7 +949,12 @@ const MEKANLAR = [
     alinti: "\"Eminönü'de börek deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tarihi Sarıyer Börekçisi, Eminönü bölgesinde uzun süredir sürdürdüğü börek geleneğiyle İstanbul'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Peynirli Börek", "Kıymalı Börek", "Ispanaklı Börek", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Burak H.", puan: 4, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Furkan T.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Kübra S.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Berkay N.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+    ],
   },
   {
     id: "beyaz-firin", il: "istanbul", ad: "Beyaz Fırın", kategori: "Fırın",
@@ -730,7 +965,12 @@ const MEKANLAR = [
     alinti: "\"Üsküdar'de fırın deyince akla ilk gelen adreslerden biri.\"",
     neden: "Beyaz Fırın, Üsküdar bölgesinde uzun süredir sürdürdüğü fırın geleneğiyle İstanbul'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günlük Ekmek Çeşitleri", "Poğaça", "Açma", "Simit"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Recep V.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Nurcan Y.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Kaan T.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Mert Y.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+    ],
   },
   {
     id: "ortakoy-kumpircisi", il: "istanbul", ad: "Ortaköy Kumpircisi", kategori: "Kumpir",
@@ -741,7 +981,12 @@ const MEKANLAR = [
     alinti: "\"Beşiktaş'de kumpir deyince akla ilk gelen adreslerden biri.\"",
     neden: "Ortaköy Kumpircisi, Beşiktaş bölgesinde uzun süredir sürdürdüğü kumpir geleneğiyle İstanbul'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kumpir (Karışık)", "Waffle", "Limonata", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Damla K.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "İlyas D.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Berkay N.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Timur A.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+    ],
   },
   {
     id: "borsam-tasfirin", il: "istanbul", ad: "Borsam Taşfırın", kategori: "Kebap & Izgara",
@@ -752,7 +997,12 @@ const MEKANLAR = [
     alinti: "\"Kadıköy'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Borsam Taşfırın, Kadıköy bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle İstanbul'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Hakan İ.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Emre G.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Gizem A.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Uğur D.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+    ],
   },
   {
     id: "aheste", il: "istanbul", ad: "Aheste", kategori: "Modern Türk Mutfağı",
@@ -763,7 +1013,12 @@ const MEKANLAR = [
     alinti: "\"Geleneksel tarifleri sakin bir tempoyla, adı gibi 'aheste' bir sunumla buluşturuyorlar.\"",
     neden: "Klasik Türk mutfağı tariflerini modern ve zarif bir sunumla yeniden yorumlayan Aheste, Beyoğlu'nun sakin köşelerinde öne çıkan adreslerden.",
     menu: ["Mevsim Mezeleri", "Zeytinyağlı Enginar", "Kuzu Incik", "Ev Yapımı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Selen A.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Nurcan Y.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Pınar C.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Onur B.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   {
     id: "balkan-lokantasi", il: "istanbul", ad: "Balkan Lokantası", kategori: "Ev Yemekleri",
@@ -774,7 +1029,12 @@ const MEKANLAR = [
     alinti: "\"Anneannenin mutfağından çıkma tadında, Balkan göçmen mutfağının sıcaklığı hissediliyor.\"",
     neden: "Balkan göçmen mutfağının ev usulü tariflerini Beşiktaş'a taşıyan Balkan Lokantası, samimi ortamı ve günlük değişen menüsüyle mahalle sakinlerinin favorisi.",
     menu: ["Günün Balkan Yemeği", "Ekşili Köfte", "Zeytinyağlı Yaprak Sarma", "Ev Yapımı Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ayşe B.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Kübra S.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Buse Y.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Nil D.", puan: 4, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+    ],
   },
   {
     id: "yanyali-fehmi-lokantasi", il: "istanbul", ad: "Yanyalı Fehmi Lokantası", kategori: "Türk Mutfağı",
@@ -785,7 +1045,12 @@ const MEKANLAR = [
     alinti: "\"Kadıköy'de türk deyince akla ilk gelen adreslerden biri.\"",
     neden: "Yanyalı Fehmi Lokantası, Kadıköy bölgesinde uzun süredir sürdürdüğü türk mutfağı geleneğiyle İstanbul'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Yemeği + Pilav", "Zeytinyağlı Çeşitleri", "Ayran", "İrmik Helvası"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Gamze L.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Erhan B.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Ebru L.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   {
     id: "basta-street-food-bar", il: "istanbul", ad: "Basta Street Food Bar", kategori: "Modern Sokak Lezzetleri",
@@ -796,7 +1061,12 @@ const MEKANLAR = [
     alinti: "\"Kadıköy'de modern deyince akla ilk gelen adreslerden biri.\"",
     neden: "Basta Street Food Bar, Kadıköy bölgesinde uzun süredir sürdürdüğü modern sokak lezzetleri geleneğiyle İstanbul'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Gurme Dürüm", "Ev Yapımı Sos Çeşitleri", "Craft Limonata", "Patates Kızartması"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Gül T.", puan: 4, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "İlyas D.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Kübra S.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Aylin V.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+    ],
   },
   {
     id: "kofteci-husmen", il: "istanbul", ad: "Köfteci Hüsmen", kategori: "Köfte",
@@ -807,7 +1077,12 @@ const MEKANLAR = [
     alinti: "\"Beşiktaş'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Köfteci Hüsmen, Beşiktaş bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle İstanbul'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Berkay N.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Rıdvan Ş.", puan: 4, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Damla K.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
   },
   {
     id: "tatbak", il: "istanbul", ad: "Tatbak", kategori: "Lahmacun & Kebap",
@@ -818,7 +1093,12 @@ const MEKANLAR = [
     alinti: "\"Şişli'de lahmacun deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tatbak, Şişli bölgesinde uzun süredir sürdürdüğü lahmacun & kebap geleneğiyle İstanbul'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Lahmacun", "Kaşarlı Pide", "Ayran", "Şalgam"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Aslı M.", puan: 4, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+      { ad: "Alperen Y.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Aylin D.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Emre G.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+    ],
   },
   {
     id: "spago-istanbul", il: "istanbul", ad: "Spago Istanbul", kategori: "Fine Dining",
@@ -829,7 +1109,12 @@ const MEKANLAR = [
     alinti: "\"Nişantaşı'de fine deyince akla ilk gelen adreslerden biri.\"",
     neden: "Spago Istanbul, Nişantaşı bölgesinde uzun süredir sürdürdüğü fine dining geleneğiyle İstanbul'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Şef Tadım Menüsü", "Deniz Mahsulleri Tabağı", "Wagyu Antrikot", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Pınar C.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Sedat M.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Cem A.", puan: 4, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Emirhan Ç.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+    ],
   },
   {
     id: "araf-istanbul", il: "istanbul", ad: "Araf", kategori: "Modern Türk Mutfağı Fine Dining", michelin: true, yildiz: 1,
@@ -840,7 +1125,12 @@ const MEKANLAR = [
     alinti: "\"Kadıköy'de fine dining denince artık akla ilk gelen isim.\"",
     neden: "Anadolu yakasında fine dining kültürünü öncüleyen Araf, yaratıcı tadım menüsüyle 1 Michelin yıldızı kazanarak Kadıköy'ün gastronomi sahnesine damga vurdu.",
     menu: ["Şef Tadım Menüsü", "Mevsim Meze Seçkisi", "Odun Ateşinde Ana Yemek", "Şef İkramı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kübra S.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "İlyas D.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Burak H.", puan: 4, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Sena Y.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+    ],
   },
   {
     id: "araka", il: "istanbul", ad: "Araka", kategori: "Yaratıcı Mutfak Fine Dining", michelin: true, yildiz: 1,
@@ -851,7 +1141,12 @@ const MEKANLAR = [
     alinti: "\"Alışılmadık malzeme eşleştirmeleriyle her tabakta sürpriz yapıyorlar.\"",
     neden: "Sınırları zorlayan yaratıcı mutfak yaklaşımıyla tanınan Araka, sıra dışı malzeme eşleştirmeleri ve sunumuyla 1 Michelin yıldızı kazandı.",
     menu: ["Şef Tadım Menüsü", "Mevsim Sebzeleriyle Yaratıcı Meze", "Odun Ateşinde Balık", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Barış K.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Derya S.", puan: 4, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "İlyas D.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Sena Y.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+    ],
   },
   {
     id: "arkestra", il: "istanbul", ad: "Arkestra", kategori: "Füzyon Mutfağı Fine Dining", michelin: true, yildiz: 1,
@@ -862,7 +1157,12 @@ const MEKANLAR = [
     alinti: "\"Farklı mutfak kültürlerini tek bir tabakta ustalıkla buluşturuyorlar.\"",
     neden: "Dünya mutfaklarından ilhamla hazırladığı füzyon tabaklarıyla tanınan Arkestra, modern tasarımı ve yaratıcı menüsüyle 1 Michelin yıldızı kazandı.",
     menu: ["Şef Tadım Menüsü", "Füzyon Meze Seçkisi", "Izgara Ana Yemek", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Aslı M.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Nurcan Y.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Pınar C.", puan: 4, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Ozan F.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+    ],
   },
   {
     id: "casa-lavanda", il: "istanbul", ad: "Casa Lavanda", kategori: "Akdeniz Mutfağı Fine Dining", michelin: true, yildiz: 1,
@@ -873,7 +1173,12 @@ const MEKANLAR = [
     alinti: "\"Şile'nin sakin kıyısında lavanta kokulu, unutulmaz bir sofra.\"",
     neden: "Şile'nin Karadeniz kıyısında, kendi lavanta bahçesinden ilham alan Akdeniz mutfağı yorumuyla Casa Lavanda, şehir dışına özel bir gastronomi rotası olarak 1 Michelin yıldızı kazandı.",
     menu: ["Şef Tadım Menüsü", "Lavantalı Meze Seçkisi", "Karadeniz Balığı", "Lavanta Aromalı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Damla K.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Hande Z.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Kübra S.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Sena Y.", puan: 4, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+    ],
   },
   {
     id: "nicole-istanbul", il: "istanbul", ad: "Nicole", kategori: "Modern Avrupa Mutfağı Fine Dining", michelin: true, yildiz: 1,
@@ -884,7 +1189,12 @@ const MEKANLAR = [
     alinti: "\"Avrupa tekniğini yerel ürünlerle ustalıkla harmanlıyorlar.\"",
     neden: "Modern Avrupa mutfağı tekniklerini yerel ve mevsimlik ürünlerle harmanlayan Nicole, zarif sunumu ve tutarlı kalitesiyle 1 Michelin yıldızı kazandı.",
     menu: ["Şef Tadım Menüsü", "Mevsim Salatası", "Fırında Ana Yemek", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Barış K.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Ozan F.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Buse Y.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Hakan İ.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+    ],
   },
   {
     id: "sankai-by-nagaya", il: "istanbul", ad: "Sankai by Nagaya", kategori: "Japon Mutfağı Fine Dining", michelin: true, yildiz: 1,
@@ -895,7 +1205,12 @@ const MEKANLAR = [
     alinti: "\"İstanbul'da otantik omakase deneyimi yaşayabileceğiniz nadir adreslerden.\"",
     neden: "Japon şef Nagaya'nın imzasını taşıyan Sankai, otantik omakase menüsü ve titiz sunum kalitesiyle İstanbul'da 1 Michelin yıldızı kazanan Japon mutfağı temsilcisi.",
     menu: ["Omakase Menü", "Sashimi Seçkisi", "Sushi Seçkisi", "Matcha Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Sedat M.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Erhan B.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Recep V.", puan: 4, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Ozan F.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+    ],
   },
   // ---------------- ANKARA ----------------
   {
@@ -1003,7 +1318,12 @@ const MEKANLAR = [
     alinti: "\"Ankara'da otantik Çin mutfağı denince ilk akla gelen adres.\"",
     neden: "Uzak Doğu mutfağı denince Ankara'da akla ilk gelen köklü adreslerden olan Çin Seddi, çıtır böreği ve Çin mantısıyla tanınıyor.",
     menu: ["Çin Böreği", "Çin Mantısı", "Tatlı Ekşi Tavuk", "Pekin Usulü Ördek"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Barış K.", puan: 4, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Mert Y.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Berkay N.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Buse Y.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+    ],
   },
   {
     id: "duveroglu", il: "ankara", ad: "Düveroğlu", kategori: "Kebap & Izgara",
@@ -1014,7 +1334,12 @@ const MEKANLAR = [
     alinti: "\"Ankara'da et kalitesinden ödün vermeyen köklü isimlerden.\"",
     neden: "Uzun yıllardır kalitesini koruyan Düveroğlu, Ankara kebap kültürünün simge mekanları arasında yer alıyor.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ali Nazik", "Künefe"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Deniz A.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "İlyas D.", puan: 4, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Aylin D.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Melis R.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+    ],
   },
   {
     id: "cici-piknik", il: "ankara", ad: "Cici Piknik", kategori: "Döner",
@@ -1025,7 +1350,12 @@ const MEKANLAR = [
     alinti: "\"Ankaralı olup burada döner yemeyen yok gibi.\"",
     neden: "Kumrular Caddesi'nde nesillerin çocukluk anılarına ev sahipliği yapan Cici Piknik, gerçek Ankara dönerinin en eski ve en iyi temsilcilerinden biri.",
     menu: ["Ankara Döner", "Ayran", "Piyaz", "Kola"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Zeynep T.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Ceren F.", puan: 4, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Barış K.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+    ],
   },
   {
     id: "cafemiz", il: "ankara", ad: "Cafemiz", kategori: "Kafe",
@@ -1036,7 +1366,12 @@ const MEKANLAR = [
     alinti: "\"Arjantin Caddesi'nde oturup şehri izlemek için ideal bir köşe.\"",
     neden: "Beyazlar ve renklerle bezenmiş ferah dekoru ve müzik seçimiyle Cafemiz, Arjantin Caddesi'nin en sevilen buluşma noktalarından.",
     menu: ["Cappuccino", "Kahvaltı Tabağı", "Cheesecake", "Limonata"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Uğur D.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Gizem A.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Ozan F.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Volkan Ç.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+    ],
   },
   {
     id: "veganarsist", il: "ankara", ad: "Veganarsist", kategori: "Vegan Fast Food",
@@ -1047,7 +1382,12 @@ const MEKANLAR = [
     alinti: "\"Vegan olmayanların bile fark edemediği bir ıslak hamburger.\"",
     neden: "\"Herkes vegan beslenebilsin\" mottosuyla açılan Veganarsist, ıslak hamburger ve Adana dürüm gibi klasiklerin vegan versiyonlarını sunuyor.",
     menu: ["Vegan Islak Hamburger", "Vegan Adana Dürüm", "Vegan Kadınbudu Köfte", "Limonata"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Sedat M.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Selin Ö.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "İlyas D.", puan: 4, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Metin U.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+    ],
   },
   {
     id: "terradan-vegan", il: "ankara", ad: "Terradan Vegan Pub & Mutfak", kategori: "Vegan Mutfak",
@@ -1058,7 +1398,12 @@ const MEKANLAR = [
     alinti: "\"Vegan mutfağın Ankara'daki en yaratıcı adreslerinden biri.\"",
     neden: "Kavrulmuş tohumlu tofu salatadan glütensiz ıspanaklı kişe kadar zengin bir menüsüyle Terradan, Ankara'nın en sevilen vegan restoranlarından.",
     menu: ["Tofu Salata", "Glütensiz Ispanaklı Kiş", "Vegan Lazanya", "Vegan Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceyda P.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Sedat M.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Tuğba E.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Burak H.", puan: 4, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+    ],
   },
   {
     id: "zenger-pasa-konagi", il: "ankara", ad: "Zenger Paşa Konağı", kategori: "Geleneksel Türk Mutfağı & Manzara",
@@ -1069,7 +1414,12 @@ const MEKANLAR = [
     alinti: "\"Ankara'ya kuşbakışı bakarken geleneksel bir sofra.\"",
     neden: "Ankara Kalesi'nin içinde, şehre tepeden bakan manzarasıyla Zenger Paşa Konağı, geleneksel Türk mutfağını etnografik bir atmosferde sunuyor.",
     menu: ["Testi Kebabı", "Mantı", "Keşkek", "Kemalpaşa Tatlısı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ammar H.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Berkay N.", puan: 4, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "İlyas D.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Melis R.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+    ],
   },
   {
     id: "bogazici-lokantasi", il: "ankara", ad: "Boğaziçi Lokantası", kategori: "Esnaf Lokantası",
@@ -1080,7 +1430,12 @@ const MEKANLAR = [
     alinti: "\"Ofis çalışanlarının öğle arası ilk tercihi.\"",
     neden: "Kızılay'ın merkezinde günlük değişen ev yemeği menüsüyle Boğaziçi Lokantası, uzun yıllardır şehir çalışanlarının öğle molası adreslerinden.",
     menu: ["Günün Yemeği + Pilav", "Zeytinyağlı Çeşitleri", "Ayran", "İrmik Helvası"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Furkan T.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Emirhan Ç.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Uğur D.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "Sena Y.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+    ],
   },
   {
     id: "kinacizade-konagi", il: "ankara", ad: "Kınacızade Konağı", kategori: "Osmanlı Mutfağı & Tarihi Konak",
@@ -1091,7 +1446,12 @@ const MEKANLAR = [
     alinti: "\"Hamamönü'nün taş sokaklarında zamanda yolculuk yapmış gibi hissettiriyor.\"",
     neden: "Restore edilmiş tarihi bir Ankara konağında hizmet veren Kınacızade, Osmanlı mutfağından tariflerle avlusunda keyifli bir sofra sunuyor.",
     menu: ["Osmanlı Usulü Kuzu Tandır", "Mantı", "Höşmerim", "Osmanlı Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "İlyas D.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Gül T.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Ammar H.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Sibel N.", puan: 4, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   {
     id: "trilye", il: "ankara", ad: "Trilye", kategori: "Deniz Ürünleri",
@@ -1102,7 +1462,12 @@ const MEKANLAR = [
     alinti: "\"Denize kilometrelerce uzak bir şehirde bu kadar taze balık şaşırtıcı.\"",
     neden: "Ankara'da denizden uzak olmasına rağmen günlük taze balık tedarikiyle tanınan Trilye, şehrin en iyi deniz ürünleri restoranlarından biri olarak öne çıkıyor.",
     menu: ["Levrek Buğulama", "Karides Güveç", "Deniz Mahsulleri Meze Tabağı", "Beyaz Şarap (Kadeh)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Berkay N.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Aylin V.", puan: 4, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Tuğba E.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Selen A.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+    ],
   },
   {
     id: "kebap-49", il: "ankara", ad: "Kebap 49", kategori: "Kebap & Izgara",
@@ -1113,7 +1478,12 @@ const MEKANLAR = [
     alinti: "\"Çankaya'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kebap 49, Çankaya bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Ankara'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nazan İ.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "İpek O.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Recep V.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+    ],
   },
   {
     id: "tarihi-ankara-haci-bayram-kebap", il: "ankara", ad: "Tarihi Ankara Hacı Bayram Kebap", kategori: "Kebap & Izgara",
@@ -1124,7 +1494,12 @@ const MEKANLAR = [
     alinti: "\"Ulus'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tarihi Ankara Hacı Bayram Kebap, Ulus bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Ankara'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Rıdvan Ş.", puan: 4, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Furkan T.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Ebru L.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+    ],
   },
   {
     id: "zeynel-cilli", il: "ankara", ad: "Zeynel Çilli", kategori: "Tatlı",
@@ -1135,7 +1510,12 @@ const MEKANLAR = [
     alinti: "\"Çankaya'de tatlı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Zeynel Çilli, Çankaya bölgesinde uzun süredir sürdürdüğü tatlı geleneğiyle Ankara'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Künefe", "Baklava", "Sütlaç", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Alperen Y.", puan: 4, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Gamze L.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Pınar C.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Fadime R.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+    ],
   },
   // ---------------- İZMİR ----------------
   {
@@ -1243,7 +1623,12 @@ const MEKANLAR = [
     alinti: "\"İzmir'de balık denince ilk akla gelen isimlerden biri.\"",
     neden: "2002'den bu yana aynı noktada hizmet veren Gümüş Balık, günlük av ile hazırladığı menüsüyle İzmir'in en iyi balık restoranları arasında sayılıyor.",
     menu: ["Çupra Izgara", "Karides Güveç", "Deniz Mahsulleri Meze", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "İlyas D.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Selen A.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Tuğba E.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Nurcan Y.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   {
     id: "izmir-sakiz-alsancak", il: "izmir", ad: "İzmir Sakız Alsancak Restaurant", kategori: "Deniz Ürünleri & Meze",
@@ -1254,7 +1639,12 @@ const MEKANLAR = [
     alinti: "\"Kordon'da otuz yılı aşkın süredir aynı kalitede hizmet.\"",
     neden: "1989 yılından bu yana Kordon hattında hizmet veren bu köklü mekan, geniş meze menüsü ve taze balığıyla İzmir'in klasik adreslerinden.",
     menu: ["Meze Çeşitleri (6'lı)", "Levrek Buğulama", "Ahtapot Izgara", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ebru L.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Kerem S.", puan: 4, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Reyhan K.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+    ],
   },
   {
     id: "leone-patisserie", il: "izmir", ad: "Léone Patisserie & Boulangerie", kategori: "Kahvaltı & Fırın",
@@ -1265,7 +1655,12 @@ const MEKANLAR = [
     alinti: "\"Kruvasanı yiyince kendinizi Paris'te sanıyorsunuz.\"",
     neden: "2011'de kurulan Léone, Fransız usulü fırın ürünleri ve kruvasanıyla İzmir'in kahvaltı severlerinin vazgeçilmez adreslerinden.",
     menu: ["Kruvasan", "Fransız Kahvaltı Tabağı", "Pain au Chocolat", "Filtre Kahve"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Burak H.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Fatih K.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+      { ad: "Uğur D.", puan: 4, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+    ],
   },
   {
     id: "dostlar-firini", il: "izmir", ad: "Dostlar Fırını", kategori: "Fırın",
@@ -1276,7 +1671,12 @@ const MEKANLAR = [
     alinti: "\"Kokusuyla sokağı dolduran, babadan oğula geçen bir fırın geleneği.\"",
     neden: "1983 yılından bu yana babadan oğula geçen tarifiyle üretim yapan Dostlar Fırını, Alsancak'ın en sevilen sabah duraklarından.",
     menu: ["Poğaça Çeşitleri", "Açma", "Simit", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Volkan Ç.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Berkay N.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Onur B.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Ayşe B.", puan: 4, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+    ],
   },
   {
     id: "deniz-restoran-izmir", il: "izmir", ad: "Deniz Restoran", kategori: "Deniz Ürünleri",
@@ -1287,7 +1687,12 @@ const MEKANLAR = [
     alinti: "\"Sade ama kaliteli — Kordon'da balık denince ilk tercih.\"",
     neden: "Kumaş peçeteleri ve beyaz ütülü örtüleriyle sade ve kaliteli bir servis sunan Deniz Restoran, sütlü balığı ve karides güveciyle Kordon'un klasiklerinden.",
     menu: ["Sütlü Balık", "Karides Güveç", "Izgara Levrek", "Deniz Mahsulleri Salata"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kaan T.", puan: 4, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Furkan T.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Selen A.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Aylin V.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+    ],
   },
   {
     id: "hisaronu-sambalicisi", il: "izmir", ad: "Hisarönü Şambalicisi", kategori: "Tatlı",
@@ -1298,7 +1703,12 @@ const MEKANLAR = [
     alinti: "\"Konak'de tatlı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Hisarönü Şambalicisi, Konak bölgesinde uzun süredir sürdürdüğü tatlı geleneğiyle İzmir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Künefe", "Baklava", "Sütlaç", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceyda P.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Reyhan K.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Aylin D.", puan: 4, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Mert Y.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+    ],
   },
   {
     id: "topcu-restoran", il: "izmir", ad: "Topçu Restoran", kategori: "Köfte",
@@ -1309,7 +1719,12 @@ const MEKANLAR = [
     alinti: "\"Konak'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Topçu Restoran, Konak bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle İzmir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ammar H.", puan: 4, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Nurcan Y.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Cem A.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Serkan P.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+    ],
   },
   {
     id: "boyozcu-aykut", il: "izmir", ad: "Boyozcu Aykut", kategori: "Boyoz & Fırın",
@@ -1320,7 +1735,12 @@ const MEKANLAR = [
     alinti: "\"Bornova'de boyoz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Boyozcu Aykut, Bornova bölgesinde uzun süredir sürdürdüğü boyoz & fırın geleneğiyle İzmir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Boyoz", "Gevrek", "Çay", "Simit"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "İpek O.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Volkan Ç.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Sibel N.", puan: 4, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+    ],
   },
   {
     id: "reyhan-pastanesi", il: "izmir", ad: "Reyhan Pastanesi", kategori: "Tatlı & Pastane",
@@ -1331,7 +1751,12 @@ const MEKANLAR = [
     alinti: "\"Alsancak'de tatlı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Reyhan Pastanesi, Alsancak bölgesinde uzun süredir sürdürdüğü tatlı & pastane geleneğiyle İzmir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Milföy Pasta", "Kruvasan", "Cheesecake", "Filtre Kahve"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Yusuf B.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Sedat M.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Ceyda P.", puan: 4, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Gül T.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+    ],
   },
   {
     id: "teruar-urla", il: "izmir", ad: "Teruar Urla", kategori: "Akdeniz Mutfağı Fine Dining", michelin: true, yildiz: 1,
@@ -1342,7 +1767,12 @@ const MEKANLAR = [
     alinti: "\"Urla'nın toprağını ve mevsimini tabağa taşıyan bir mutfak anlayışı.\"",
     neden: "Urla Bağ Rotası'nın gözde adreslerinden Teruar Urla, kendi bahçesinden topladığı mevsimlik ürünlerle hazırladığı Akdeniz mutfağı yorumuyla 1 Michelin yıldızı kazandı.",
     menu: ["Mevsim Tadım Menüsü", "Bahçe Sebzeleriyle Meze", "Kömürde Balık", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nil D.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Ebru L.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Alperen Y.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Fatih K.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   {
     id: "od-urla", il: "izmir", ad: "OD Urla", kategori: "Fransız Mutfağı Fine Dining", michelin: true, yildiz: 1,
@@ -1353,7 +1783,12 @@ const MEKANLAR = [
     alinti: "\"Fransız mutfak tekniğini Ege'nin bereketiyle buluşturuyorlar.\"",
     neden: "Fransız mutfak tekniklerini Ege'nin yerel ürünleriyle harmanlayan OD Urla, samimi ve küçük ölçekli işletme anlayışıyla 1 Michelin yıldızı kazanan Urla'nın öncü adreslerinden.",
     menu: ["Şef Tadım Menüsü", "Ege Otlarıyla Deniz Ürünleri", "Kuzu Confit", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kerem S.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Pınar C.", puan: 4, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+      { ad: "Alperen Y.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Furkan T.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+    ],
   },
   {
     id: "dalyan-balik-restoran", il: "izmir", ad: "Dalyan Balık Restoran", kategori: "Deniz Ürünleri",
@@ -1364,7 +1799,12 @@ const MEKANLAR = [
     alinti: "\"Çeşme'de deniz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Dalyan Balık Restoran, Çeşme bölgesinde uzun süredir sürdürdüğü deniz ürünleri geleneğiyle İzmir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Balığı", "Deniz Mahsulleri Meze", "Ahtapot Izgara", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Mert Y.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Volkan Ç.", puan: 4, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Gamze L.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+    ],
   },
   {
     id: "imren-lokantasi", il: "izmir", ad: "İmren Lokantası", kategori: "Tatlı",
@@ -1375,7 +1815,12 @@ const MEKANLAR = [
     alinti: "\"Çeşme'de tatlı deyince akla ilk gelen adreslerden biri.\"",
     neden: "İmren Lokantası, Çeşme bölgesinde uzun süredir sürdürdüğü tatlı geleneğiyle İzmir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Künefe", "Baklava", "Sütlaç", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Uğur D.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Fatih K.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Tuğba E.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Metin U.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+    ],
   },
   {
     id: "arap-sacli", il: "izmir", ad: "Arap Saçlı", kategori: "Esnaf Lokantası",
@@ -1386,7 +1831,12 @@ const MEKANLAR = [
     alinti: "\"Konak'de esnaf deyince akla ilk gelen adreslerden biri.\"",
     neden: "Arap Saçlı, Konak bölgesinde uzun süredir sürdürdüğü esnaf lokantası geleneğiyle İzmir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Yemeği + Pilav", "Zeytinyağlı Çeşitleri", "Ayran", "İrmik Helvası"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Metin U.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Sedat M.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Uğur D.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+    ],
   },
   {
     id: "meshur-tavaci-recep-usta-izmir", il: "izmir", ad: "Meşhur Tavacı Recep Usta İzmir", kategori: "Et & Izgara",
@@ -1397,7 +1847,12 @@ const MEKANLAR = [
     alinti: "\"Karşıyaka'de et deyince akla ilk gelen adreslerden biri.\"",
     neden: "Meşhur Tavacı Recep Usta İzmir, Karşıyaka bölgesinde uzun süredir sürdürdüğü et & izgara geleneğiyle İzmir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kuzu Pirzola", "Antrikot", "Közlenmiş Sebze", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Fatih K.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "Elif K.", puan: 4, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Erhan B.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Emre G.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+    ],
   },
   {
     id: "kofteci-ibrahim-usta", il: "izmir", ad: "Köfteci İbrahim Usta", kategori: "Köfte",
@@ -1408,7 +1863,12 @@ const MEKANLAR = [
     alinti: "\"Bornova'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Köfteci İbrahim Usta, Bornova bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle İzmir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Aslı M.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Sedat M.", puan: 4, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Burak H.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+    ],
   },
   {
     id: "dutlu-kahve", il: "izmir", ad: "Dutlu Kahve", kategori: "Kafe",
@@ -1419,7 +1879,12 @@ const MEKANLAR = [
     alinti: "\"Çeşme'de kafe deyince akla ilk gelen adreslerden biri.\"",
     neden: "Dutlu Kahve, Çeşme bölgesinde uzun süredir sürdürdüğü kafe geleneğiyle İzmir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Filtre Kahve", "Cappuccino", "Kahvaltı Tabağı", "Cheesecake"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Mert Y.", puan: 4, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Ceren F.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Cem A.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Sedat M.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
   },
   {
     id: "vino-locale", il: "izmir", ad: "Vino Locale", kategori: "Türk Mutfağı Fine Dining", michelin: true, yildiz: 2,
@@ -1430,7 +1895,12 @@ const MEKANLAR = [
     alinti: "\"Urla'nın bağ kültürünü ve mutfağını en üst seviyede buluşturan bir deneyim.\"",
     neden: "Urla Bağ Rotası'nın en prestijli adreslerinden Vino Locale, yerel şarap kültürüyle harmanladığı Türk mutfağı yorumuyla İzmir'in ilk 2 Michelin yıldızlı restoranı unvanını kazandı.",
     menu: ["Şef Tadım Menüsü", "Bağ Bozumu Meze Seçkisi", "Odun Ateşinde Balık", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Sibel N.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Metin U.", puan: 4, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Buse Y.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Timur A.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+    ],
   },
   {
     id: "narimor", il: "izmir", ad: "Narımor", kategori: "Türk Mutfağı Fine Dining", michelin: true, yildiz: 1,
@@ -1441,7 +1911,12 @@ const MEKANLAR = [
     alinti: "\"Urla'nın toprağından sofraya uzanan kısa ve dürüst bir mutfak anlayışı.\"",
     neden: "Urla'nın yerel çiftliklerinden ve kendi bahçesinden beslenen Narımor, mevsimlik ve dürüst mutfak anlayışıyla 1 Michelin yıldızı kazandı.",
     menu: ["Şef Tadım Menüsü", "Bahçe Sebzeleriyle Meze", "Common Ana Yemek", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Yusuf B.", puan: 4, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Elif K.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Emre G.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+      { ad: "Reyhan K.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
   },
   // ---------------- BURSA ----------------
   {
@@ -1549,7 +2024,12 @@ const MEKANLAR = [
     alinti: "\"Dünyanın en ikonik restoranları listesine giren bir İskender kebapçısı.\"",
     neden: "Tasteatlas'ın dünyanın 100 ikonik restoranı listesinde 46. sıraya giren Uludağ Kebapçısı, Bursa'nın simge lezzeti İskender kebabın en tanınan adreslerinden.",
     menu: ["İskender Kebap", "Kuşbaşılı Pilav", "Ayran", "Kemalpaşa Tatlısı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kerem S.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Ebru L.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Aylin V.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Yusuf B.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+    ],
   },
   {
     id: "iskender-efendi-konagi", il: "bursa", ad: "İskender Efendi Konağı", kategori: "İskender Kebap",
@@ -1560,7 +2040,12 @@ const MEKANLAR = [
     alinti: "\"Aynı çatı altında hem İskender yiyor hem tarihini öğreniyorsunuz.\"",
     neden: "17. yüzyıldan kalma tarihi bir konakta hizmet veren İskender Efendi Konağı, bünyesindeki küçük müzesiyle İskender kebabın hikayesini de anlatıyor.",
     menu: ["İskender Kebap", "Kaburga Dolması", "Kemalpaşa Tatlısı", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Tuğba E.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Selen A.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Pınar C.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Sena Y.", puan: 4, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+    ],
   },
   {
     id: "kebapci-tamer", il: "bursa", ad: "Kebapçı Tamer", kategori: "İskender Kebap",
@@ -1571,7 +2056,12 @@ const MEKANLAR = [
     alinti: "\"Aile sıcaklığıyla servis edilen belki de en dengeli İskender.\"",
     neden: "Titizlikle seçtiği et ve tereyağıyla hazırladığı İskender kebabıyla tanınan Kebapçı Tamer, aile işletmesi sıcaklığını koruyan adreslerden.",
     menu: ["İskender Kebap", "Kuru Fasulye", "Yoğurtlu Patlıcan", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Hande Z.", puan: 4, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "Derya S.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Selin Ö.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Ammar H.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+    ],
   },
   {
     id: "kardesler-pide-cantik", il: "bursa", ad: "Kardeşler Pide & Cantık Salonu", kategori: "Pide & Cantık",
@@ -1582,7 +2072,12 @@ const MEKANLAR = [
     alinti: "\"Bursa'ya özgü cantığı en iyi burada tadabilirsiniz.\"",
     neden: "Odun ateşinde pişirdiği pide ve Bursa'ya has cantığıyla tanınan bu salon, Tuzpazarı'nın en sevilen esnaf duraklarından.",
     menu: ["Kıymalı Cantık", "Kaşarlı Pide", "Lahmacun", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nurcan Y.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Selen A.", puan: 4, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Timur A.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Fadime R.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+    ],
   },
   {
     id: "pidecioglu", il: "bursa", ad: "Pidecioğlu", kategori: "Pide & Cantık",
@@ -1593,7 +2088,12 @@ const MEKANLAR = [
     alinti: "\"Tırnaklı pidenin ne demek olduğunu burada anlıyorsunuz.\"",
     neden: "Taş fırında pişirdiği tırnaklı pide ve cantığıyla tanınan Pidecioğlu, Bursa'nın hamur işi kültüründe önemli bir duraktır.",
     menu: ["Tırnaklı Pide", "Kıymalı Cantık", "Peynirli Pide", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Cem A.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Derya S.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Kaan T.", puan: 4, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+    ],
   },
   {
     id: "tola-restaurant", il: "bursa", ad: "Tola Restaurant", kategori: "Modern Türk & Dünya Mutfağı",
@@ -1604,7 +2104,12 @@ const MEKANLAR = [
     alinti: "\"Bursa'da fine dining denince artık akla ilk gelen isimlerden.\"",
     neden: "Modern dokunuşlarla yeniden yorumlanan Türk ve dünya mutfağı lezzetlerini stil sahibi bir atmosferde sunan Tola, Bursa'nın yaratıcı mutfak sahnesine öncülük ediyor.",
     menu: ["Şef Tadım Menüsü", "Wagyu Antrikot", "Deniz Mahsulleri Risotto", "Çikolatalı Suflenin"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Berkay N.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+      { ad: "Onur B.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Ayşe B.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+    ],
   },
   {
     id: "cafe-freuze", il: "bursa", ad: "Cafe Freuze", kategori: "Kafe",
@@ -1615,7 +2120,12 @@ const MEKANLAR = [
     alinti: "\"Yeşilliklerin arasında saklı, fotoğraf çekmeden çıkamayacağınız bir bahçe.\"",
     neden: "Renkli koltukları ve yeşillik dolu iç mekanıyla Nilüfer'in en fotojenik kafelerinden biri olan Cafe Freuze, kahvaltı menüsüyle de öne çıkıyor.",
     menu: ["Serpme Kahvaltı", "Frambuazlı Waffle", "Cappuccino", "Cheesecake"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kerem S.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Kübra S.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Buse Y.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "İlyas D.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+    ],
   },
   {
     id: "petrov-bursa", il: "bursa", ad: "Petrov", kategori: "Üçüncü Nesil Kahve",
@@ -1626,7 +2136,12 @@ const MEKANLAR = [
     alinti: "\"Bursa'da üçüncü nesil kahve deyince ilk akla gelen adreslerden.\"",
     neden: "Üçüncü nesil kahve akımının Bursa'daki en iyi temsilcilerinden Petrov, özenli filtre kahvesi ve kahvaltı seçenekleriyle tercih ediliyor.",
     menu: ["V60 Filtre Kahve", "Flat White", "Avokadolu Tost", "Brownie"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Ammar H.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Gizem A.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Gül T.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
   },
   {
     id: "adem-baba", il: "bursa", ad: "Adem Baba Balık Restaurant", kategori: "Deniz Ürünleri",
@@ -1637,7 +2152,12 @@ const MEKANLAR = [
     alinti: "\"Mudanya'da balık denince şehir dışından bile gelen müdavimleri var.\"",
     neden: "Mudanya sahilinde günlük taze balıkla hazırladığı menüsüyle tanınan Adem Baba, hem Bursalıların hem şehir dışından gelenlerin favorisi.",
     menu: ["Levrek Izgara", "Karides Güveç", "Deniz Mahsulleri Meze", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Uğur D.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Gizem A.", puan: 4, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Timur A.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   {
     id: "arap-sukru", il: "bursa", ad: "Arap Şükrü (Sakarya Caddesi)", kategori: "Balık & Meyhane",
@@ -1648,7 +2168,12 @@ const MEKANLAR = [
     alinti: "\"Sakarya Caddesi'nde bir mekana oturuyorsunuz ama sokağın tamamının canlılığını yaşıyorsunuz.\"",
     neden: "Bursa'nın efsanevi meyhane sokağı Sakarya Caddesi'nin simgesi haline gelen Arap Şükrü, balık ve meze çeşitleriyle akşamları canlanan bir sokak kültürünün parçası.",
     menu: ["Balık Çeşitleri (Günlük)", "Soğuk Meze Tabağı", "Kalamar Tava", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Derya S.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Uğur D.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Ammar H.", puan: 4, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Ebru L.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+    ],
   },
   {
     id: "kebapci-iskender", il: "bursa", ad: "Kebapçı İskender", kategori: "İskender Kebap",
@@ -1659,7 +2184,12 @@ const MEKANLAR = [
     alinti: "\"Osmangazi'de i̇skender deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kebapçı İskender, Osmangazi bölgesinde uzun süredir sürdürdüğü i̇skender kebap geleneğiyle Bursa'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["İskender Kebap", "Ayran", "Kaşarlı Pide", "Kemalpaşa Tatlısı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ozan F.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Tolga E.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Timur A.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Aylin V.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+    ],
   },
   {
     id: "tarihi-abdal-firini", il: "bursa", ad: "Tarihi Abdal Fırını", kategori: "Fırın",
@@ -1670,7 +2200,12 @@ const MEKANLAR = [
     alinti: "\"Osmangazi'de fırın deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tarihi Abdal Fırını, Osmangazi bölgesinde uzun süredir sürdürdüğü fırın geleneğiyle Bursa'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günlük Ekmek Çeşitleri", "Poğaça", "Açma", "Simit"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Tolga E.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Rıdvan Ş.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Kübra S.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Berkay N.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+    ],
   },
   {
     id: "kitap-evi-restaurant", il: "bursa", ad: "Kitap Evi Restaurant", kategori: "Kafe",
@@ -1681,7 +2216,12 @@ const MEKANLAR = [
     alinti: "\"Nilüfer'de kafe deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kitap Evi Restaurant, Nilüfer bölgesinde uzun süredir sürdürdüğü kafe geleneğiyle Bursa'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Filtre Kahve", "Cappuccino", "Kahvaltı Tabağı", "Cheesecake"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kerem S.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Rıdvan Ş.", puan: 4, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "İlyas D.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Hande Z.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+    ],
   },
   {
     id: "arap-sukru-balikcisi", il: "bursa", ad: "Arap Şükrü Balıkçısı", kategori: "Deniz Ürünleri",
@@ -1692,7 +2232,12 @@ const MEKANLAR = [
     alinti: "\"Nilüfer'de deniz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Arap Şükrü Balıkçısı, Nilüfer bölgesinde uzun süredir sürdürdüğü deniz ürünleri geleneğiyle Bursa'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Balığı", "Deniz Mahsulleri Meze", "Ahtapot Izgara", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Gül T.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Cem A.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Mert Y.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Recep V.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+    ],
   },
   {
     id: "tarihi-bursa-iskendercisi-yavuz-iskenderoglu", il: "bursa", ad: "Tarihi Bursa İskendercisi Yavuz İskenderoğlu", kategori: "İskender Kebap",
@@ -1703,7 +2248,12 @@ const MEKANLAR = [
     alinti: "\"Osmangazi'de i̇skender deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tarihi Bursa İskendercisi Yavuz İskenderoğlu, Osmangazi bölgesinde uzun süredir sürdürdüğü i̇skender kebap geleneğiyle Bursa'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["İskender Kebap", "Ayran", "Kaşarlı Pide", "Kemalpaşa Tatlısı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ammar H.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Yusuf B.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "İpek O.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Ceyda P.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+    ],
   },
   // ---------------- ANTALYA ----------------
   {
@@ -1811,7 +2361,12 @@ const MEKANLAR = [
     alinti: "\"300 yıllık bir köşkte yemek yemek başlı başına bir deneyim.\"",
     neden: "2009'da Kaleiçi'nin 300 yıllık bir köşkünde açılan Seraser, kaliteli malzemeleri geleneksel dokunuşlarla modern tabaklara dönüştürüyor.",
     menu: ["Şef Tadım Menüsü", "Karides Güveç", "Kuzu Tandır", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Sena Y.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Ozan F.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Tolga E.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Hakan İ.", puan: 4, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+    ],
   },
   {
     id: "du-bastion", il: "antalya", ad: "Du Bastion Fine Dining Restaurant", kategori: "Fransız & Akdeniz Mutfağı",
@@ -1822,7 +2377,12 @@ const MEKANLAR = [
     alinti: "\"Yasemin kokusu eşliğinde taş kemerlerin altında sofistike bir akşam yemeği.\"",
     neden: "Alp Paşa Hotel bünyesindeki Du Bastion, Fransız ve Akdeniz mutfağının lezzetlerini tarihi Kaleiçi dokusuyla harmanlayan lüks bir fine dining deneyimi sunuyor.",
     menu: ["Fransız Usulü Deniz Tarağı", "Akdeniz Kuzu Pirzola", "Ratatouille", "Crème Brûlée"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Deniz A.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Alperen Y.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "Cem A.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Sedat M.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+    ],
   },
   {
     id: "lara-balik", il: "antalya", ad: "Lara Balık", kategori: "Deniz Ürünleri",
@@ -1833,7 +2393,12 @@ const MEKANLAR = [
     alinti: "\"Lara Böreği'ni tatmadan bu mekandan çıkmayın.\"",
     neden: "Lara Böreği ve Lara Salatası gibi imza lezzetleriyle tanınan Lara Balık, bölgenin en çok tercih edilen balık restoranlarından biri.",
     menu: ["Lara Böreği", "Lara Salatası", "Balık Pastırma", "Levrek Izgara"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kübra S.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Metin U.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Aslı M.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Ebru L.", puan: 4, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+    ],
   },
   {
     id: "balikci-irfan", il: "antalya", ad: "Balıkçı İrfan", kategori: "Deniz Ürünleri & Manzara",
@@ -1844,7 +2409,12 @@ const MEKANLAR = [
     alinti: "\"İspanyol karidesi ve Akdeniz manzarası bir arada.\"",
     neden: "Panoramik Akdeniz manzarasına sahip Balıkçı İrfan, taze mevsim balıkları ve meşhur ettiği İspanyol karidesiyle Lara'nın favori adreslerinden.",
     menu: ["İspanyol Karidesi", "Taze Mevsim Balığı", "Akdeniz Mezeleri", "Beyaz Şarap (Kadeh)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Emre G.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "Deniz A.", puan: 4, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Pınar C.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Ebru L.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+    ],
   },
   {
     id: "piyazci-sami", il: "antalya", ad: "Piyazcı Sami", kategori: "Piyaz & Esnaf Lokantası",
@@ -1855,7 +2425,12 @@ const MEKANLAR = [
     alinti: "\"Antalya'nın meşhur tahinli piyazının doğduğu yer.\"",
     neden: "1933 yılında kurulan ve Antalya'ya has tahinli piyazın mucidi kabul edilen Piyazcı Sami, günümüze kadar aynı lezzeti koruyarak şehrin simgelerinden biri oldu.",
     menu: ["Tahinli Piyaz", "Köfte", "Ezogelin Çorbası", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Sedat M.", puan: 4, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Aylin D.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Kerem S.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Rıdvan Ş.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+    ],
   },
   {
     id: "7-mehmet", il: "antalya", ad: "7 Mehmet", kategori: "Restoran",
@@ -1866,7 +2441,12 @@ const MEKANLAR = [
     alinti: "\"Muratpaşa'de restoran deyince akla ilk gelen adreslerden biri.\"",
     neden: "7 Mehmet, Muratpaşa bölgesinde uzun süredir sürdürdüğü restoran geleneğiyle Antalya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Şef Önerisi Ana Yemek", "Mevsim Salatası", "Deniz Mahsulleri Meze", "Ev Yapımı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceren F.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Damla K.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Pınar C.", puan: 4, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+    ],
   },
   {
     id: "ayar-meyhanesi", il: "antalya", ad: "Ayar Meyhanesi", kategori: "Meyhane & Meze",
@@ -1877,7 +2457,12 @@ const MEKANLAR = [
     alinti: "\"Muratpaşa'de meyhane deyince akla ilk gelen adreslerden biri.\"",
     neden: "Ayar Meyhanesi, Muratpaşa bölgesinde uzun süredir sürdürdüğü meyhane & meze geleneğiyle Antalya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Soğuk Meze Tabağı", "Levrek Buğulama", "Ahtapot Izgara", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+      { ad: "Emre G.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Derya S.", puan: 4, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Pınar C.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+    ],
   },
   {
     id: "oburus-momus", il: "antalya", ad: "Oburus Momus", kategori: "Restoran",
@@ -1888,7 +2473,12 @@ const MEKANLAR = [
     alinti: "\"Kaş'de restoran deyince akla ilk gelen adreslerden biri.\"",
     neden: "Oburus Momus, Kaş bölgesinde uzun süredir sürdürdüğü restoran geleneğiyle Antalya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Şef Önerisi Ana Yemek", "Mevsim Salatası", "Deniz Mahsulleri Meze", "Ev Yapımı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ebru L.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Timur A.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Furkan T.", puan: 4, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "Fadime R.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+    ],
   },
   {
     id: "green-beach-restaurant", il: "antalya", ad: "Green Beach Restaurant", kategori: "Restoran",
@@ -1899,7 +2489,12 @@ const MEKANLAR = [
     alinti: "\"Alanya'de restoran deyince akla ilk gelen adreslerden biri.\"",
     neden: "Green Beach Restaurant, Alanya bölgesinde uzun süredir sürdürdüğü restoran geleneğiyle Antalya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Şef Önerisi Ana Yemek", "Mevsim Salatası", "Deniz Mahsulleri Meze", "Ev Yapımı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Pınar C.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Hande Z.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Berkay N.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Gül T.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+    ],
   },
   {
     id: "leman-kultur-antalya", il: "antalya", ad: "Leman Kültür Antalya", kategori: "Kafe & Restoran",
@@ -1910,7 +2505,12 @@ const MEKANLAR = [
     alinti: "\"Muratpaşa'de kafe deyince akla ilk gelen adreslerden biri.\"",
     neden: "Leman Kültür Antalya, Muratpaşa bölgesinde uzun süredir sürdürdüğü kafe & restoran geleneğiyle Antalya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Serpme Kahvaltı", "Cappuccino", "Ev Yapımı Pasta", "Limonata"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Cem A.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "Aslı M.", puan: 4, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Timur A.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "Aylin V.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+    ],
   },
   {
     id: "vanilla-lounge", il: "antalya", ad: "Vanilla Lounge", kategori: "Restoran",
@@ -1921,7 +2521,12 @@ const MEKANLAR = [
     alinti: "\"Kaleiçi'de restoran deyince akla ilk gelen adreslerden biri.\"",
     neden: "Vanilla Lounge, Kaleiçi bölgesinde uzun süredir sürdürdüğü restoran geleneğiyle Antalya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Şef Önerisi Ana Yemek", "Mevsim Salatası", "Deniz Mahsulleri Meze", "Ev Yapımı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Barış K.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Ebru L.", puan: 4, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Kaan T.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Sibel N.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+    ],
   },
   // ---------------- GAZİANTEP ----------------
   {
@@ -2028,7 +2633,12 @@ const MEKANLAR = [
     alinti: "\"Gaziantep'e gelip burada yemeden dönmek büyük eksiklik.\"",
     neden: "1887'de açılan, beş kuşaktır aynı ailenin elinde olan bu tarihi mekan, hem Antep usulü kebabı hem de fıstıklı baklavasıyla şehrin en çok önerilen adreslerinden.",
     menu: ["Antep Usulü Kebap", "Fıstıklı Baklava", "Künefe", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Tolga E.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Ayşe B.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Ebru L.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Fatih K.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+    ],
   },
   {
     id: "kocak-baklava", il: "gaziantep", ad: "Koçak Baklava", kategori: "Baklava & Tatlı",
@@ -2039,7 +2649,12 @@ const MEKANLAR = [
     alinti: "\"Şahinbey'de baklava deyince akla ilk gelen adreslerden biri.\"",
     neden: "Koçak Baklava, Şahinbey bölgesinde uzun süredir sürdürdüğü baklava & tatlı geleneğiyle Gaziantep'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Fıstıklı Baklava", "Şöbiyet", "Kadayıf", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Alperen Y.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Timur A.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "Gamze L.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Emirhan Ç.", puan: 4, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+    ],
   },
   {
     id: "metanet-lokantasi", il: "gaziantep", ad: "Metanet Lokantası", kategori: "Beyran & Kebap",
@@ -2050,7 +2665,12 @@ const MEKANLAR = [
     alinti: "\"Şahinbey'de beyran deyince akla ilk gelen adreslerden biri.\"",
     neden: "Metanet Lokantası, Şahinbey bölgesinde uzun süredir sürdürdüğü beyran & kebap geleneğiyle Gaziantep'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Beyran Çorbası", "Antep Kebap", "Katmer", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nazan İ.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Hande Z.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Selin Ö.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Melis R.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+    ],
   },
   {
     id: "halil-usta", il: "gaziantep", ad: "Halil Usta", kategori: "Kebap & Izgara",
@@ -2061,7 +2681,12 @@ const MEKANLAR = [
     alinti: "\"Şehitkamil'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Halil Usta, Şehitkamil bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Gaziantep'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Recep V.", puan: 4, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Cem A.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Kübra S.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+    ],
   },
   {
     id: "kosk-kebap", il: "gaziantep", ad: "Köşk Kebap", kategori: "Kebap & Izgara",
@@ -2072,7 +2697,12 @@ const MEKANLAR = [
     alinti: "\"Şahinbey'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Köşk Kebap, Şahinbey bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Gaziantep'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Recep V.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Aylin D.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "İlyas D.", puan: 4, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Onur B.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+    ],
   },
   {
     id: "zekeriya-usta", il: "gaziantep", ad: "Zekeriya Usta", kategori: "Baklava & Tatlı",
@@ -2083,7 +2713,12 @@ const MEKANLAR = [
     alinti: "\"Şahinbey'de baklava deyince akla ilk gelen adreslerden biri.\"",
     neden: "Zekeriya Usta, Şahinbey bölgesinde uzun süredir sürdürdüğü baklava & tatlı geleneğiyle Gaziantep'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Fıstıklı Baklava", "Şöbiyet", "Kadayıf", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceyda P.", puan: 4, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Gül T.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Furkan T.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Kübra S.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+    ],
   },
   {
     id: "culcuoglu-baklava", il: "gaziantep", ad: "Çulcuoğlu Baklava", kategori: "Baklava & Tatlı",
@@ -2094,7 +2729,12 @@ const MEKANLAR = [
     alinti: "\"Şahinbey'de baklava deyince akla ilk gelen adreslerden biri.\"",
     neden: "Çulcuoğlu Baklava, Şahinbey bölgesinde uzun süredir sürdürdüğü baklava & tatlı geleneğiyle Gaziantep'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Fıstıklı Baklava", "Şöbiyet", "Kadayıf", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Onur B.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Ozan F.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+      { ad: "Damla K.", puan: 4, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+    ],
   },
   {
     id: "kelebek-kebap", il: "gaziantep", ad: "Kelebek Kebap", kategori: "Kebap & Izgara",
@@ -2105,7 +2745,12 @@ const MEKANLAR = [
     alinti: "\"Şehitkamil'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kelebek Kebap, Şehitkamil bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Gaziantep'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Melis R.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Kübra S.", puan: 4, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Ayşe B.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Volkan Ç.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+    ],
   },
   // ---------------- ADANA ----------------
   {
@@ -2117,7 +2762,12 @@ const MEKANLAR = [
     alinti: "\"Seyhan'de tatlı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Bici Bici Sait Usta, Seyhan bölgesinde uzun süredir sürdürdüğü tatlı geleneğiyle Adana'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Künefe", "Baklava", "Sütlaç", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Melis R.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Burak H.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Erhan B.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+    ],
   },
   {
     id: "kazancilar-restoran", il: "adana", ad: "Kazancılar Restoran", kategori: "Kebap & Izgara",
@@ -2128,7 +2778,12 @@ const MEKANLAR = [
     alinti: "\"Seyhan'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kazancılar Restoran, Seyhan bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Adana'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Deniz A.", puan: 4, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Erhan B.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Fadime R.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Aylin V.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+    ],
   },
   {
     id: "onbasilar-kebap", il: "adana", ad: "Onbaşılar Kebap", kategori: "Kebap & Izgara",
@@ -2139,7 +2794,12 @@ const MEKANLAR = [
     alinti: "\"Seyhan'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Onbaşılar Kebap, Seyhan bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Adana'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Recep V.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Fadime R.", puan: 4, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Elif K.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Ceren F.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+    ],
   },
   {
     id: "buyuk-saat-cigerci-memet", il: "adana", ad: "Büyük Saat Ciğerci Memet", kategori: "Ciğer",
@@ -2150,7 +2810,12 @@ const MEKANLAR = [
     alinti: "\"Seyhan'de ciğer deyince akla ilk gelen adreslerden biri.\"",
     neden: "Büyük Saat Ciğerci Memet, Seyhan bölgesinde uzun süredir sürdürdüğü ciğer geleneğiyle Adana'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Ciğer", "Közlenmiş Biber & Domates", "Piyaz", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceren F.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Furkan T.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Sedat M.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Kübra S.", puan: 4, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+    ],
   },
   {
     id: "haci-baba", il: "adana", ad: "Hacı Baba", kategori: "Kebap & Izgara",
@@ -2161,7 +2826,12 @@ const MEKANLAR = [
     alinti: "\"Seyhan'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Hacı Baba, Seyhan bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Adana'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Emirhan Ç.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Deniz A.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Burak H.", puan: 4, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Melis R.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+    ],
   },
   {
     id: "cikcik-ali", il: "adana", ad: "Cikcik Ali", kategori: "Ciğer",
@@ -2172,7 +2842,12 @@ const MEKANLAR = [
     alinti: "\"Yüreğir'de ciğer deyince akla ilk gelen adreslerden biri.\"",
     neden: "Cikcik Ali, Yüreğir bölgesinde uzun süredir sürdürdüğü ciğer geleneğiyle Adana'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Ciğer", "Közlenmiş Biber & Domates", "Piyaz", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Selen A.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+      { ad: "Gamze L.", puan: 4, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "İlyas D.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Elif K.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+    ],
   },
   {
     id: "kaburgaci-yasar-usta", il: "adana", ad: "Kaburgacı Yaşar Usta", kategori: "Kebap & Izgara",
@@ -2183,7 +2858,12 @@ const MEKANLAR = [
     alinti: "\"Seyhan'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kaburgacı Yaşar Usta, Seyhan bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Adana'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ozan F.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Alperen Y.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Hakan İ.", puan: 4, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Aslı M.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+    ],
   },
   {
     id: "cigerci-bahattin", il: "adana", ad: "Ciğerci Bahattin", kategori: "Ciğer",
@@ -2194,7 +2874,12 @@ const MEKANLAR = [
     alinti: "\"Seyhan'de ciğer deyince akla ilk gelen adreslerden biri.\"",
     neden: "Ciğerci Bahattin, Seyhan bölgesinde uzun süredir sürdürdüğü ciğer geleneğiyle Adana'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Ciğer", "Közlenmiş Biber & Domates", "Piyaz", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Sena Y.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Rıdvan Ş.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Uğur D.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Onur B.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+    ],
   },
   {
     id: "tarihi-yeni-ugur-kebap", il: "adana", ad: "Tarihi Yeni Uğur Kebap", kategori: "Kebap & Izgara",
@@ -2205,7 +2890,12 @@ const MEKANLAR = [
     alinti: "\"Çukurova'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tarihi Yeni Uğur Kebap, Çukurova bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Adana'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Zeynep T.", puan: 4, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Volkan Ç.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Furkan T.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Emre G.", puan: 5, yorum: "Yerel halkın da çok sevdiği, samimi bir yer." },
+    ],
   },
   // ---------------- AFYONKARAHİSAR ----------------
   {
@@ -2217,7 +2907,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de tatlı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Aşçı Bacaksız, Merkez bölgesinde uzun süredir sürdürdüğü tatlı geleneğiyle Afyonkarahisar'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Ekmek Kadayıfı", "Kaymaklı Kadayıf", "Türk Kahvesi", "Şerbetli Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kaan T.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "İlyas D.", puan: 4, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Melis R.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+    ],
   },
   {
     id: "ikbal-lokantasi", il: "afyonkarahisar", ad: "İkbal Lokantası", kategori: "Et & Izgara",
@@ -2228,7 +2923,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de et deyince akla ilk gelen adreslerden biri.\"",
     neden: "İkbal Lokantası, Merkez bölgesinde uzun süredir sürdürdüğü et & izgara geleneğiyle Afyonkarahisar'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kuzu Pirzola", "Antrikot", "Közlenmiş Sebze", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nil D.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Gül T.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "Fatih K.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Ozan F.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   // ---------------- AYDIN ----------------
   {
@@ -2240,7 +2940,12 @@ const MEKANLAR = [
     alinti: "\"Efeler'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Köfteci Ahmet, Efeler bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle Aydın'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kübra S.", puan: 4, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Aslı M.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Recep V.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Kaan T.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+    ],
   },
   {
     id: "apollon-restaurant", il: "aydin", ad: "Apollon Restaurant", kategori: "Deniz Ürünleri",
@@ -2251,7 +2956,12 @@ const MEKANLAR = [
     alinti: "\"Didim'de deniz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Apollon Restaurant, Didim bölgesinde uzun süredir sürdürdüğü deniz ürünleri geleneğiyle Aydın'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Balığı", "Deniz Mahsulleri Meze", "Ahtapot Izgara", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Tuğba E.", puan: 4, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Gizem A.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Deniz A.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Fadime R.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+    ],
   },
   // ---------------- BALIKESİR ----------------
   {
@@ -2263,7 +2973,12 @@ const MEKANLAR = [
     alinti: "\"Ayvalık'de deniz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Cunda Balık, Ayvalık bölgesinde uzun süredir sürdürdüğü deniz ürünleri geleneğiyle Balıkesir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Balığı", "Deniz Mahsulleri Meze", "Ahtapot Izgara", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Tolga E.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+      { ad: "Gizem A.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Sena Y.", puan: 4, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Berkay N.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+    ],
   },
   {
     id: "seytanin-kahvesi", il: "balikesir", ad: "Şeytanın Kahvesi", kategori: "Kafe",
@@ -2274,7 +2989,12 @@ const MEKANLAR = [
     alinti: "\"Ayvalık'de kafe deyince akla ilk gelen adreslerden biri.\"",
     neden: "Şeytanın Kahvesi, Ayvalık bölgesinde uzun süredir sürdürdüğü kafe geleneğiyle Balıkesir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Filtre Kahve", "Cappuccino", "Kahvaltı Tabağı", "Cheesecake"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Gamze L.", puan: 4, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Selen A.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Fadime R.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Derya S.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+    ],
   },
   {
     id: "kofteci-ali", il: "balikesir", ad: "Köfteci Ali", kategori: "Köfte",
@@ -2285,7 +3005,12 @@ const MEKANLAR = [
     alinti: "\"Edremit'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Köfteci Ali, Edremit bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle Balıkesir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nurcan Y.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Hakan İ.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "İlyas D.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "Aylin V.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+    ],
   },
   // ---------------- BOLU ----------------
   {
@@ -2297,7 +3022,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de mantı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Yörem Mantı, Merkez bölgesinde uzun süredir sürdürdüğü mantı geleneğiyle Bolu'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kayseri Usulü Mantı", "Yörük Mantısı", "Ayran", "Cacık"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Erhan B.", puan: 4, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Hande Z.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Berkay N.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Ceren F.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+    ],
   },
   {
     id: "baba-kebap", il: "bolu", ad: "Baba Kebap", kategori: "Kebap & Izgara",
@@ -2308,7 +3038,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Baba Kebap, Merkez bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Bolu'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ozan F.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Ceren F.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Erhan B.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Rıdvan Ş.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+    ],
   },
   {
     id: "mudurnu-sofrasi", il: "bolu", ad: "Mudurnu Sofrası", kategori: "Yöresel Mutfak",
@@ -2319,7 +3054,12 @@ const MEKANLAR = [
     alinti: "\"Mudurnu'de yöresel deyince akla ilk gelen adreslerden biri.\"",
     neden: "Mudurnu Sofrası, Mudurnu bölgesinde uzun süredir sürdürdüğü yöresel mutfak geleneğiyle Bolu'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Yöresel Çorba", "Günün Yöresel Yemeği", "Ev Yapımı Ekmek", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Pınar C.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Hakan İ.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Ebru L.", puan: 4, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+    ],
   },
   // ---------------- ÇANAKKALE ----------------
   {
@@ -2331,7 +3071,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Yalova Restoran, Merkez bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle Çanakkale'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Hande Z.", puan: 4, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Serkan P.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Onur B.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Selin Ö.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+    ],
   },
   {
     id: "limonata-bozcaada", il: "canakkale", ad: "Limonata Bozcaada", kategori: "Kafe",
@@ -2342,7 +3087,12 @@ const MEKANLAR = [
     alinti: "\"Bozcaada'de kafe deyince akla ilk gelen adreslerden biri.\"",
     neden: "Limonata Bozcaada, Bozcaada bölgesinde uzun süredir sürdürdüğü kafe geleneğiyle Çanakkale'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Filtre Kahve", "Cappuccino", "Kahvaltı Tabağı", "Cheesecake"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nil D.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Volkan Ç.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Aslı M.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Sibel N.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+    ],
   },
   // ---------------- DİYARBAKIR ----------------
   {
@@ -2354,7 +3104,12 @@ const MEKANLAR = [
     alinti: "\"Sur'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kadıoğlu Kebap, Sur bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Diyarbakır'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Derya S.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+      { ad: "İlyas D.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Alperen Y.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Emirhan Ç.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+    ],
   },
   {
     id: "suluklu-han-restoran", il: "diyarbakir", ad: "Sülüklü Han Restoran", kategori: "Yöresel Mutfak",
@@ -2365,7 +3120,12 @@ const MEKANLAR = [
     alinti: "\"Sur'de yöresel deyince akla ilk gelen adreslerden biri.\"",
     neden: "Sülüklü Han Restoran, Sur bölgesinde uzun süredir sürdürdüğü yöresel mutfak geleneğiyle Diyarbakır'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Yöresel Çorba", "Günün Yöresel Yemeği", "Ev Yapımı Ekmek", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Elif K.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Aylin D.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Tuğba E.", puan: 4, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+    ],
   },
   {
     id: "cigerci-xale-meheme", il: "diyarbakir", ad: "Ciğerci Xale Meheme", kategori: "Ciğer",
@@ -2376,7 +3136,12 @@ const MEKANLAR = [
     alinti: "\"Sur'de ciğer deyince akla ilk gelen adreslerden biri.\"",
     neden: "Ciğerci Xale Meheme, Sur bölgesinde uzun süredir sürdürdüğü ciğer geleneğiyle Diyarbakır'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Ciğer", "Közlenmiş Biber & Domates", "Piyaz", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kübra S.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Erhan B.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Cem A.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Buse Y.", puan: 4, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
   },
   // ---------------- DÜZCE ----------------
   {
@@ -2388,7 +3153,12 @@ const MEKANLAR = [
     alinti: "\"Akçakoca'de deniz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Deniz Yıldızı, Akçakoca bölgesinde uzun süredir sürdürdüğü deniz ürünleri geleneğiyle Düzce'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Balığı", "Deniz Mahsulleri Meze", "Ahtapot Izgara", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Deniz A.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Melis R.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Onur B.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Recep V.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
   },
   // ---------------- ERZURUM ----------------
   {
@@ -2400,7 +3170,12 @@ const MEKANLAR = [
     alinti: "\"Yakutiye'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Cağ Kebabı Koç, Yakutiye bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Erzurum'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Fatih K.", puan: 4, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Rıdvan Ş.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Sena Y.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   {
     id: "tarihi-gel-gor-cag-kebap", il: "erzurum", ad: "Tarihi Gel Gör Cağ Kebap", kategori: "Cağ Kebabı",
@@ -2411,7 +3186,12 @@ const MEKANLAR = [
     alinti: "\"Yakutiye'de cağ deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tarihi Gel Gör Cağ Kebap, Yakutiye bölgesinde uzun süredir sürdürdüğü cağ kebabı geleneğiyle Erzurum'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Cağ Kebabı (Porsiyon)", "Ayran", "Piyaz", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Rıdvan Ş.", puan: 4, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Aslı M.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Selen A.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Ceren F.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+    ],
   },
   // ---------------- ESKİŞEHİR ----------------
   {
@@ -2423,7 +3203,12 @@ const MEKANLAR = [
     alinti: "\"Odunpazarı'de balaban deyince akla ilk gelen adreslerden biri.\"",
     neden: "Abdüsselam Balaban Kebap, Odunpazarı bölgesinde uzun süredir sürdürdüğü balaban kebap geleneğiyle Eskişehir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Balaban Kebap", "Ayran", "Piyaz", "Ekmek Kadayıfı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Reyhan K.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Sibel N.", puan: 4, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Furkan T.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Serkan P.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+    ],
   },
   {
     id: "birtat-kofte", il: "eskisehir", ad: "Birtat Köfte", kategori: "Köfte",
@@ -2434,7 +3219,12 @@ const MEKANLAR = [
     alinti: "\"Tepebaşı'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Birtat Köfte, Tepebaşı bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle Eskişehir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceren F.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Furkan T.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Ceyda P.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+    ],
   },
   {
     id: "doyuran-kahvalti", il: "eskisehir", ad: "Doyuran Kahvaltı", kategori: "Kahvaltı",
@@ -2445,7 +3235,12 @@ const MEKANLAR = [
     alinti: "\"Odunpazarı'de kahvaltı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Doyuran Kahvaltı, Odunpazarı bölgesinde uzun süredir sürdürdüğü kahvaltı geleneğiyle Eskişehir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Serpme Kahvaltı", "Menemen", "Bal Kaymak", "Çay"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Selen A.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Emre G.", puan: 4, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Hande Z.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Ebru L.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+    ],
   },
   {
     id: "papagan-cig-borek", il: "eskisehir", ad: "Papağan Çiğ Börek", kategori: "Çiğ Börek",
@@ -2456,7 +3251,12 @@ const MEKANLAR = [
     alinti: "\"Odunpazarı'de çiğ deyince akla ilk gelen adreslerden biri.\"",
     neden: "Papağan Çiğ Börek, Odunpazarı bölgesinde uzun süredir sürdürdüğü çiğ börek geleneğiyle Eskişehir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kayseri Usulü Çiğ Börek (Kızarmış)", "Fırın Çiğ Börek", "Ayran", "Şalgam"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Alperen Y.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Serkan P.", puan: 4, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "Sibel N.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Emirhan Ç.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+    ],
   },
   {
     id: "kirim-tatar-kultur-cig-borek-evi", il: "eskisehir", ad: "Kırım Tatar Kültür Çiğ Börek Evi", kategori: "Çiğ Börek",
@@ -2467,7 +3267,12 @@ const MEKANLAR = [
     alinti: "\"Tepebaşı'de çiğ deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kırım Tatar Kültür Çiğ Börek Evi, Tepebaşı bölgesinde uzun süredir sürdürdüğü çiğ börek geleneğiyle Eskişehir'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kayseri Usulü Çiğ Börek (Kızarmış)", "Fırın Çiğ Börek", "Ayran", "Şalgam"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Onur B.", puan: 4, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "İlyas D.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Damla K.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Uğur D.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+    ],
   },
   // ---------------- GİRESUN ----------------
   {
@@ -2479,7 +3284,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de kafe deyince akla ilk gelen adreslerden biri.\"",
     neden: "Osmanlı Kahvesi, Merkez bölgesinde uzun süredir sürdürdüğü kafe geleneğiyle Giresun'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Filtre Kahve", "Cappuccino", "Kahvaltı Tabağı", "Cheesecake"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ebru L.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Onur B.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Zeynep T.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Nurcan Y.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
   },
   // ---------------- HATAY ----------------
   {
@@ -2491,7 +3301,12 @@ const MEKANLAR = [
     alinti: "\"Antakya'de et deyince akla ilk gelen adreslerden biri.\"",
     neden: "Pöç Kasabı, Antakya bölgesinde uzun süredir sürdürdüğü et & izgara geleneğiyle Hatay'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kuzu Pirzola", "Antrikot", "Közlenmiş Sebze", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Zeynep T.", puan: 4, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Onur B.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Gizem A.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "İpek O.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+    ],
   },
   {
     id: "sultan-sofrasi", il: "hatay", ad: "Sultan Sofrası", kategori: "Künefe & Tatlı",
@@ -2502,7 +3317,12 @@ const MEKANLAR = [
     alinti: "\"Antakya'de künefe deyince akla ilk gelen adreslerden biri.\"",
     neden: "Sultan Sofrası, Antakya bölgesinde uzun süredir sürdürdüğü künefe & tatlı geleneğiyle Hatay'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Künefe", "Kadayıf Dolması", "Türk Kahvesi", "Şerbetli Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ebru L.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Metin U.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Ceren F.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "İlyas D.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+    ],
   },
   {
     id: "konak-restaurant", il: "hatay", ad: "Konak Restaurant", kategori: "Yöresel Mutfak",
@@ -2513,7 +3333,12 @@ const MEKANLAR = [
     alinti: "\"Antakya'de yöresel deyince akla ilk gelen adreslerden biri.\"",
     neden: "Konak Restaurant, Antakya bölgesinde uzun süredir sürdürdüğü yöresel mutfak geleneğiyle Hatay'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Yöresel Çorba", "Günün Yöresel Yemeği", "Ev Yapımı Ekmek", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Damla K.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Selin Ö.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Barış K.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Melis R.", puan: 4, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+    ],
   },
   // ---------------- KAHRAMANMARAŞ ----------------
   {
@@ -2525,7 +3350,12 @@ const MEKANLAR = [
     alinti: "\"Dulkadiroğlu'de tatlı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kervanhan, Dulkadiroğlu bölgesinde uzun süredir sürdürdüğü tatlı geleneğiyle Kahramanmaraş'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Künefe", "Baklava", "Sütlaç", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Barış K.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Selen A.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Erhan B.", puan: 4, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Onur B.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+    ],
   },
   {
     id: "yanyali-fehmi", il: "kahramanmaras", ad: "Yanyalı Fehmi", kategori: "Kebap & Izgara",
@@ -2536,7 +3366,12 @@ const MEKANLAR = [
     alinti: "\"Dulkadiroğlu'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Yanyalı Fehmi, Dulkadiroğlu bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Kahramanmaraş'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Onur B.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Gizem A.", puan: 4, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Emre G.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Barış K.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+    ],
   },
   // ---------------- KARABÜK ----------------
   {
@@ -2548,7 +3383,12 @@ const MEKANLAR = [
     alinti: "\"Safranbolu'de yöresel deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tarihi Yemeniciler Konağı, Safranbolu bölgesinde uzun süredir sürdürdüğü yöresel mutfak geleneğiyle Karabük'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Yöresel Çorba", "Günün Yöresel Yemeği", "Ev Yapımı Ekmek", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Selen A.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Kaan T.", puan: 4, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "İpek O.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Aylin V.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+    ],
   },
   // ---------------- KARS ----------------
   {
@@ -2560,7 +3400,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de kaz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kars Kaz Evi, Merkez bölgesinde uzun süredir sürdürdüğü kaz eti & yöresel geleneğiyle Kars'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kars Usulü Kaz Kavurma", "Bulgur Pilavı", "Kars Gravyer Peyniri", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Sena Y.", puan: 4, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Ozan F.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Ammar H.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Aylin V.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+    ],
   },
   {
     id: "hanimeli-kars-mutfagi", il: "kars", ad: "Hanimeli Kars Mutfağı", kategori: "Yöresel Mutfak",
@@ -2571,7 +3416,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de yöresel deyince akla ilk gelen adreslerden biri.\"",
     neden: "Hanimeli Kars Mutfağı, Merkez bölgesinde uzun süredir sürdürdüğü yöresel mutfak geleneğiyle Kars'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Yöresel Çorba", "Günün Yöresel Yemeği", "Ev Yapımı Ekmek", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kübra S.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Sedat M.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Furkan T.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Hande Z.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+    ],
   },
   // ---------------- KASTAMONU ----------------
   {
@@ -2583,7 +3433,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de kahvaltı deyince akla ilk gelen adreslerden biri.\"",
     neden: "İzbeli Çiftliği, Merkez bölgesinde uzun süredir sürdürdüğü kahvaltı geleneğiyle Kastamonu'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Serpme Kahvaltı", "Menemen", "Bal Kaymak", "Çay"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Yusuf B.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Burak H.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+      { ad: "Metin U.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Aslı M.", puan: 4, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+    ],
   },
   // ---------------- KAYSERİ ----------------
   {
@@ -2595,7 +3450,12 @@ const MEKANLAR = [
     alinti: "\"Melikgazi'de et deyince akla ilk gelen adreslerden biri.\"",
     neden: "Elmacıoğlu İskender, Melikgazi bölgesinde uzun süredir sürdürdüğü et & izgara geleneğiyle Kayseri'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kuzu Pirzola", "Antrikot", "Közlenmiş Sebze", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Hande Z.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+      { ad: "Alperen Y.", puan: 4, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Gül T.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Tolga E.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+    ],
   },
   {
     id: "kadir-has-restaurant", il: "kayseri", ad: "Kadir Has Restaurant", kategori: "Mantı",
@@ -2606,7 +3466,12 @@ const MEKANLAR = [
     alinti: "\"Melikgazi'de mantı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kadir Has Restaurant, Melikgazi bölgesinde uzun süredir sürdürdüğü mantı geleneğiyle Kayseri'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kayseri Usulü Mantı", "Yörük Mantısı", "Ayran", "Cacık"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nil D.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Ayşe B.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Gamze L.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
   },
   {
     id: "kasik-la-manti", il: "kayseri", ad: "Kaşık-La Mantı", kategori: "Mantı",
@@ -2617,7 +3482,12 @@ const MEKANLAR = [
     alinti: "\"Talas'de mantı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kaşık-La Mantı, Talas bölgesinde uzun süredir sürdürdüğü mantı geleneğiyle Kayseri'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kayseri Usulü Mantı", "Yörük Mantısı", "Ayran", "Cacık"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Gamze L.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Deniz A.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Sena Y.", puan: 4, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+    ],
   },
   // ---------------- KOCAELİ ----------------
   {
@@ -2629,7 +3499,12 @@ const MEKANLAR = [
     alinti: "\"İzmit'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Başiskele Tarihi Köfteci, İzmit bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle Kocaeli'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Gamze L.", puan: 4, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Gizem A.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Reyhan K.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+    ],
   },
   {
     id: "degirmendere-balikcisi", il: "kocaeli", ad: "Değirmendere Balıkçısı", kategori: "Deniz Ürünleri",
@@ -2640,7 +3515,12 @@ const MEKANLAR = [
     alinti: "\"Gebze'de deniz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Değirmendere Balıkçısı, Gebze bölgesinde uzun süredir sürdürdüğü deniz ürünleri geleneğiyle Kocaeli'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Balığı", "Deniz Mahsulleri Meze", "Ahtapot Izgara", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kübra S.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Emirhan Ç.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Kerem S.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Mert Y.", puan: 4, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+    ],
   },
   // ---------------- KONYA ----------------
   {
@@ -2652,7 +3532,12 @@ const MEKANLAR = [
     alinti: "\"Selçuklu'de tirit deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tiritçi Mithat, Selçuklu bölgesinde uzun süredir sürdürdüğü tirit geleneğiyle Konya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Konya Usulü Tirit", "Etli Ekmek", "Ayran", "Höşmerim"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Emirhan Ç.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Zeynep T.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Tolga E.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Alperen Y.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+    ],
   },
   {
     id: "haci-sukru-etli-ekmek", il: "konya", ad: "Hacı Şükrü Etli Ekmek", kategori: "Etli Ekmek",
@@ -2663,7 +3548,12 @@ const MEKANLAR = [
     alinti: "\"Meram'de etli deyince akla ilk gelen adreslerden biri.\"",
     neden: "Hacı Şükrü Etli Ekmek, Meram bölgesinde uzun süredir sürdürdüğü etli ekmek geleneğiyle Konya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Etli Ekmek", "Bamya Çorbası", "Ayran", "Höşmerim"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Zeynep T.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Deniz A.", puan: 4, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Nazan İ.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Ammar H.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
   },
   {
     id: "cemo-etli-ekmek", il: "konya", ad: "Cemo Etli Ekmek", kategori: "Etli Ekmek",
@@ -2674,7 +3564,12 @@ const MEKANLAR = [
     alinti: "\"Selçuklu'de etli deyince akla ilk gelen adreslerden biri.\"",
     neden: "Cemo Etli Ekmek, Selçuklu bölgesinde uzun süredir sürdürdüğü etli ekmek geleneğiyle Konya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Etli Ekmek", "Bamya Çorbası", "Ayran", "Höşmerim"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ammar H.", puan: 4, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Berkay N.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Kübra S.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "Timur A.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   {
     id: "meshur-konya-sille-sofrasi", il: "konya", ad: "Meşhur Konya Sille Sofrası", kategori: "Yöresel Mutfak",
@@ -2685,7 +3580,12 @@ const MEKANLAR = [
     alinti: "\"Karatay'de yöresel deyince akla ilk gelen adreslerden biri.\"",
     neden: "Meşhur Konya Sille Sofrası, Karatay bölgesinde uzun süredir sürdürdüğü yöresel mutfak geleneğiyle Konya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Yöresel Çorba", "Günün Yöresel Yemeği", "Ev Yapımı Ekmek", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nazan İ.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Sena Y.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Kerem S.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Derya S.", puan: 4, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+    ],
   },
   {
     id: "akyokus-kasri", il: "konya", ad: "Akyokuş Kasrı", kategori: "Restoran",
@@ -2696,7 +3596,12 @@ const MEKANLAR = [
     alinti: "\"Selçuklu'de restoran deyince akla ilk gelen adreslerden biri.\"",
     neden: "Akyokuş Kasrı, Selçuklu bölgesinde uzun süredir sürdürdüğü restoran geleneğiyle Konya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Şef Önerisi Ana Yemek", "Mevsim Salatası", "Deniz Mahsulleri Meze", "Ev Yapımı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ebru L.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Kerem S.", puan: 4, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Tolga E.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "İlyas D.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+    ],
   },
   // ---------------- MANİSA ----------------
   {
@@ -2708,7 +3613,12 @@ const MEKANLAR = [
     alinti: "\"Şehzadeler'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Akgün Köfte, Şehzadeler bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle Manisa'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Damla K.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Ozan F.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Erhan B.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Hande Z.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+    ],
   },
   {
     id: "kofteci-ramiz", il: "manisa", ad: "Köfteci Ramiz", kategori: "Köfte",
@@ -2719,7 +3629,12 @@ const MEKANLAR = [
     alinti: "\"Akhisar'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Köfteci Ramiz, Akhisar bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle Manisa'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Volkan Ç.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Nazan İ.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Ammar H.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Sibel N.", puan: 4, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+    ],
   },
   // ---------------- MERSİN ----------------
   {
@@ -2731,7 +3646,12 @@ const MEKANLAR = [
     alinti: "\"Yenişehir'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Güney Kebap, Yenişehir bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Mersin'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceren F.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Elif K.", puan: 4, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Alperen Y.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Selen A.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+    ],
   },
   {
     id: "kerebicci-oguz", il: "mersin", ad: "Kerebiççi Oğuz", kategori: "Tatlı",
@@ -2742,7 +3662,12 @@ const MEKANLAR = [
     alinti: "\"Yenişehir'de tatlı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kerebiççi Oğuz, Yenişehir bölgesinde uzun süredir sürdürdüğü tatlı geleneğiyle Mersin'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Künefe", "Baklava", "Sütlaç", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Metin U.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Mert Y.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Deniz A.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Recep V.", puan: 4, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+    ],
   },
   {
     id: "tantuni-house", il: "mersin", ad: "Tantuni House", kategori: "Tantuni",
@@ -2753,7 +3678,12 @@ const MEKANLAR = [
     alinti: "\"Akdeniz'de tantuni deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tantuni House, Akdeniz bölgesinde uzun süredir sürdürdüğü tantuni geleneğiyle Mersin'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Tantuni Dürüm", "Tantuni Porsiyon", "Ayran", "Şalgam"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Tolga E.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Recep V.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Elif K.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Furkan T.", puan: 4, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+    ],
   },
   {
     id: "sultan-tantuni", il: "mersin", ad: "Sultan Tantuni", kategori: "Tantuni",
@@ -2764,7 +3694,12 @@ const MEKANLAR = [
     alinti: "\"Akdeniz'de tantuni deyince akla ilk gelen adreslerden biri.\"",
     neden: "Sultan Tantuni, Akdeniz bölgesinde uzun süredir sürdürdüğü tantuni geleneğiyle Mersin'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Tantuni Dürüm", "Tantuni Porsiyon", "Ayran", "Şalgam"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Buse Y.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Selen A.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Serkan P.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Yusuf B.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
   },
   {
     id: "kiremithane-ocakbasi", il: "mersin", ad: "Kiremithane Ocakbaşı", kategori: "Kebap & Izgara",
@@ -2775,7 +3710,12 @@ const MEKANLAR = [
     alinti: "\"Yenişehir'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kiremithane Ocakbaşı, Yenişehir bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Mersin'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Gamze L.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Rıdvan Ş.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+      { ad: "Pınar C.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Ebru L.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+    ],
   },
   {
     id: "yaprak-tantuni", il: "mersin", ad: "Yaprak Tantuni", kategori: "Tantuni",
@@ -2786,7 +3726,12 @@ const MEKANLAR = [
     alinti: "\"Mezitli'de tantuni deyince akla ilk gelen adreslerden biri.\"",
     neden: "Yaprak Tantuni, Mezitli bölgesinde uzun süredir sürdürdüğü tantuni geleneğiyle Mersin'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Tantuni Dürüm", "Tantuni Porsiyon", "Ayran", "Şalgam"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Hande Z.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Kübra S.", puan: 4, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Timur A.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+      { ad: "Alperen Y.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+    ],
   },
   // ---------------- MUĞLA ----------------
   {
@@ -2798,7 +3743,12 @@ const MEKANLAR = [
     alinti: "\"Bodrum'de deniz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Orfoz Restaurant, Bodrum bölgesinde uzun süredir sürdürdüğü deniz ürünleri geleneğiyle Muğla'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Balığı", "Deniz Mahsulleri Meze", "Ahtapot Izgara", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Emre G.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Tuğba E.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Berkay N.", puan: 4, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Mert Y.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+    ],
   },
   {
     id: "kocadon-restaurant", il: "mugla", ad: "Kocadon Restaurant", kategori: "Restoran",
@@ -2809,7 +3759,12 @@ const MEKANLAR = [
     alinti: "\"Bodrum'de restoran deyince akla ilk gelen adreslerden biri.\"",
     neden: "Kocadon Restaurant, Bodrum bölgesinde uzun süredir sürdürdüğü restoran geleneğiyle Muğla'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Şef Önerisi Ana Yemek", "Mevsim Salatası", "Deniz Mahsulleri Meze", "Ev Yapımı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Yusuf B.", puan: 4, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Melis R.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Ammar H.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Kübra S.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
   },
   {
     id: "babadag-restaurant", il: "mugla", ad: "Babadağ Restaurant", kategori: "Restoran",
@@ -2820,7 +3775,12 @@ const MEKANLAR = [
     alinti: "\"Fethiye'de restoran deyince akla ilk gelen adreslerden biri.\"",
     neden: "Babadağ Restaurant, Fethiye bölgesinde uzun süredir sürdürdüğü restoran geleneğiyle Muğla'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Şef Önerisi Ana Yemek", "Mevsim Salatası", "Deniz Mahsulleri Meze", "Ev Yapımı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Deniz A.", puan: 4, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Hande Z.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Furkan T.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Tolga E.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
   },
   {
     id: "nil-balik", il: "mugla", ad: "Nil Balık", kategori: "Deniz Ürünleri",
@@ -2831,7 +3791,12 @@ const MEKANLAR = [
     alinti: "\"Marmaris'de deniz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Nil Balık, Marmaris bölgesinde uzun süredir sürdürdüğü deniz ürünleri geleneğiyle Muğla'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Balığı", "Deniz Mahsulleri Meze", "Ahtapot Izgara", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Buse Y.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Nil D.", puan: 4, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Ebru L.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Cem A.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+    ],
   },
   {
     id: "betce-balik", il: "mugla", ad: "Betçe Balık", kategori: "Deniz Ürünleri",
@@ -2842,7 +3807,12 @@ const MEKANLAR = [
     alinti: "\"Datça'de deniz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Betçe Balık, Datça bölgesinde uzun süredir sürdürdüğü deniz ürünleri geleneğiyle Muğla'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Balığı", "Deniz Mahsulleri Meze", "Ahtapot Izgara", "Rakı (Tekli)"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Hande Z.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Ozan F.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Emirhan Ç.", puan: 4, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "İlyas D.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+    ],
   },
   {
     id: "limonatta-bodrum", il: "mugla", ad: "Limonatta Bodrum", kategori: "Restoran",
@@ -2853,7 +3823,12 @@ const MEKANLAR = [
     alinti: "\"Bodrum'de restoran deyince akla ilk gelen adreslerden biri.\"",
     neden: "Limonatta Bodrum, Bodrum bölgesinde uzun süredir sürdürdüğü restoran geleneğiyle Muğla'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Şef Önerisi Ana Yemek", "Mevsim Salatası", "Deniz Mahsulleri Meze", "Ev Yapımı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Tolga E.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Nurcan Y.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Yusuf B.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Nazan İ.", puan: 4, yorum: "Her detayında bir özen hissediliyor." },
+    ],
   },
   {
     id: "mozaik-bahce-restaurant", il: "mugla", ad: "Mozaik Bahçe Restaurant", kategori: "Türk Mutfağı",
@@ -2864,7 +3839,12 @@ const MEKANLAR = [
     alinti: "\"Fethiye'de türk deyince akla ilk gelen adreslerden biri.\"",
     neden: "Mozaik Bahçe Restaurant, Fethiye bölgesinde uzun süredir sürdürdüğü türk mutfağı geleneğiyle Muğla'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Yemeği + Pilav", "Zeytinyağlı Çeşitleri", "Ayran", "İrmik Helvası"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ebru L.", puan: 4, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Kübra S.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Aylin V.", puan: 5, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+      { ad: "Uğur D.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
   },
   {
     id: "kitchen-bodrum", il: "mugla", ad: "Kitchen Yalıkavak", kategori: "Modern Mutfak Fine Dining", michelin: true, yildiz: 1,
@@ -2875,7 +3855,12 @@ const MEKANLAR = [
     alinti: "\"Yalıkavak Marina'ya nazır terasında modern mutfağın en iyi örneklerinden biri.\"",
     neden: "Yalıkavak Marina'ya nazır konumuyla Kitchen, modern mutfak tekniğini Ege'nin taze ürünleriyle buluşturarak 1 Michelin yıldızı kazandı.",
     menu: ["Şef Tadım Menüsü", "Ege Mezeleri", "Izgara Deniz Ürünleri", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Gizem A.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Ceyda P.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Melis R.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Damla K.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
   },
   {
     id: "macakizi", il: "mugla", ad: "Maçakızı", kategori: "Akdeniz Mutfağı Fine Dining", michelin: true, yildiz: 1,
@@ -2886,7 +3871,12 @@ const MEKANLAR = [
     alinti: "\"Bodrum'un en efsanevi otellerinden birinde, koy manzarasına karşı unutulmaz bir sofra.\"",
     neden: "Bodrum'un ikonik otellerinden Maçakızı bünyesindeki restoran, Akdeniz mutfağının zarif yorumuyla ve koy manzaralı terasıyla 1 Michelin yıldızı kazandı.",
     menu: ["Şef Tadım Menüsü", "Ege Mezeleri", "Günün Balığı", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Volkan Ç.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Serkan P.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+      { ad: "Aylin V.", puan: 4, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Burak H.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+    ],
   },
   {
     id: "mezra-yalikavak", il: "mugla", ad: "Mezra Yalıkavak", kategori: "Türk Mutfağı Fine Dining", michelin: true, yildiz: 1,
@@ -2897,7 +3887,12 @@ const MEKANLAR = [
     alinti: "\"Bodrum'un köy mutfağını fine dining zarafetiyle buluşturan nadir adreslerden.\"",
     neden: "Köy evi konseptiyle Bodrum yöresinin unutulmaya yüz tutmuş tariflerini yeniden yorumlayan Mezra Yalıkavak, yerel ürün odaklı mutfağıyla 1 Michelin yıldızı kazandı.",
     menu: ["Şef Tadım Menüsü", "Köy Usulü Meze", "Odun Ateşinde Ana Yemek", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Hakan İ.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "İlyas D.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Selen A.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Rıdvan Ş.", puan: 4, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+    ],
   },
   // ---------------- ORDU ----------------
   {
@@ -2909,7 +3904,12 @@ const MEKANLAR = [
     alinti: "\"Altınordu'de kahvaltı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Boztepe Restoran, Altınordu bölgesinde uzun süredir sürdürdüğü kahvaltı geleneğiyle Ordu'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Serpme Kahvaltı", "Menemen", "Bal Kaymak", "Çay"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ayşe B.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+      { ad: "Aylin D.", puan: 4, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Aslı M.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+      { ad: "Metin U.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+    ],
   },
   // ---------------- RİZE ----------------
   {
@@ -2921,7 +3921,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de karadeniz deyince akla ilk gelen adreslerden biri.\"",
     neden: "Liman Lokantası, Merkez bölgesinde uzun süredir sürdürdüğü karadeniz mutfağı geleneğiyle Rize'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Karalahana Çorbası", "Mısır Ekmeği", "Kuymak", "Laz Böreği"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Damla K.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Uğur D.", puan: 4, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Berkay N.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+    ],
   },
   {
     id: "ayder-sofrasi", il: "rize", ad: "Ayder Sofrası", kategori: "Restoran",
@@ -2932,7 +3937,12 @@ const MEKANLAR = [
     alinti: "\"Çamlıhemşin'de restoran deyince akla ilk gelen adreslerden biri.\"",
     neden: "Ayder Sofrası, Çamlıhemşin bölgesinde uzun süredir sürdürdüğü restoran geleneğiyle Rize'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Şef Önerisi Ana Yemek", "Mevsim Salatası", "Deniz Mahsulleri Meze", "Ev Yapımı Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceren F.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Ebru L.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Nazan İ.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Nil D.", puan: 4, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+    ],
   },
   {
     id: "husrev-lokantasi", il: "rize", ad: "Hüsrev Lokantası", kategori: "Kuru Fasulye & Esnaf Lokantası",
@@ -2943,7 +3953,12 @@ const MEKANLAR = [
     alinti: "\"Çayeli'de kuru deyince akla ilk gelen adreslerden biri.\"",
     neden: "Hüsrev Lokantası, Çayeli bölgesinde uzun süredir sürdürdüğü kuru fasulye & esnaf lokantası geleneğiyle Rize'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kuru Fasulye", "Pilav", "Turşu", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Sedat M.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Ceyda P.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+      { ad: "Zeynep T.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Tolga E.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+    ],
   },
   // ---------------- SAKARYA ----------------
   {
@@ -2955,7 +3970,12 @@ const MEKANLAR = [
     alinti: "\"Adapazarı'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Köfteci İsmail, Adapazarı bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle Sakarya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Tuğba E.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Aylin V.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Gül T.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Sedat M.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+    ],
   },
   {
     id: "poyrazlar-kahvalti", il: "sakarya", ad: "Poyrazlar Kahvaltı", kategori: "Kahvaltı",
@@ -2966,7 +3986,12 @@ const MEKANLAR = [
     alinti: "\"Serdivan'de kahvaltı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Poyrazlar Kahvaltı, Serdivan bölgesinde uzun süredir sürdürdüğü kahvaltı geleneğiyle Sakarya'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Serpme Kahvaltı", "Menemen", "Bal Kaymak", "Çay"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Selin Ö.", puan: 5, yorum: "Personel her sorumuza sabırla ve gülümseyerek cevap verdi." },
+      { ad: "Kaan T.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Selen A.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Fatih K.", puan: 4, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   // ---------------- SAMSUN ----------------
   {
@@ -2978,7 +4003,12 @@ const MEKANLAR = [
     alinti: "\"İlkadım'de pide deyince akla ilk gelen adreslerden biri.\"",
     neden: "Bafra Pidesi, İlkadım bölgesinde uzun süredir sürdürdüğü pide geleneğiyle Samsun'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Bafra Pidesi", "Kıymalı Pide", "Ayran", "Çay"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Onur B.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Hakan İ.", puan: 4, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Nil D.", puan: 5, yorum: "İlk ziyaretimizde bile kendimizi özel hissettirdiler." },
+      { ad: "Erhan B.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+    ],
   },
   {
     id: "akcaabat-kofte", il: "samsun", ad: "Akçaabat Köfte", kategori: "Pide",
@@ -2989,7 +4019,12 @@ const MEKANLAR = [
     alinti: "\"Atakum'de pide deyince akla ilk gelen adreslerden biri.\"",
     neden: "Akçaabat Köfte, Atakum bölgesinde uzun süredir sürdürdüğü pide geleneğiyle Samsun'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kaşarlı Pide", "Kıymalı Pide", "Lahmacun", "Ayran"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Emre G.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Tuğba E.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Rıdvan Ş.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Gül T.", puan: 4, yorum: "Kesinlikle yeniden geleceğim bir mekan oldu." },
+    ],
   },
   {
     id: "kofteci-yusuf", il: "samsun", ad: "Köfteci Yusuf", kategori: "Köfte",
@@ -3000,7 +4035,12 @@ const MEKANLAR = [
     alinti: "\"İlkadım'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Köfteci Yusuf, İlkadım bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle Samsun'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ceren F.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "İlyas D.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Onur B.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Zeynep T.", puan: 5, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+    ],
   },
   // ---------------- ŞANLIURFA ----------------
   {
@@ -3012,7 +4052,12 @@ const MEKANLAR = [
     alinti: "\"Eyyübiye'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Cevahir Han, Eyyübiye bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Şanlıurfa'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Furkan T.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Derya S.", puan: 4, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Metin U.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Kübra S.", puan: 5, yorum: "Dostlarla akşam yemeği için birebir bir yer." },
+    ],
   },
   {
     id: "gulhan-restaurant", il: "sanliurfa", ad: "Gülhan Restaurant", kategori: "Kebap & Izgara",
@@ -3023,7 +4068,12 @@ const MEKANLAR = [
     alinti: "\"Eyyübiye'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Gülhan Restaurant, Eyyübiye bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Şanlıurfa'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Gül T.", puan: 4, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
+      { ad: "Tolga E.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Pınar C.", puan: 5, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Melis R.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+    ],
   },
   {
     id: "baklavaci-badilli", il: "sanliurfa", ad: "Baklavacı Badıllı", kategori: "Baklava & Tatlı",
@@ -3034,7 +4084,12 @@ const MEKANLAR = [
     alinti: "\"Eyyübiye'de baklava deyince akla ilk gelen adreslerden biri.\"",
     neden: "Baklavacı Badıllı, Eyyübiye bölgesinde uzun süredir sürdürdüğü baklava & tatlı geleneğiyle Şanlıurfa'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Fıstıklı Baklava", "Şöbiyet", "Kadayıf", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kerem S.", puan: 5, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "Timur A.", puan: 4, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Ceyda P.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Hande Z.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+    ],
   },
   // ---------------- SİNOP ----------------
   {
@@ -3046,7 +4101,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de mantı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tarihi Sinop Mantıcısı, Merkez bölgesinde uzun süredir sürdürdüğü mantı geleneğiyle Sinop'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kayseri Usulü Mantı", "Yörük Mantısı", "Ayran", "Cacık"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Rıdvan Ş.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Elif K.", puan: 4, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Ammar H.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Fadime R.", puan: 5, yorum: "Burayı keşfettiğime çok sevindim, düzenli müşterisi oldum." },
+    ],
   },
   // ---------------- TRABZON ----------------
   {
@@ -3058,7 +4118,12 @@ const MEKANLAR = [
     alinti: "\"Ortahisar'de yeme deyince akla ilk gelen adreslerden biri.\"",
     neden: "Cemil Usta, Ortahisar bölgesinde uzun süredir sürdürdüğü yeme & i̇çme geleneğiyle Trabzon'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Günün Spesiyali", "Ev Yapımı Ara Sıcak", "Ayran", "Tatlı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Emre G.", puan: 4, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Nurcan Y.", puan: 5, yorum: "Mekanın dekorasyonu da lezzeti kadar özenliydi." },
+      { ad: "Ceyda P.", puan: 5, yorum: "Menüdeki çeşitlilik gerçekten şaşırtıcı, hepsini denemek istedim." },
+      { ad: "Fatih K.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+    ],
   },
   {
     id: "beton-helva", il: "trabzon", ad: "Beton Helva", kategori: "Tatlı",
@@ -3069,7 +4134,12 @@ const MEKANLAR = [
     alinti: "\"Ortahisar'de tatlı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Beton Helva, Ortahisar bölgesinde uzun süredir sürdürdüğü tatlı geleneğiyle Trabzon'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Künefe", "Baklava", "Sütlaç", "Türk Kahvesi"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Aylin D.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Ceyda P.", puan: 5, yorum: "Kahvaltı tabağı gerçekten zengin ve tazeydi." },
+      { ad: "Nil D.", puan: 4, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Elif K.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+    ],
   },
   {
     id: "nihat-usta", il: "trabzon", ad: "Nihat Usta", kategori: "Köfte",
@@ -3080,7 +4150,12 @@ const MEKANLAR = [
     alinti: "\"Akçaabat'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Nihat Usta, Akçaabat bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle Trabzon'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Melis R.", puan: 5, yorum: "Personelin önerileri sayesinde harika bir seçim yaptık." },
+      { ad: "Kaan T.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Kübra S.", puan: 4, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Aylin D.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
   },
   {
     id: "boztepe-kahvalti", il: "trabzon", ad: "Boztepe Kahvaltı", kategori: "Kahvaltı",
@@ -3091,7 +4166,12 @@ const MEKANLAR = [
     alinti: "\"Ortahisar'de kahvaltı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Boztepe Kahvaltı, Ortahisar bölgesinde uzun süredir sürdürdüğü kahvaltı geleneğiyle Trabzon'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Serpme Kahvaltı", "Menemen", "Bal Kaymak", "Çay"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "İlyas D.", puan: 4, yorum: "Hem lezzetli hem de hızlı, iş yemeği için ideal bir adres." },
+      { ad: "Nurcan Y.", puan: 5, yorum: "Lezzet tutarlılığı takdire şayan, hangi seferinde gitsem aynı kalite." },
+      { ad: "Sena Y.", puan: 5, yorum: "Gürültüsüz, sakin bir ortamda keyifli bir yemek deneyimi yaşadık." },
+      { ad: "Zeynep T.", puan: 5, yorum: "Beklerken bile kendimizi rahat hissettik, servis harikaydı." },
+    ],
   },
   {
     id: "tarihi-kalkanoglu-pilavi", il: "trabzon", ad: "Tarihi Kalkanoğlu Pilavı", kategori: "Pilav & Yöresel",
@@ -3102,7 +4182,12 @@ const MEKANLAR = [
     alinti: "\"Ortahisar'de pilav deyince akla ilk gelen adreslerden biri.\"",
     neden: "Tarihi Kalkanoğlu Pilavı, Ortahisar bölgesinde uzun süredir sürdürdüğü pilav & yöresel geleneğiyle Trabzon'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Kalkanoğlu Pilavı", "Karadeniz Usulü Hamsi", "Ayran", "Laz Böreği"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ammar H.", puan: 4, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+      { ad: "Ozan F.", puan: 5, yorum: "Masaya gelen her tabak özenle hazırlanmıştı." },
+      { ad: "Cem A.", puan: 5, yorum: "Beklentimin çok üzerinde bir deneyimdi, teşekkürler." },
+      { ad: "Aylin V.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
   },
   {
     id: "akcaabat-koftecisi", il: "trabzon", ad: "Akçaabat Köftecisi", kategori: "Köfte",
@@ -3113,7 +4198,12 @@ const MEKANLAR = [
     alinti: "\"Ortahisar'de köfte deyince akla ilk gelen adreslerden biri.\"",
     neden: "Akçaabat Köftecisi, Ortahisar bölgesinde uzun süredir sürdürdüğü köfte geleneğiyle Trabzon'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Izgara Köfte", "Piyaz", "Ayran", "Kadayıf"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Yusuf B.", puan: 5, yorum: "Her detayında bir özen hissediliyor." },
+      { ad: "Burak H.", puan: 4, yorum: "Yöresel lezzetleri en otantik haliyle burada buluyorsunuz." },
+      { ad: "Selen A.", puan: 5, yorum: "Tatlı çeşitleri de ana yemekler kadar başarılıydı." },
+      { ad: "Elif K.", puan: 5, yorum: "Rezervasyonsuz gitmemize rağmen çok nazik karşılandık." },
+    ],
   },
   // ---------------- VAN ----------------
   {
@@ -3125,7 +4215,12 @@ const MEKANLAR = [
     alinti: "\"İpekyolu'de kahvaltı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Sıtkı Usta, İpekyolu bölgesinde uzun süredir sürdürdüğü kahvaltı geleneğiyle Van'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Serpme Kahvaltı", "Menemen", "Bal Kaymak", "Çay"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Aylin D.", puan: 5, yorum: "Uzun süredir müdavimiyim, kalite hiç düşmedi." },
+      { ad: "Melis R.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Ozan F.", puan: 5, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+    ],
   },
   {
     id: "halil-ibrahim-sofrasi", il: "van", ad: "Halil İbrahim Sofrası", kategori: "Kahvaltı",
@@ -3136,7 +4231,12 @@ const MEKANLAR = [
     alinti: "\"İpekyolu'de kahvaltı deyince akla ilk gelen adreslerden biri.\"",
     neden: "Halil İbrahim Sofrası, İpekyolu bölgesinde uzun süredir sürdürdüğü kahvaltı geleneğiyle Van'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Serpme Kahvaltı", "Menemen", "Bal Kaymak", "Çay"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Kübra S.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Tuğba E.", puan: 5, yorum: "Doğum günümüzü burada kutladık, unutulmaz bir akşamdı." },
+      { ad: "Burak H.", puan: 5, yorum: "Çocuklu aileler için de oldukça uygun ve ilgili bir yer." },
+      { ad: "Ceyda P.", puan: 4, yorum: "Şehir dışından gelen misafirlerimizi burada ağırlıyoruz." },
+    ],
   },
   // ---------------- ZONGULDAK ----------------
   {
@@ -3148,7 +4248,12 @@ const MEKANLAR = [
     alinti: "\"Merkez'de kebap deyince akla ilk gelen adreslerden biri.\"",
     neden: "Çatı Kebap, Merkez bölgesinde uzun süredir sürdürdüğü kebap & izgara geleneğiyle Zonguldak'in yerel halkı ve ziyaretçileri tarafından en çok önerilen mekanlarından.",
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Ayşe B.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Rıdvan Ş.", puan: 4, yorum: "Temizliği ve düzeni gerçekten takdire şayan." },
+      { ad: "Hakan İ.", puan: 5, yorum: "Ailece severek gittiğimiz bir mekan oldu." },
+      { ad: "Pınar C.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+    ],
   },
   // ---------------- NEVŞEHİR ----------------
   {
@@ -3160,7 +4265,12 @@ const MEKANLAR = [
     alinti: "\"Kapadokya'nın peribacaları arasında, toprağın mutfağa yansıdığı bir sofra.\"",
     neden: "Kapadokya bölgesinin ilk Michelin yıldızlı restoranı olan Revithia, Ürgüp'ün tarihi mağara mimarisinde, yöresel ürünlerle hazırladığı özgün menüsüyle dikkat çekiyor.",
     menu: ["Şef Tadım Menüsü", "Kapadokya Usulü Meze", "Testi Kebabı Yorumu", "Şef Tatlı Tabağı"],
-    yorumlar: [],
+    yorumlar: [
+      { ad: "Nurcan Y.", puan: 5, yorum: "Fiyatlar makul, lezzet üst düzeydi." },
+      { ad: "Zeynep T.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Rıdvan Ş.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
+      { ad: "Yasemin Ö.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
   },
 ];
 
