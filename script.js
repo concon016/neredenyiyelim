@@ -125,17 +125,17 @@ function initHomePage() {
     initReveal();
   }
 
-  // Michelin yıldızlı mekanlar
+  // Michelin yıldızlı mekanlar (öne çıkan birkaçı, tamamı michelin.html'de)
   const michelinSection = document.getElementById("michelinSection");
   const michelinGrid = document.getElementById("michelinGrid");
   if (michelinGrid) {
-    const michelinList = MEKANLAR.filter((m) => m.michelin);
+    const michelinList = MEKANLAR.filter((m) => m.michelin).sort((a, b) => (b.yildiz || 0) - (a.yildiz || 0)).slice(0, 6);
     if (michelinList.length) {
       michelinSection.style.display = "";
       michelinGrid.innerHTML = michelinList.map((m) => `
         <a class="venue-mini reveal" href="mekan.html?id=${m.id}">
           <img src="${m.gorsel}" alt="${m.ad}" loading="lazy">
-          <span class="badge-michelin" style="position:absolute;top:10px;left:10px;">★ Michelin</span>
+          <span class="badge-michelin" style="position:absolute;top:10px;left:10px;">${"★".repeat(m.yildiz || 1)} Michelin</span>
           <span class="badge-rating">★ ${m.puan}</span>
           <div class="overlay">
             <h3>${m.ad}</h3>
@@ -214,7 +214,7 @@ function initCityPage() {
       <img src="${v.gorsel}" alt="${v.ad}" loading="lazy">
       <div class="scrim"></div>
       <div class="reel-top">
-        ${v.michelin ? '<span class="badge-michelin">★ Michelin Yıldızlı</span>' : v.trend ? '<span class="badge-trend">Bu Hafta Trend</span>' : "<span></span>"}
+        ${v.michelin ? `<span class="badge-michelin">${"★".repeat(v.yildiz || 1)} Michelin</span>` : v.trend ? '<span class="badge-trend">Bu Hafta Trend</span>' : "<span></span>"}
         <span class="badge-rating">★ ${v.puan} <span style="opacity:.8;font-weight:500;">(${v.yorumSayisi.toLocaleString("tr-TR")})</span></span>
       </div>
       <div class="reel-bottom">
@@ -328,7 +328,7 @@ function initVenuePage() {
         <div class="venue-hero-meta">
           <span class="badge-rating" style="position:static;">★ ${v.puan} (${v.yorumSayisi.toLocaleString("tr-TR")} yorum)</span>
           <span>${v.kategori}</span><span>${v.fiyat}</span>
-          ${v.michelin ? '<span class="badge-michelin">★ Michelin Yıldızlı</span>' : v.trend ? '<span class="badge-trend" style="position:static;">Bu Hafta Trend</span>' : ""}
+          ${v.michelin ? `<span class="badge-michelin">${"★".repeat(v.yildiz || 1)} Michelin Yıldızlı</span>` : v.trend ? '<span class="badge-trend" style="position:static;">Bu Hafta Trend</span>' : ""}
         </div>
       </div>
     </div>
@@ -375,6 +375,40 @@ function initVenuePage() {
     const active = toggleFavori(v.id);
     e.target.textContent = active ? "♥ Favorilerde" : "♡ Favorilere Ekle";
   });
+}
+
+/* ============================================================
+   MICHELIN SAYFASI
+   ============================================================ */
+function initMichelinPage() {
+  const root = document.getElementById("michelinRoot");
+  if (!root) return;
+
+  const list = MEKANLAR.filter((m) => m.michelin).sort((a, b) => (b.yildiz || 0) - (a.yildiz || 0) || b.puan - a.puan);
+  const iki = list.filter((m) => m.yildiz === 2);
+  const bir = list.filter((m) => m.yildiz !== 2);
+
+  function rowHtml(v) {
+    const il = ilGetir(v.il);
+    return `<a class="list-row reveal in" href="mekan.html?id=${v.id}" style="text-decoration:none;color:inherit;">
+      <div class="thumb"><img src="${v.gorsel}" alt="${v.ad}" loading="lazy"></div>
+      <div class="body">
+        <div class="list-row-head">
+          <div><div class="cat">${v.kategori}</div><h3>${v.ad}</h3></div>
+          <span class="badge-michelin">${"★".repeat(v.yildiz || 1)} ${v.yildiz || 1} Yıldız</span>
+        </div>
+        <p style="margin:0;font-size:.85rem;">${v.adres} · ${il ? il.ad : ""}</p>
+        <div class="tags">${v.ozellikler.slice(0, 3).map((o) => `<span>${o}</span>`).join("")}</div>
+      </div>
+    </a>`;
+  }
+
+  root.innerHTML = `
+    ${iki.length ? `<div class="section-head reveal in"><p class="eyebrow">★★ İki Yıldız</p><h2>En üst seviye mutfak deneyimi</h2></div>
+    <div class="list-view" style="padding:0 0 30px;">${iki.map(rowHtml).join("")}</div>` : ""}
+    ${bir.length ? `<div class="section-head reveal in"><p class="eyebrow">★ Bir Yıldız</p><h2>Kendi kategorisinde en iyisi</h2></div>
+    <div class="list-view" style="padding:0;">${bir.map(rowHtml).join("")}</div>` : ""}
+  `;
 }
 
 /* ============================================================
@@ -445,6 +479,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initHomePage();
   initCityPage();
   initVenuePage();
+  initMichelinPage();
   initFavoritesPage();
   initContactForm();
   initFaq();

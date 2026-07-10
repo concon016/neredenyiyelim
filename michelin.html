@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sıkça Sorulan Sorular | neredenyiyelim</title>
-<meta name="description" content="Mekanlar nasıl seçiliyor, veriler nereden geliyor — merak edilenler.">
+<title>Michelin Yıldızlı Restoranlar | neredenyiyelim</title>
+<meta name="description" content="Türkiye'nin tüm Michelin yıldızlı restoranları — İstanbul, İzmir, Muğla ve Kapadokya'dan 2 ve 1 yıldızlı adresler tek sayfada.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B4%3C/text%3E%3C/svg%3E">
 <script>
   (function () {
@@ -24,10 +24,10 @@
     <a href="index.html" class="logo">nereden<span class="hl">yiyelim</span></a>
     <ul class="nav-links" id="navMobile">
       <li><a href="index.html">Ana Sayfa</a></li>
-      <li><a href="michelin.html">★ Michelin</a></li>
+      <li><a href="michelin.html" class="active">★ Michelin</a></li>
       <li><a href="favoriler.html">Favorilerim</a></li>
       <li><a href="hakkinda.html">Hakkında</a></li>
-      <li><a href="sss.html" class="active">SSS</a></li>
+      <li><a href="sss.html">SSS</a></li>
       <li><a href="iletisim.html">İletişim</a></li>
     </ul>
     <div class="nav-right">
@@ -42,32 +42,14 @@
 <main>
   <section class="hero" style="padding-bottom:10px;">
     <div class="hero-inner">
-      <span class="hero-badge">SSS</span>
-      <h1>Sıkça Sorulan Sorular</h1>
+      <span class="hero-badge" style="background:#B3122A;color:#fff;">★ Michelin Guide Türkiye</span>
+      <h1>Türkiye'nin <span class="hl">Michelin yıldızlı</span> restoranları</h1>
+      <p class="hero-sub">Michelin Rehberi'nin Türkiye seçkisinde yıldız almış tüm restoranlar — İstanbul, İzmir (Urla), Muğla (Bodrum) ve Kapadokya'dan.</p>
     </div>
   </section>
 
-  <section class="section" style="max-width:760px;padding-top:0;">
-    <div class="faq-item open">
-      <div class="faq-q"><span>Mekanlar nasıl seçiliyor?</span><span class="plus">+</span></div>
-      <div class="faq-a"><p>Google puanı, yorum sayısı, yakın dönemdeki yükseliş trendi ve yorumlarda tekrar eden olumlu detaylar birlikte değerlendirilerek editör seçmesi bir liste oluşturuyoruz.</p></div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q"><span>Tüm 81 il için mekan var mı?</span><span class="plus">+</span></div>
-      <div class="faq-a"><p>Şu an birkaç büyük şehirde başlıyoruz; diğer iller için özenli seçim süreci devam ediyor ve kademeli olarak ekleniyor.</p></div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q"><span>İşletmemi nasıl eklettirebilirim?</span><span class="plus">+</span></div>
-      <div class="faq-a"><p>İletişim sayfasındaki formu "İşletmemi Eklemek İstiyorum" konusuyla doldurabilirsin.</p></div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q"><span>Sıralama karşılığında ücret alıyor musunuz?</span><span class="plus">+</span></div>
-      <div class="faq-a"><p>Hayır. Hiçbir işletmeden öne çıkarma ya da sıralama karşılığında ücret almıyoruz.</p></div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q"><span>Favorilerim nerede saklanıyor?</span><span class="plus">+</span></div>
-      <div class="faq-a"><p>Favoriler yalnızca senin tarayıcında (localStorage) saklanır, hesap açmana gerek yoktur.</p></div>
-    </div>
+  <section class="section" style="padding-top:0;">
+    <div id="michelinRoot"></div>
   </section>
 </main>
 
@@ -81,6 +63,7 @@
     <a href="iletisim.html">İletişim</a>
   </div>
   <p>&copy; 2026 neredenyiyelim. Tüm hakları saklıdır.</p>
+  <p class="disclaimer">Michelin yıldızı bilgileri Michelin Guide Türkiye'nin güncel seçkisi baz alınarak derlenmiştir; puan ve yorum sayıları tanıtım amaçlı örnek değerlerdir.</p>
 </footer>
 
 <script src="data.js"></script>
