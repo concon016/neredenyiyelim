@@ -125,6 +125,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Elif K.", puan: 5, yorum: "Manzara ve lezzet bir arada, özel günler için ideal." },
       { ad: "Mert Y.", puan: 5, yorum: "Balık taze, servis hızlı. Kesinlikle rezervasyon yapın." },
+      { ad: "Kerem S.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Nil D.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
     ],
   },
   {
@@ -144,6 +146,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Deniz A.", puan: 5, yorum: "Kahveleri gerçekten farklı bir seviyede." },
       { ad: "Zeynep T.", puan: 4, yorum: "Biraz kalabalık olabiliyor ama lezzet buna değer." },
+      { ad: "Derya S.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Elif K.", puan: 4, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
     ],
   },
   {
@@ -163,6 +167,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "James R.", puan: 5, yorum: "Best Ottoman cuisine experience in the old city." },
       { ad: "Ayşe B.", puan: 4, yorum: "Fiyatlar turistik bölgeye göre normal, lezzet iyi." },
+      { ad: "Rıdvan Ş.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Ebru L.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
     ],
   },
   {
@@ -182,6 +188,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Barış K.", puan: 5, yorum: "Fiyat performans açısından Kadıköy'de zirvede." },
       { ad: "Selin Ö.", puan: 4, yorum: "Kuyruk oluyor ama hızlı ilerliyor." },
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Serkan P.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
     ],
   },
   {
@@ -201,6 +209,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Nil D.", puan: 5, yorum: "Şehrin en iyi tatlıcılarından biri, tereddütsüz." },
       { ad: "Kerem S.", puan: 5, yorum: "Sunum ve lezzet birebir örtüşüyor." },
+      { ad: "Gül T.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Serkan P.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
     ],
   },
   {
@@ -220,7 +230,7 @@ const MEKANLAR = [
     ],
   },
   {
-    id: "pandeli", il: "istanbul", ad: "Pandeli", kategori: "Osmanlı Mutfağı",
+    id: "pandeli", il: "istanbul", ad: "Pandeli", kategori: "Osmanlı Mutfağı", bibGourmand: true,
     puan: 4.5, yorumSayisi: 8600, fiyat: "₺₺₺",
     adres: "Mısır Çarşısı Üstü, Eminönü, Fatih / İstanbul",
     gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.deniz), img(GORSEL.sahil)],
@@ -557,7 +567,7 @@ const MEKANLAR = [
     ],
   },
   {
-    id: "ciya-sofrasi", il: "istanbul", ad: "Çiya Sofrası", kategori: "Anadolu Mutfağı",
+    id: "ciya-sofrasi", il: "istanbul", ad: "Çiya Sofrası", kategori: "Anadolu Mutfağı", bibGourmand: true,
     puan: 4.6, yorumSayisi: 10800, fiyat: "₺₺", trend: true,
     adres: "Güneşlibahçe Sk., Kadıköy / İstanbul",
     gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.zeytinyagli), img(GORSEL.sokak)],
@@ -589,7 +599,7 @@ const MEKANLAR = [
     ],
   },
   {
-    id: "zubeyir-ocakbasi", il: "istanbul", ad: "Zübeyir Ocakbaşı", kategori: "Ocakbaşı & Kebap",
+    id: "zubeyir-ocakbasi", il: "istanbul", ad: "Zübeyir Ocakbaşı", kategori: "Ocakbaşı & Kebap", bibGourmand: true,
     puan: 4.6, yorumSayisi: 5900, fiyat: "₺₺₺",
     adres: "Bekar Sk., Beyoğlu / İstanbul",
     gorsel: img(GORSEL.et), galeri: [img(GORSEL.et), img(GORSEL.meyhane), img(GORSEL.sokak)],
@@ -1037,7 +1047,7 @@ const MEKANLAR = [
     ],
   },
   {
-    id: "yanyali-fehmi-lokantasi", il: "istanbul", ad: "Yanyalı Fehmi Lokantası", kategori: "Türk Mutfağı",
+    id: "yanyali-fehmi-lokantasi", il: "istanbul", ad: "Yanyalı Fehmi Lokantası", kategori: "Türk Mutfağı", bibGourmand: true,
     puan: 4.7, yorumSayisi: 8817, fiyat: "₺₺",
     adres: "Kadıköy / İstanbul",
     gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.sokak), img(GORSEL.geleneksel)],
@@ -1212,6 +1222,150 @@ const MEKANLAR = [
       { ad: "Ozan F.", puan: 5, yorum: "Hem lezzet hem atmosfer olarak tam puan." },
     ],
   },
+  {
+    id: "alaf-kurucesme", il: "istanbul", ad: "Alaf", kategori: "Göçebe Anadolu Mutfağı", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 5421, fiyat: "₺₺₺",
+    adres: "Kuruçeşme, İstanbul",
+    gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Göçebe Anadolu mutfağının unutulmaya yüz tutmuş tariflerini yeniden yorumlayan Alaf, uygun fiyata sunduğu kaliteli mutfağıyla Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Göçebe Usulü Kebap", "Yayla Çorbası", "Ev Yapımı Yoğurt", "Yöresel Tatlı"],
+    yorumlar: [
+      { ad: "Hakan İ.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Volkan Ç.", puan: 4, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Kerem S.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Sibel N.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+    ],
+  },
+  {
+    id: "tersane-karakoy", il: "istanbul", ad: "Tersane", kategori: "Boğaz Manzaralı Restoran", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 1335, fiyat: "₺₺₺",
+    adres: "Karaköy, İstanbul",
+    gorsel: img(GORSEL.sahil), galeri: [img(GORSEL.sahil), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Karaköy'de Boğaz ve Galata Kulesi manzarasına karşı hizmet veren Tersane, kaliteli mutfağı ve uygun fiyat politikasıyla Michelin Bib Gourmand ödülü aldı.",
+    menu: ["Günün Balığı", "Meze Seçkisi", "Izgara Ana Yemek", "Ev Yapımı Tatlı"],
+    yorumlar: [
+      { ad: "Serkan P.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Selin Ö.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+      { ad: "Volkan Ç.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Aylin V.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
+  },
+  {
+    id: "giritli-ahirkapi", il: "istanbul", ad: "Giritli", kategori: "Girit Mutfağı", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 6300, fiyat: "₺₺₺",
+    adres: "Ahırkapı, Fatih / İstanbul",
+    gorsel: img(GORSEL.meze), galeri: [img(GORSEL.meze), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Girit mutfağının zengin meze kültürünü sabit menü konseptiyle sunan Giritli, Ahırkapı'nın tarihi sokağında Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Girit Usulü Meze Sofrası", "Deniz Ürünleri Çeşitleri", "Ev Yapımı Rakı Mezeleri", "Girit Tatlısı"],
+    yorumlar: [
+      { ad: "Aylin V.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Mert Y.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Kerem S.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Kaan T.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+    ],
+  },
+  {
+    id: "casius-antioch-kitchen", il: "istanbul", ad: "Casius Antioch Kitchen", kategori: "Hatay Mutfağı", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 5121, fiyat: "₺₺₺",
+    adres: "İstanbul",
+    gorsel: img(GORSEL.et), galeri: [img(GORSEL.et), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Hatay mutfağının otantik lezzetlerini İstanbul'a taşıyan Casius Antioch Kitchen, uygun fiyata sunduğu zengin menüsüyle Michelin Bib Gourmand ödülü aldı.",
+    menu: ["Katmerli Antakya Kebabı", "Humus", "Kaytaz Böreği", "Antakya Künefesi"],
+    yorumlar: [
+      { ad: "Kerem S.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Ayşe B.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Uğur D.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+    ],
+  },
+  {
+    id: "mahir-lokantasi", il: "istanbul", ad: "Mahir Lokantası", kategori: "Esnaf Lokantası", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 5059, fiyat: "₺₺₺",
+    adres: "İstanbul",
+    gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Günlük ev yemeği çeşitleriyle tanınan Mahir Lokantası, samimi esnaf lokantası kimliğini koruyarak Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Günün Yemeği + Pilav", "Zeytinyağlı Çeşitleri", "Ayran", "İrmik Helvası"],
+    yorumlar: [
+      { ad: "Ayşe B.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Gizem A.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Aylin V.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Selin Ö.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
+  },
+  {
+    id: "mutfakkoz", il: "istanbul", ad: "Mutfakkoz", kategori: "Modern Türk Mutfağı", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 6644, fiyat: "₺₺₺",
+    adres: "İstanbul",
+    gorsel: img(GORSEL.zeytinyagli), galeri: [img(GORSEL.zeytinyagli), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Geleneksel tarifleri modern dokunuşlarla yeniden yorumlayan Mutfakkoz, uygun fiyat politikasıyla Michelin Bib Gourmand ödülü aldı.",
+    menu: ["Mevsim Mezeleri", "Ev Usulü Ana Yemek", "Zeytinyağlı Çeşitleri", "Ev Yapımı Tatlı"],
+    yorumlar: [
+      { ad: "Tolga E.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Uğur D.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Nil D.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Buse Y.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+    ],
+  },
+  {
+    id: "parvus-kalamis", il: "istanbul", ad: "Parvus Kalamış", kategori: "Modern Türk Mutfağı", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 3925, fiyat: "₺₺₺",
+    adres: "Kalamış, Kadıköy / İstanbul",
+    gorsel: img(GORSEL.meze), galeri: [img(GORSEL.meze), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Kadıköy'ün sahil şeridinde modern Türk mutfağı yorumuyla dikkat çeken Parvus Kalamış, Michelin Bib Gourmand ödülüne layık görüldü.",
+    menu: ["Mevsim Meze Seçkisi", "Izgara Balık", "Zeytinyağlı Çeşitleri", "Ev Yapımı Tatlı"],
+    yorumlar: [
+      { ad: "Onur B.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Elif K.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Barış K.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+      { ad: "Yasemin Ö.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+    ],
+  },
+  {
+    id: "ahmet-ustam-ocakbasi", il: "istanbul", ad: "Ahmet Ustam Ocakbaşı", kategori: "Ocakbaşı & Kebap", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 5821, fiyat: "₺₺₺",
+    adres: "İstanbul",
+    gorsel: img(GORSEL.et), galeri: [img(GORSEL.et), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Klasik ocakbaşı kültürünü uygun fiyata yaşatan Ahmet Ustam Ocakbaşı, kaliteli et ve ızgara menüsüyle Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Kuzu Şiş", "Ciğer Şiş", "Közlenmiş Patlıcan Salatası", "Baklava"],
+    yorumlar: [
+      { ad: "Cem A.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Kerem S.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Emre G.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Zeynep T.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+    ],
+  },
+  {
+    id: "seraf-vadi", il: "istanbul", ad: "Seraf Vadi", kategori: "Anadolu Mutfağı", michelinMention: true,
+    puan: 4.5, yorumSayisi: 3400, fiyat: "₺₺₺",
+    adres: "Ayazağa, Sarıyer / İstanbul",
+    gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.zeytinyagli), img(GORSEL.et)],
+    ozellikler: ["Michelin Rehberi'nde Yer Alıyor", "Vadistanbul Yakını", "Anadolu Mirası"],
+    alinti: "\"Ateşte pişen soğan dolması imza lezzetleri arasında, Anadolu mutfağını çağdaş bir sunumla buluşturuyorlar.\"",
+    neden: "Şef Sinem Özler önderliğinde Anadolu mutfağının köklerini yeniden yorumlayan Seraf Vadi, Michelin Guide Türkiye'nin önerilen restoranlar seçkisinde yer alıyor.",
+    menu: ["Ateşte Soğan Dolması", "Kuzu Kaburga", "Antakya Usulü Lahmacun", "Ev Yapımı Tatlı"],
+    yorumlar: [
+      { ad: "Emre G.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Onur B.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Zeynep T.", puan: 4, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+      { ad: "Elif K.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
+  },
   // ---------------- ANKARA ----------------
   {
     id: "ankara-1", il: "ankara", ad: "Kızılay Et Lokantası", kategori: "Et & Izgara",
@@ -1230,6 +1384,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Onur B.", puan: 5, yorum: "Et kalitesi ve pişirim mükemmel." },
       { ad: "Gizem A.", puan: 4, yorum: "Hafta sonu rezervasyonsuz zor, ama değer." },
+      { ad: "Zeynep T.", puan: 4, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Selen A.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
     ],
   },
   {
@@ -1249,6 +1405,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Ceren F.", puan: 5, yorum: "Avluda oturmak, mantısı kadar güzel." },
       { ad: "Tolga E.", puan: 4, yorum: "Lezzet gayet iyi, servis biraz yavaş." },
+      { ad: "Burak H.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Pınar C.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
     ],
   },
   {
@@ -1268,6 +1426,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Pınar C.", puan: 5, yorum: "Hem sağlıklı hem lezzetli, nadir bir kombinasyon." },
       { ad: "Emre G.", puan: 4, yorum: "Porsiyonlar biraz küçük ama tadı çok iyi." },
+      { ad: "Burak H.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Gizem A.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
     ],
   },
   {
@@ -1287,6 +1447,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Buse Y.", puan: 5, yorum: "Hamur işi konusunda iddialılar ve haklılar." },
       { ad: "Kaan T.", puan: 4, yorum: "Fiyat performans açısından çok iyi." },
+      { ad: "Metin U.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Aslı M.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
     ],
   },
   {
@@ -1306,6 +1468,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Aslı M.", puan: 5, yorum: "Reçelleri ev yapımı ve gerçekten çok lezzetli." },
       { ad: "Fatih K.", puan: 5, yorum: "Bahçede kahvaltı keyfi başka bir şey." },
+      { ad: "Barış K.", puan: 4, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Deniz A.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
     ],
   },
 
@@ -1535,6 +1699,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Yasemin Ö.", puan: 5, yorum: "Balık taptaze, manzara muhteşem." },
       { ad: "Cem A.", puan: 4, yorum: "Fiyatlar biraz yüksek ama kalite hak ediyor." },
+      { ad: "Emre G.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Kaan T.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
     ],
   },
   {
@@ -1554,6 +1720,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Derya S.", puan: 5, yorum: "Meze çeşitliliği inanılmaz, hepsi lezzetli." },
       { ad: "Volkan Ç.", puan: 4, yorum: "Fasıl geceleri çok keyifli, erken rezervasyon şart." },
+      { ad: "Mert Y.", puan: 4, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Tolga E.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
     ],
   },
   {
@@ -1573,6 +1741,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Sibel N.", puan: 5, yorum: "Ege mutfağının en saf haliyle karşılaşıyorsunuz." },
       { ad: "Uğur D.", puan: 4, yorum: "Sade ama çok lezzetli, tavsiye ederim." },
+      { ad: "Onur B.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Derya S.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
     ],
   },
   {
@@ -1592,6 +1762,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Hakan İ.", puan: 5, yorum: "Otantik lezzet, geleneği yaşatıyorlar." },
       { ad: "Melis R.", puan: 4, yorum: "Küçük bir yer ama atmosferi çok güzel." },
+      { ad: "Burak H.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Cem A.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
     ],
   },
   {
@@ -1611,6 +1783,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Ebru L.", puan: 5, yorum: "Manzara ve lezzet mükemmel bir uyum içinde." },
       { ad: "Serkan P.", puan: 5, yorum: "Gün batımında burada olmak ayrı bir keyif." },
+      { ad: "Gül T.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Buse Y.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
     ],
   },
 
@@ -1839,7 +2013,7 @@ const MEKANLAR = [
     ],
   },
   {
-    id: "meshur-tavaci-recep-usta-izmir", il: "izmir", ad: "Meşhur Tavacı Recep Usta İzmir", kategori: "Et & Izgara",
+    id: "meshur-tavaci-recep-usta-izmir", il: "izmir", ad: "Meşhur Tavacı Recep Usta İzmir", kategori: "Et & Izgara", bibGourmand: true,
     puan: 4.6, yorumSayisi: 9772, fiyat: "₺₺₺",
     adres: "Karşıyaka / İzmir",
     gorsel: img(GORSEL.et), galeri: [img(GORSEL.et), img(GORSEL.sokak), img(GORSEL.geleneksel)],
@@ -1918,6 +2092,134 @@ const MEKANLAR = [
       { ad: "Reyhan K.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
     ],
   },
+  {
+    id: "partal-kardesler-balik", il: "izmir", ad: "Partal Kardeşler Balık Restaurant", kategori: "Deniz Ürünleri", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 2227, fiyat: "₺₺₺",
+    adres: "Balıklıova, Urla / İzmir",
+    gorsel: img(GORSEL.deniz), galeri: [img(GORSEL.deniz), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Urla'nın Balıklıova köyünde günlük taze balıkla hazırladığı sade menüsüyle Partal Kardeşler, Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Günün Balığı", "Deniz Mahsulleri Meze", "Ahtapot Izgara", "Ayran"],
+    yorumlar: [
+      { ad: "Barış K.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Aslı M.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+      { ad: "Hakan İ.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Elif K.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
+  },
+  {
+    id: "kemalin-yeri", il: "izmir", ad: "Kemal'in Yeri", kategori: "Meze & Balık", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 3306, fiyat: "₺₺₺",
+    adres: "Urla / İzmir",
+    gorsel: img(GORSEL.meyhane), galeri: [img(GORSEL.meyhane), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Urla'nın meze ve balık kültürünü sade bir sunumla yaşatan Kemal'in Yeri, Michelin Bib Gourmand ödülüne layık görüldü.",
+    menu: ["Meze Seçkisi", "Günün Balığı", "Ahtapot Izgara", "Rakı (Tekli)"],
+    yorumlar: [
+      { ad: "Hakan İ.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+      { ad: "Uğur D.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Elif K.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Melis R.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
+  },
+  {
+    id: "aysa-bosnak-borekcisi", il: "izmir", ad: "Ayşa Boşnak Börekçisi", kategori: "Börek", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 3957, fiyat: "₺₺₺",
+    adres: "İzmir",
+    gorsel: img(GORSEL.kahvalti), galeri: [img(GORSEL.kahvalti), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Boşnak göçmen mutfağının börek geleneğini yaşatan Ayşa Boşnak Börekçisi, otantik tarifleriyle Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Boşnak Usulü Börek", "Peynirli Börek", "Ayran", "Çay"],
+    yorumlar: [
+      { ad: "Ceren F.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Derya S.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Hakan İ.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Kaan T.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
+  },
+  {
+    id: "begendik-abi", il: "izmir", ad: "Beğendik Abi", kategori: "Esnaf Lokantası", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 2675, fiyat: "₺₺₺",
+    adres: "İzmir",
+    gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Günlük ev yemeği menüsüyle tanınan Beğendik Abi, samimi esnaf lokantası kimliğiyle Michelin Bib Gourmand ödülü aldı.",
+    menu: ["Günün Yemeği + Pilav", "Zeytinyağlı Çeşitleri", "Ayran", "İrmik Helvası"],
+    yorumlar: [
+      { ad: "Serkan P.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Cem A.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+      { ad: "Pınar C.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Tolga E.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
+  },
+  {
+    id: "adil-muftuoglu", il: "izmir", ad: "Adil Müftüoğlu", kategori: "Kebap & Izgara", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 3365, fiyat: "₺₺₺",
+    adres: "İzmir",
+    gorsel: img(GORSEL.et), galeri: [img(GORSEL.et), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Kaliteli et ve ızgara menüsüyle tanınan Adil Müftüoğlu, uygun fiyat politikasıyla Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
+    yorumlar: [
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Ebru L.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Aylin V.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+      { ad: "Emre G.", puan: 4, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+    ],
+  },
+  {
+    id: "la-mahzen", il: "izmir", ad: "La Mahzen", kategori: "Şarap Mahzeni Restoran", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 4633, fiyat: "₺₺₺",
+    adres: "İzmir",
+    gorsel: img(GORSEL.meyhane), galeri: [img(GORSEL.meyhane), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Şarap mahzeni konseptiyle modern meze kültürünü buluşturan La Mahzen, Michelin Bib Gourmand ödülüne layık görüldü.",
+    menu: ["Meze Seçkisi", "Peynir Tabağı", "Izgara Ana Yemek", "Şarap (Kadeh)"],
+    yorumlar: [
+      { ad: "Aslı M.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Cem A.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Onur B.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Fatih K.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+    ],
+  },
+  {
+    id: "aslinda-meyhane", il: "izmir", ad: "Aslında Meyhane", kategori: "Meyhane & Meze", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 6946, fiyat: "₺₺₺",
+    adres: "İzmir",
+    gorsel: img(GORSEL.meyhane), galeri: [img(GORSEL.meyhane), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Klasik meyhane kültürünü uygun fiyata yaşatan Aslında Meyhane, geniş meze menüsüyle Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Soğuk Meze Tabağı", "Levrek Buğulama", "Ahtapot Izgara", "Rakı (Tekli)"],
+    yorumlar: [
+      { ad: "Aylin V.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Aslı M.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Ayşe B.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Kaan T.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
+  },
+  {
+    id: "asma-yapragi", il: "izmir", ad: "Asma Yaprağı", kategori: "Ev Yemekleri & Zeytinyağlı", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 3350, fiyat: "₺₺₺",
+    adres: "İzmir",
+    gorsel: img(GORSEL.zeytinyagli), galeri: [img(GORSEL.zeytinyagli), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Zeytinyağlı ve ev usulü Ege yemekleriyle tanınan Asma Yaprağı, otantik mutfağıyla Michelin Bib Gourmand ödülü aldı.",
+    menu: ["Zeytinyağlı Yaprak Sarma", "Enginarlı Bakla", "Zeytinyağlı Barbunya", "Ev Yapımı Ekmek"],
+    yorumlar: [
+      { ad: "Nil D.", puan: 4, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Volkan Ç.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Buse Y.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Uğur D.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+    ],
+  },
   // ---------------- BURSA ----------------
   {
     id: "bursa-1", il: "bursa", ad: "Ulu Cami Yanı İskender", kategori: "İskender Kebap",
@@ -1936,6 +2238,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Aylin V.", puan: 5, yorum: "Yediğim en iyi İskender, tartışmasız." },
       { ad: "Burak H.", puan: 5, yorum: "Tereyağ kokusu ve et kalitesi bambaşka." },
+      { ad: "Yusuf B.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Nil D.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
     ],
   },
   {
@@ -1955,6 +2259,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Nazan İ.", puan: 5, yorum: "Hem tarih hem lezzet bir arada." },
       { ad: "Ozan F.", puan: 4, yorum: "Hafta sonu çok kalabalık oluyor, erken gidin." },
+      { ad: "Ebru L.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Yusuf B.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
     ],
   },
   {
@@ -1974,6 +2280,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Gül T.", puan: 5, yorum: "Kıvamı ve tazeliği harika, hediyelik olarak da mükemmel." },
       { ad: "Rıdvan Ş.", puan: 4, yorum: "Biraz pahalı ama kalite hissediliyor." },
+      { ad: "Uğur D.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Buse Y.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
     ],
   },
   {
@@ -1993,6 +2301,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "İpek O.", puan: 5, yorum: "Manzara ve peynir çeşitleri unutulmaz." },
       { ad: "Metin U.", puan: 5, yorum: "Kış sabahları için birebir." },
+      { ad: "Zeynep T.", puan: 4, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Tolga E.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
     ],
   },
   {
@@ -2012,6 +2322,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Selen A.", puan: 5, yorum: "Sahilde gün batımıyla balık, tam bir keyif." },
       { ad: "Yusuf B.", puan: 4, yorum: "Servis içten, lezzet gayet iyi." },
+      { ad: "Fatih K.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Serkan P.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
     ],
   },
 
@@ -2273,6 +2585,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Sophie M.", puan: 5, yorum: "Stunning harbor view, unforgettable dinner." },
       { ad: "Emirhan Ç.", puan: 5, yorum: "Manzara ve lezzet birlikte zirvede." },
+      { ad: "Aylin V.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Elif K.", puan: 5, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
     ],
   },
   {
@@ -2292,6 +2606,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Alperen Y.", puan: 5, yorum: "Etin pişme derecesi tam istediğim gibiydi." },
       { ad: "Laura K.", puan: 4, yorum: "Great sunset view with dinner." },
+      { ad: "Gizem A.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Rıdvan Ş.", puan: 4, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
     ],
   },
   {
@@ -2311,6 +2627,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Berkay N.", puan: 5, yorum: "Şov kısmı çocuklarımın da çok hoşuna gitti." },
       { ad: "Hande Z.", puan: 4, yorum: "Lezzetli ama biraz zaman alıyor pişirmesi." },
+      { ad: "Zeynep T.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Deniz A.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
     ],
   },
   {
@@ -2330,6 +2648,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Ceyda P.", puan: 5, yorum: "Bahçesi gerçekten çok huzurlu." },
       { ad: "Timur A.", puan: 4, yorum: "Yoğun saatlerde bekleme olabiliyor." },
+      { ad: "Derya S.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Ceren F.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
     ],
   },
   {
@@ -2349,6 +2669,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Marco T.", puan: 5, yorum: "Dining next to ancient ruins was magical." },
       { ad: "Gamze L.", puan: 4, yorum: "Fiyatlar yüksek ama atmosfer o kadar özel ki değer." },
+      { ad: "Barış K.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Emre G.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
     ],
   },
 
@@ -2546,6 +2868,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Reyhan K.", puan: 5, yorum: "Yediğim en iyi baklava, tereddütsüz." },
       { ad: "David S.", puan: 5, yorum: "Best baklava I've ever had, worth the trip." },
+      { ad: "Derya S.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Pınar C.", puan: 4, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
     ],
   },
   {
@@ -2565,6 +2889,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Sedat M.", puan: 5, yorum: "Antep kebabını en iyi burada yiyeceksiniz." },
       { ad: "Nour A.", puan: 5, yorum: "Amazing flavors, the view is a bonus." },
+      { ad: "Gizem A.", puan: 4, yorum: "Sunumu gerçekten göz alıcıydı, damak tadına da uygun." },
+      { ad: "Hakan İ.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
     ],
   },
   {
@@ -2584,6 +2910,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Fadime R.", puan: 5, yorum: "Sıcacık katmer ve menengiç kahvesi, mükemmel bir sabah." },
       { ad: "İlyas D.", puan: 4, yorum: "Sabah erken gitmek lazım, çabuk tükeniyor." },
+      { ad: "Selin Ö.", puan: 5, yorum: "Beklediğimize değdi, lezzet konusunda hayal kırıklığına uğratmadı." },
+      { ad: "Emre G.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
     ],
   },
   {
@@ -2603,6 +2931,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Tuğba E.", puan: 5, yorum: "Ev yemeği tadı gerçekten hissediliyor." },
       { ad: "Recep V.", puan: 4, yorum: "Sade ama doyurucu ve lezzetli." },
+      { ad: "Metin U.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Volkan Ç.", puan: 4, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
     ],
   },
   {
@@ -2622,6 +2952,8 @@ const MEKANLAR = [
     yorumlar: [
       { ad: "Sena Y.", puan: 5, yorum: "Tarihi atmosfer ve kahve muhteşem uyum içinde." },
       { ad: "Ammar H.", puan: 4, yorum: "Sakin, keyifli bir mola noktası." },
+      { ad: "Melis R.", puan: 4, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Metin U.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
     ],
   },
   {
@@ -3894,6 +4226,118 @@ const MEKANLAR = [
       { ad: "Rıdvan Ş.", puan: 4, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
     ],
   },
+  {
+    id: "mezegi", il: "mugla", ad: "Mezegi", kategori: "Meze & Modern Mutfak", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 3283, fiyat: "₺₺₺",
+    adres: "Muğla",
+    gorsel: img(GORSEL.meze), galeri: [img(GORSEL.meze), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Modern meze yorumuyla dikkat çeken Mezegi, uygun fiyat politikasıyla Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Modern Meze Tabağı", "Günün Balığı", "Zeytinyağlı Çeşitleri", "Ev Yapımı Tatlı"],
+    yorumlar: [
+      { ad: "Buse Y.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Ayşe B.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Aylin V.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Kerem S.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
+  },
+  {
+    id: "bagarasi", il: "mugla", ad: "Bağarası", kategori: "Ev Yemekleri", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 5021, fiyat: "₺₺₺",
+    adres: "Muğla",
+    gorsel: img(GORSEL.zeytinyagli), galeri: [img(GORSEL.zeytinyagli), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Ege'nin ev usulü yemek kültürünü yaşatan Bağarası, sade ve otantik mutfağıyla Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Günün Ev Yemeği", "Zeytinyağlı Çeşitleri", "Ayran", "Ev Yapımı Tatlı"],
+    yorumlar: [
+      { ad: "Sibel N.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Ayşe B.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Serkan P.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Pınar C.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
+  },
+  {
+    id: "mandalya", il: "mugla", ad: "Mandalya", kategori: "Akdeniz Mutfağı", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 6750, fiyat: "₺₺₺",
+    adres: "Muğla",
+    gorsel: img(GORSEL.ege), galeri: [img(GORSEL.ege), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Akdeniz mutfağının taze ve sade lezzetlerini sunan Mandalya, Michelin Bib Gourmand ödülüne layık görüldü.",
+    menu: ["Akdeniz Mezeleri", "Günün Balığı", "Zeytinyağlı Çeşitleri", "Ev Yapımı Tatlı"],
+    yorumlar: [
+      { ad: "Selin Ö.", puan: 4, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Elif K.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Nil D.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Kaan T.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+    ],
+  },
+  {
+    id: "otantik-ocakbasi", il: "mugla", ad: "Otantik Ocakbaşı", kategori: "Ocakbaşı & Kebap", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 5592, fiyat: "₺₺₺",
+    adres: "Bodrum / Muğla",
+    gorsel: img(GORSEL.et), galeri: [img(GORSEL.et), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Bodrum'da klasik ocakbaşı kültürünü yaşatan Otantik Ocakbaşı, kaliteli et menüsüyle Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Kuzu Şiş", "Adana Kebap", "Közlenmiş Patlıcan Salatası", "Baklava"],
+    yorumlar: [
+      { ad: "Aslı M.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Tolga E.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Barış K.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Zeynep T.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
+  },
+  {
+    id: "arka-ristorante", il: "mugla", ad: "Arka Ristorante Pizzeria", kategori: "İtalyan Mutfağı", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 2090, fiyat: "₺₺₺",
+    adres: "Bodrum / Muğla",
+    gorsel: img(GORSEL.tatli), galeri: [img(GORSEL.tatli), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Otantik İtalyan mutfağını Bodrum'a taşıyan Arka Ristorante Pizzeria, Michelin Bib Gourmand ödülüne layık görüldü.",
+    menu: ["Odun Fırın Pizza", "Ev Yapımı Makarna", "Bruschetta", "Tiramisu"],
+    yorumlar: [
+      { ad: "Cem A.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Volkan Ç.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+      { ad: "Selin Ö.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Tolga E.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+    ],
+  },
+  {
+    id: "iki-sandal", il: "mugla", ad: "İki Sandal", kategori: "Deniz Ürünleri", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 6908, fiyat: "₺₺₺",
+    adres: "Bodrum / Muğla",
+    gorsel: img(GORSEL.deniz), galeri: [img(GORSEL.deniz), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Bodrum'un taze deniz ürünlerini sade bir sunumla sofraya taşıyan İki Sandal, Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Günün Balığı", "Deniz Mahsulleri Meze", "Ahtapot Izgara", "Rakı (Tekli)"],
+    yorumlar: [
+      { ad: "Gizem A.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Mert Y.", puan: 5, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
+      { ad: "Ayşe B.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+      { ad: "Hakan İ.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
+  },
+  {
+    id: "beynel", il: "mugla", ad: "Beynel", kategori: "Yöresel Mutfak", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 3376, fiyat: "₺₺₺",
+    adres: "Bodrum / Muğla",
+    gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Bodrum yöresinin unutulmaya yüz tutmuş tariflerini yaşatan Beynel, Michelin Bib Gourmand ödülüne layık görüldü.",
+    menu: ["Yöresel Çorba", "Günün Yöresel Yemeği", "Ev Yapımı Ekmek", "Ayran"],
+    yorumlar: [
+      { ad: "Serkan P.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Sibel N.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+      { ad: "Tolga E.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Kaan T.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+    ],
+  },
   // ---------------- ORDU ----------------
   {
     id: "boztepe-restoran", il: "ordu", ad: "Boztepe Restoran", kategori: "Kahvaltı",
@@ -4270,6 +4714,87 @@ const MEKANLAR = [
       { ad: "Zeynep T.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
       { ad: "Rıdvan Ş.", puan: 5, yorum: "İkinci kez geldim, ilk seferki kadar iyiydi hatta daha iyi." },
       { ad: "Yasemin Ö.", puan: 4, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+    ],
+  },
+  {
+    id: "babayan-evi", il: "nevsehir", ad: "Babayan Evi Restoran", kategori: "Ermeni-Anadolu Mutfağı", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 2986, fiyat: "₺₺₺",
+    adres: "Ürgüp, Nevşehir",
+    gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Kapadokya'nın çok kültürlü mutfak mirasını yaşatan Babayan Evi, tarihi bir konakta sunduğu otantik menüsüyle Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Testi Kebabı", "Mantı", "Ev Yapımı Ekmek", "Kapadokya Usulü Tatlı"],
+    yorumlar: [
+      { ad: "Sibel N.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Tolga E.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Cem A.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Deniz A.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+    ],
+  },
+  {
+    id: "old-greek-house", il: "nevsehir", ad: "Old Greek House", kategori: "Rum Mutfağı", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 3358, fiyat: "₺₺₺",
+    adres: "Mustafapaşa, Ürgüp / Nevşehir",
+    gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Mustafapaşa'nın Rum mimarisine sahip tarihi bir evinde hizmet veren Old Greek House, otantik mutfağıyla Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Rum Usulü Meze", "Testi Kebabı", "Zeytinyağlı Çeşitleri", "Kapadokya Şarabı (Kadeh)"],
+    yorumlar: [
+      { ad: "Ceren F.", puan: 5, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Zeynep T.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Ebru L.", puan: 4, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Selin Ö.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+    ],
+  },
+  {
+    id: "aravan-evi", il: "nevsehir", ad: "Aravan Evi", kategori: "Geleneksel Kapadokya Mutfağı", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 6586, fiyat: "₺₺₺",
+    adres: "Nevşehir",
+    gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Kapadokya'nın geleneksel mutfağını mağara mimarisinde yaşatan Aravan Evi, Michelin Bib Gourmand ödülüne layık görüldü.",
+    menu: ["Testi Kebabı", "Mantı", "Höşmerim", "Ev Yapımı Ekmek"],
+    yorumlar: [
+      { ad: "Kaan T.", puan: 5, yorum: "Atmosferi çok samimi, ailecek harika vakit geçirdik." },
+      { ad: "Derya S.", puan: 5, yorum: "Arkadaşlarıma gönül rahatlığıyla tavsiye edebilirim." },
+      { ad: "Onur B.", puan: 5, yorum: "Servis çok hızlı ve ilgiliydi, hiç beklemedik." },
+      { ad: "Zeynep T.", puan: 4, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
+  },
+  {
+    id: "happena", il: "nevsehir", ad: "Happena", kategori: "Modern Mutfak", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 1841, fiyat: "₺₺₺",
+    adres: "Nevşehir",
+    gorsel: img(GORSEL.zeytinyagli), galeri: [img(GORSEL.zeytinyagli), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Kapadokya'da modern mutfak yorumuyla dikkat çeken Happena, Michelin Bib Gourmand ödülü kazandı.",
+    menu: ["Mevsim Tadım Menüsü", "Zeytinyağlı Meze", "Ev Yapımı Ekmek", "Şef Tatlısı"],
+    yorumlar: [
+      { ad: "Mert Y.", puan: 5, yorum: "Michelin'in bu mekanı seçmesine hiç şaşırmadım, hakkını veriyor." },
+      { ad: "Cem A.", puan: 4, yorum: "Personel çok güler yüzlü, kendimizi evimizde gibi hissettik." },
+      { ad: "Serkan P.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Nil D.", puan: 5, yorum: "Bu fiyata bu kalite başka yerde kolay kolay bulunmaz." },
+    ],
+  },
+  // ---------------- NİĞDE ----------------
+  {
+    id: "tabal-gastronomievi", il: "nigde", ad: "Tabal Gastronomievi", kategori: "Yöresel Gastronomi", bibGourmand: true,
+    puan: 4.5, yorumSayisi: 3841, fiyat: "₺₺₺",
+    adres: "Niğde",
+    gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.sokak), img(GORSEL.geleneksel)],
+    ozellikler: ["Michelin Bib Gourmand", "Michelin Rehberi'nde Yer Alıyor", "Uygun Fiyata Yüksek Kalite"],
+    alinti: "Michelin'in \'lezzetli ve uygun fiyatlı\' tanımını hakkıyla karşılıyor.",
+    neden: "Niğde yöresinin unutulmaya yüz tutmuş tariflerini gastronomi anlayışıyla yeniden yorumlayan Tabal, Michelin Bib Gourmand ödülü kazanan ilk Niğde restoranı oldu.",
+    menu: ["Yöresel Çorba", "Niğde Usulü Ana Yemek", "Ev Yapımı Ekmek", "Yöresel Tatlı"],
+    yorumlar: [
+      { ad: "Yasemin Ö.", puan: 5, yorum: "Tazelik her tabakta hissediliyordu, gerçekten kaliteli." },
+      { ad: "Cem A.", puan: 5, yorum: "Porsiyonlar oldukça doyurucu, boşuna beklemedik." },
+      { ad: "Kaan T.", puan: 5, yorum: "Fiyat-performans açısından bölgenin en iyilerinden." },
+      { ad: "Sibel N.", puan: 4, yorum: "Lezzeti gerçekten beklentimin üzerindeydi, kesinlikle tekrar geleceğim." },
     ],
   },
 ];
