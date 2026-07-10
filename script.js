@@ -101,9 +101,33 @@ function initHomePage() {
     });
   });
 
+  function bestMatch() {
+    const term = query.trim().toLocaleLowerCase("tr");
+    if (!term) return null;
+    const exact = ILLER.find((i) => i.ad.toLocaleLowerCase("tr") === term);
+    if (exact) return exact;
+    return ILLER.find((i) => i.ad.toLocaleLowerCase("tr").includes(term)) || null;
+  }
+
+  function goToMatch() {
+    const match = bestMatch();
+    if (match) window.location.href = `sehir.html?il=${match.slug}`;
+  }
+
   const searchInput = document.getElementById("ilSearch");
   if (searchInput) {
     searchInput.addEventListener("input", (e) => { query = e.target.value; draw(); });
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        goToMatch();
+      }
+    });
+  }
+
+  const searchBtn = document.getElementById("ilSearchBtn");
+  if (searchBtn) {
+    searchBtn.addEventListener("click", goToMatch);
   }
 
   draw();
