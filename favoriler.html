@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favorilerim | neredenyiyelim</title>
+<meta name="description" content="Beğendiğin mekanları tarayıcında sakla, hesap açmadan istediğin zaman tekrar bul.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B4%3C/text%3E%3C/svg%3E">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">nereden<span class="hl">yiyelim</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="favoriler.html" class="active">Favorilerim</a></li>
+      <li><a href="hakkinda.html">Hakkında</a></li>
+      <li><a href="sss.html">SSS</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="city-head">
+    <div class="city-title-row"><h1>Favorilerim</h1></div>
+    <p class="city-sub">Kalp ikonuna dokunduğun mekanlar burada, tarayıcında saklanır.</p>
+  </div>
+  <div id="favRoot" style="max-width:var(--max);margin:0 auto;padding:0 20px 60px;"></div>
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="favoriler.html">Favorilerim</a>
+    <a href="hakkinda.html">Hakkında</a>
+    <a href="sss.html">SSS</a>
+    <a href="iletisim.html">İletişim</a>
+  </div>
+  <p>&copy; 2026 neredenyiyelim. Tüm hakları saklıdır.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

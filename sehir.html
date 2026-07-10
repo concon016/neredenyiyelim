@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Şehir Mekanları | neredenyiyelim</title>
+<meta name="description" content="Seçtiğin şehirdeki en yüksek puanlı, özel seçilmiş mekanları reels tadında kaydırarak keşfet.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B4%3C/text%3E%3C/svg%3E">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">nereden<span class="hl">yiyelim</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="favoriler.html">Favorilerim</a></li>
+      <li><a href="hakkinda.html">Hakkında</a></li>
+      <li><a href="sss.html">SSS</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<div class="city-head">
+  <div class="breadcrumb"><a href="index.html">Ana Sayfa</a> › <span id="cityBreadcrumb">Şehir</span></div>
+  <div class="city-title-row">
+    <h1 id="cityName">Şehir</h1>
+  </div>
+  <p class="city-sub" id="citySub"></p>
+</div>
+
+<div id="cityRoot">
+  <div class="filter-bar" id="filterBar">
+    <div id="chips" style="display:contents;"></div>
+    <div class="view-toggle">
+      <button class="active" data-view="reels">🎞️ Reels</button>
+      <button data-view="list">☰ Liste</button>
+    </div>
+  </div>
+
+  <div class="reels-wrap" id="reelsWrap">
+    <div class="reels" id="reels"></div>
+    <div class="reel-progress" id="reelProgress"></div>
+  </div>
+
+  <div class="list-view" id="listView" style="display:none;"></div>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="favoriler.html">Favorilerim</a>
+    <a href="hakkinda.html">Hakkında</a>
+    <a href="sss.html">SSS</a>
+    <a href="iletisim.html">İletişim</a>
+  </div>
+  <p>&copy; 2026 neredenyiyelim. Tüm hakları saklıdır.</p>
+  <p class="disclaimer">Bu platformdaki mekan, puan ve yorum bilgileri tanıtım/başlangıç amaçlı örnek içeriklerdir; güncel fiyat ve puanlar için işletmenin kendi Google profilini kontrol edin.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

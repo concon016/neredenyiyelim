@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hakkında | neredenyiyelim</title>
+<meta name="description" content="neredenyiyelim nasıl bir seçim yapıyor? Mekanları hangi kriterlerle seçtiğimizi öğren.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B4%3C/text%3E%3C/svg%3E">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">nereden<span class="hl">yiyelim</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="favoriler.html">Favorilerim</a></li>
+      <li><a href="hakkinda.html" class="active">Hakkında</a></li>
+      <li><a href="sss.html">SSS</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="hero" style="padding-bottom:20px;">
+    <div class="hero-inner">
+      <span class="hero-badge">Hakkımızda</span>
+      <h1>Rastgele değil, <span class="hl">özenle seçilmiş.</span></h1>
+      <p class="hero-sub">neredenyiyelim, Türkiye'nin 81 ilinde gerçekten gitmeye değer mekanları bir araya getiren, sadeliği önceliği yapan bir keşif platformudur.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      <div class="card reveal">
+        <h3>Nasıl Seçiyoruz?</h3>
+        <p>Her mekan; Google'daki puan ortalaması, yorum hacmi ve yakın dönemdeki yükseliş trendi baz alınarak elenir. Sadece yüksek puan yetmez — yorumlardaki tekrar eden olumlu detaylar (manzara, servis, lezzet, atmosfer) da editör değerlendirmesine dahil edilir.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Neden Reels Tadında?</h3>
+        <p>Uzun listeler yerine, bir şehirdeki en iyi seçenekleri hızlıca ve keyifli şekilde kaydırarak görmeni istedik — tıpkı bir otel rezervasyon uygulamasında olduğu gibi sade, görsel ağırlıklı bir deneyim.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Veriler Sürekli Güncelleniyor</h3>
+        <p>Şu anda seçili birkaç büyük şehirde başlıyoruz; 81 ilin tamamını en güncel verilerle kademeli olarak dolduruyoruz.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Bağımsızız</h3>
+        <p>Hiçbir işletmeden sıralama ya da öne çıkarma karşılığında ücret almıyoruz. Seçim kriterimiz sadece kalite.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Şehrini seç, keşfe başla</h2>
+    <p>81 il arasından birini seç, özel seçmece mekanları hemen kaydırarak gör.</p>
+    <a class="btn btn-secondary" href="index.html">Şehirlere Göz At</a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="favoriler.html">Favorilerim</a>
+    <a href="hakkinda.html">Hakkında</a>
+    <a href="sss.html">SSS</a>
+    <a href="iletisim.html">İletişim</a>
+  </div>
+  <p>&copy; 2026 neredenyiyelim. Tüm hakları saklıdır.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

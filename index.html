@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>neredenyiyelim | Türkiye'nin 81 İlinde Özel Seçilmiş Mekanlar</title>
+<meta name="description" content="Türkiye'nin 81 ilinde yüksek puanlı, öne çıkmış ve özenle seçilmiş restoran, kahve ve tatlı mekanları. Şehrini seç, reels tadında kaydırarak keşfet.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="neredenyiyelim | Türkiye'nin 81 İlinde Özel Seçilmiş Mekanlar">
+<meta property="og:description" content="Şehrini seç, en güncel ve en yüksek puanlı mekanları reels tadında kaydırarak keşfet.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B4%3C/text%3E%3C/svg%3E">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">nereden<span class="hl">yiyelim</span></a>
+    <ul class="nav-links" id="navMobile">
+      <li><a href="index.html" class="active">Ana Sayfa</a></li>
+      <li><a href="favoriler.html">Favorilerim</a></li>
+      <li><a href="hakkinda.html">Hakkında</a></li>
+      <li><a href="sss.html">SSS</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-thumb"></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-badge">81 İl · Özenle Seçilmiş Mekanlar</span>
+    <h1>Bugün <span class="hl">nereden yiyelim?</span></h1>
+    <p class="hero-sub">Türkiye'nin 81 ilinde en yüksek puanlı, Google'da öne çıkmış ve özenle elenmiş mekanları bir araya getirdik. Şehrini seç, reels'te kaydırır gibi keşfet.</p>
+
+    <div class="search-box">
+      <input type="text" id="ilSearch" placeholder="Şehir ara — örn. İzmir, Gaziantep, Trabzon..." aria-label="Şehir ara">
+      <button class="btn btn-accent btn-sm" onclick="document.getElementById('ilGridSection').scrollIntoView({behavior:'smooth'})">Ara</button>
+    </div>
+    <div style="margin-top:16px;">
+      <button class="btn btn-secondary" id="zarBtn">🎲 Bugün Nereye Gitsem?</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="trendSection">
+  <div class="section-head center reveal">
+    <p class="eyebrow">Bu Hafta Trend</p>
+    <h2>Öne çıkan mekanlar</h2>
+    <p>Google'da puanı ve yorum hızı son dönemde en çok yükselen, editör seçmesi mekanlar.</p>
+  </div>
+  <div class="grid" id="trendGrid"></div>
+</section>
+
+<section class="section section-soft" id="ilGridSection">
+  <div class="section-head center reveal">
+    <p class="eyebrow">81 İl</p>
+    <h2>Şehrini seç</h2>
+    <p>Bölgeye göre filtrele ya da doğrudan ara — her ilde en özel mekanlar seni bekliyor.</p>
+  </div>
+
+  <div class="region-tabs">
+    <button class="region-tab active" data-region="hepsi">Tümü</button>
+    <button class="region-tab" data-region="marmara">Marmara</button>
+    <button class="region-tab" data-region="ege">Ege</button>
+    <button class="region-tab" data-region="akdeniz">Akdeniz</button>
+    <button class="region-tab" data-region="icanadolu">İç Anadolu</button>
+    <button class="region-tab" data-region="karadeniz">Karadeniz</button>
+    <button class="region-tab" data-region="doguanadolu">Doğu Anadolu</button>
+    <button class="region-tab" data-region="guneydogu">Güneydoğu Anadolu</button>
+  </div>
+
+  <div class="il-grid" id="ilGrid"></div>
+</section>
+
+<section class="section">
+  <div class="section-head center reveal">
+    <p class="eyebrow">Nasıl Çalışır?</p>
+    <h2>Üç adımda en iyi mekanı bul</h2>
+  </div>
+  <div class="grid">
+    <div class="card reveal">
+      <h3>1. Şehrini seç</h3>
+      <p>81 il arasından gideceğin ya da yaşadığın şehri seç veya arama kutusuna yaz.</p>
+    </div>
+    <div class="card reveal">
+      <h3>2. Kaydırarak keşfet</h3>
+      <p>Reels tadında kaydırarak yüksek puanlı, öne çıkmış mekanları gör — kategori filtrele, favorile.</p>
+    </div>
+    <div class="card reveal">
+      <h3>3. Detayına gir</h3>
+      <p>Menü, konum, işletme görselleri ve müşteri yorumlarından öne çıkanları tek sayfada incele.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Nereye gideceğine karar veremedin mi?</h2>
+  <p>Zar at, sana rastgele özel seçmece bir mekan önerelim.</p>
+  <button class="btn btn-secondary" onclick="document.getElementById('zarBtn').click()">🎲 Bugün Nereye Gitsem?</button>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-links">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="favoriler.html">Favorilerim</a>
+    <a href="hakkinda.html">Hakkında</a>
+    <a href="sss.html">SSS</a>
+    <a href="iletisim.html">İletişim</a>
+  </div>
+  <p>&copy; 2026 neredenyiyelim. Tüm hakları saklıdır.</p>
+  <p class="disclaimer">Bu platformdaki mekan, puan ve yorum bilgileri tanıtım/başlangıç amaçlı örnek içeriklerdir; güncel fiyat ve puanlar için işletmenin kendi Google profilini kontrol edin.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
