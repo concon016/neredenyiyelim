@@ -754,6 +754,28 @@ const MEKANLAR = [
     menu: ["Adana Kebap", "Kuzu Şiş", "Ayran", "Baklava"],
     yorumlar: [],
   },
+  {
+    id: "aheste", il: "istanbul", ad: "Aheste", kategori: "Modern Türk Mutfağı",
+    puan: 4.6, yorumSayisi: 2400, fiyat: "₺₺₺",
+    adres: "Beyoğlu / İstanbul",
+    gorsel: img(GORSEL.meze), galeri: [img(GORSEL.meze), img(GORSEL.geleneksel), img(GORSEL.zeytinyagli)],
+    ozellikler: ["Modern Meze Yorumu", "Şık ve Sakin Atmosfer", "Mevsimlik Menü"],
+    alinti: "\"Geleneksel tarifleri sakin bir tempoyla, adı gibi 'aheste' bir sunumla buluşturuyorlar.\"",
+    neden: "Klasik Türk mutfağı tariflerini modern ve zarif bir sunumla yeniden yorumlayan Aheste, Beyoğlu'nun sakin köşelerinde öne çıkan adreslerden.",
+    menu: ["Mevsim Mezeleri", "Zeytinyağlı Enginar", "Kuzu Incik", "Ev Yapımı Tatlı"],
+    yorumlar: [],
+  },
+  {
+    id: "balkan-lokantasi", il: "istanbul", ad: "Balkan Lokantası", kategori: "Ev Yemekleri",
+    puan: 4.4, yorumSayisi: 3100, fiyat: "₺₺",
+    adres: "Beşiktaş / İstanbul",
+    gorsel: img(GORSEL.geleneksel), galeri: [img(GORSEL.geleneksel), img(GORSEL.zeytinyagli), img(GORSEL.tatli)],
+    ozellikler: ["Balkan Göçmen Mutfağı", "Ev Usulü Lezzetler", "Samimi Esnaf Ortamı"],
+    alinti: "\"Anneannenin mutfağından çıkma tadında, Balkan göçmen mutfağının sıcaklığı hissediliyor.\"",
+    neden: "Balkan göçmen mutfağının ev usulü tariflerini Beşiktaş'a taşıyan Balkan Lokantası, samimi ortamı ve günlük değişen menüsüyle mahalle sakinlerinin favorisi.",
+    menu: ["Günün Balkan Yemeği", "Ekşili Köfte", "Zeytinyağlı Yaprak Sarma", "Ev Yapımı Baklava"],
+    yorumlar: [],
+  },
   // ---------------- ANKARA ----------------
   {
     id: "ankara-1", il: "ankara", ad: "Kızılay Et Lokantası", kategori: "Et & Izgara",
