@@ -203,6 +203,12 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
   position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,.55); color: #fff; font-size: .78rem;
   font-weight: 700; padding: 4px 10px; border-radius: 999px; display: flex; align-items: center; gap: 4px;
 }
+.badge-michelin {
+  background: #B3122A; color: #fff; font-size: .72rem; font-weight: 800; padding: 4px 10px;
+  border-radius: 999px; letter-spacing: .02em; display: inline-flex; align-items: center; gap: 4px;
+}
+.chip.chip-michelin { border-color: #B3122A; color: #B3122A; }
+.chip.chip-michelin.active { background: #B3122A; border-color: #B3122A; color: #fff; }
 
 /* ---------- CTA ---------- */
 .cta { max-width: var(--max); margin: 20px auto 70px; padding: 46px 30px; border-radius: var(--radius-lg);
@@ -244,18 +250,13 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
 }
 .view-toggle button.active { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
 
-/* --- Reels stack --- */
-.reels-wrap { position: relative; max-width: 480px; margin: 0 auto; }
-.reels {
-  height: calc(100dvh - 190px); min-height: 460px; max-width: 480px; margin: 0 auto;
-  overflow-y: scroll; scroll-snap-type: y mandatory; border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md); scrollbar-width: none; position: relative;
-}
-.reels::-webkit-scrollbar { display: none; }
+/* --- Kaydırdıkça açılan mekan kartları (otel ilanı hissiyatı) --- */
+.reels-wrap { max-width: 640px; margin: 0 auto; }
+.reels { display: flex; flex-direction: column; gap: 22px; padding: 4px 2px 40px; }
 
 .reel-card {
-  scroll-snap-align: start; scroll-snap-stop: always;
-  height: calc(100dvh - 190px); min-height: 460px; position: relative; display: flex; flex-direction: column;
+  height: 460px; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+  position: relative; display: flex; flex-direction: column;
   justify-content: flex-end; color: #fff; overflow: hidden;
 }
 .reel-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
@@ -272,6 +273,8 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
   background: rgba(255,255,255,.16); backdrop-filter: blur(4px); padding: 4px 10px; border-radius: 999px; font-size: .74rem; font-weight: 600;
 }
 .reel-quote { font-style: italic; font-size: .88rem; opacity: .92; max-width: 90%; }
+.reel-menu { font-size: .82rem; opacity: .92; }
+.reel-menu b { font-weight: 700; }
 .reel-actions { display: flex; gap: 10px; margin-top: 4px; }
 .reel-actions .btn { flex: 1; }
 .reel-fav {
@@ -280,26 +283,8 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
 }
 .reel-fav.active { background: var(--accent); }
 
-.reel-progress {
-  position: absolute; right: -22px; top: 50%; transform: translateY(-50%);
-  display: flex; flex-direction: column; gap: 6px;
-}
-.reel-progress span { width: 6px; height: 6px; border-radius: 50%; background: var(--line); transition: background .2s, height .2s; }
-.reel-progress span.active { background: var(--accent); height: 20px; border-radius: 3px; }
-
-.reel-hint {
-  position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%);
-  font-size: .72rem; color: rgba(255,255,255,.85); display: flex; flex-direction: column; align-items: center; gap: 2px;
-  pointer-events: none; animation: bob 1.6s ease-in-out infinite;
-}
-@keyframes bob { 0%,100% { transform: translate(-50%,0); } 50% { transform: translate(-50%,6px); } }
-
-@media (min-width: 861px) {
-  .reel-progress { right: -30px; }
-}
 @media (max-width: 520px) {
-  .reels, .reel-card { max-width: 100%; border-radius: 0; }
-  .reel-progress { display: none; }
+  .reel-card { height: 420px; border-radius: var(--radius); }
 }
 
 /* --- List view (booking-style rows) --- */
@@ -364,6 +349,7 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
 .sidebar-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); position: sticky; top: 90px; }
 .sidebar-card .addr { font-size: .9rem; margin-bottom: 14px; }
 .sidebar-card .btn { width: 100%; margin-bottom: 10px; }
+.map-embed { width: 100%; height: 220px; border: none; border-radius: var(--radius-sm); margin-bottom: 14px; }
 
 /* Favorites page */
 .fav-empty { text-align: center; padding: 80px 20px; }

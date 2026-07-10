@@ -125,6 +125,27 @@ function initHomePage() {
     initReveal();
   }
 
+  // Michelin yıldızlı mekanlar
+  const michelinSection = document.getElementById("michelinSection");
+  const michelinGrid = document.getElementById("michelinGrid");
+  if (michelinGrid) {
+    const michelinList = MEKANLAR.filter((m) => m.michelin);
+    if (michelinList.length) {
+      michelinSection.style.display = "";
+      michelinGrid.innerHTML = michelinList.map((m) => `
+        <a class="venue-mini reveal" href="mekan.html?id=${m.id}">
+          <img src="${m.gorsel}" alt="${m.ad}" loading="lazy">
+          <span class="badge-michelin" style="position:absolute;top:10px;left:10px;">★ Michelin</span>
+          <span class="badge-rating">★ ${m.puan}</span>
+          <div class="overlay">
+            <h3>${m.ad}</h3>
+            <div class="meta">${m.kategori} · ${ilGetir(m.il).ad}</div>
+          </div>
+        </a>`).join("");
+      initReveal();
+    }
+  }
+
   // "Bugün nereye gitsem?" rastgele mekan
   const zarBtn = document.getElementById("zarBtn");
   if (zarBtn) {
@@ -175,21 +196,25 @@ function initCityPage() {
   let activeView = "reels";
 
   const categories = [...new Set(venues.map((v) => v.kategori))];
+  const hasMichelin = venues.some((v) => v.michelin);
   const chipsWrap = document.getElementById("chips");
   chipsWrap.innerHTML = `<button class="chip active" data-cat="hepsi">Hepsi</button>` +
+    (hasMichelin ? `<button class="chip chip-michelin" data-cat="michelin">★ Michelin Yıldızlı</button>` : "") +
     categories.map((c) => `<button class="chip" data-cat="${c}">${c}</button>`).join("");
 
   function filtered() {
-    return activeCat === "hepsi" ? venues : venues.filter((v) => v.kategori === activeCat);
+    if (activeCat === "hepsi") return venues;
+    if (activeCat === "michelin") return venues.filter((v) => v.michelin);
+    return venues.filter((v) => v.kategori === activeCat);
   }
 
   function reelCardHtml(v) {
     const fav = isFavori(v.id);
-    return `<div class="reel-card" data-id="${v.id}">
+    return `<div class="reel-card reveal" data-id="${v.id}">
       <img src="${v.gorsel}" alt="${v.ad}" loading="lazy">
       <div class="scrim"></div>
       <div class="reel-top">
-        ${v.trend ? '<span class="badge-trend">Bu Hafta Trend</span>' : "<span></span>"}
+        ${v.michelin ? '<span class="badge-michelin">★ Michelin Yıldızlı</span>' : v.trend ? '<span class="badge-trend">Bu Hafta Trend</span>' : "<span></span>"}
         <span class="badge-rating">★ ${v.puan} <span style="opacity:.8;font-weight:500;">(${v.yorumSayisi.toLocaleString("tr-TR")})</span></span>
       </div>
       <div class="reel-bottom">
@@ -197,6 +222,7 @@ function initCityPage() {
         <h3>${v.ad}</h3>
         <div class="reel-price">${v.kategori} · ${v.fiyat} · ${v.adres}</div>
         <div class="reel-tags">${v.ozellikler.map((o) => `<span>${o}</span>`).join("")}</div>
+        <div class="reel-menu"><b>Menüden:</b> ${v.menu.slice(0, 3).join(", ")}</div>
         <div class="reel-actions">
           <a class="btn btn-accent" href="mekan.html?id=${v.id}">Detayları Gör</a>
           <button class="reel-fav${fav ? " active" : ""}" data-fav="${v.id}" aria-label="Favorilere ekle">${fav ? "♥" : "♡"}</button>
@@ -219,6 +245,7 @@ function initCityPage() {
         </div>
         <p style="margin:0;font-size:.85rem;">${v.adres} · ${v.fiyat}</p>
         <div class="tags">${v.ozellikler.slice(0, 3).map((o) => `<span>${o}</span>`).join("")}</div>
+        <p style="margin:0;font-size:.8rem;color:var(--ink-muted);"><b style="color:var(--ink);">Menüden:</b> ${v.menu.slice(0, 3).join(", ")}</p>
         <div class="list-row-foot">
           <a class="btn btn-secondary btn-sm" href="mekan.html?id=${v.id}">Detayları Gör</a>
           <button class="reel-fav${fav ? " active" : ""}" data-fav="${v.id}" aria-label="Favorilere ekle" style="background:var(--surface-2);color:${fav ? "#fff" : "var(--ink)"};">${fav ? "♥" : "♡"}</button>
@@ -229,30 +256,12 @@ function initCityPage() {
 
   const reels = document.getElementById("reels");
   const listView = document.getElementById("listView");
-  const progress = document.getElementById("reelProgress");
 
   function draw() {
     const list = filtered();
     reels.innerHTML = list.map(reelCardHtml).join("");
     listView.innerHTML = list.map(listRowHtml).join("");
-    progress.innerHTML = list.map((_, idx) => `<span class="${idx === 0 ? "active" : ""}"></span>`).join("");
-    observeReels();
-  }
-
-  let io;
-  function observeReels() {
-    if (io) io.disconnect();
-    const cards = [...reels.querySelectorAll(".reel-card")];
-    const dots = [...progress.querySelectorAll("span")];
-    io = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const idx = cards.indexOf(entry.target);
-          dots.forEach((d, i) => d.classList.toggle("active", i === idx));
-        }
-      });
-    }, { root: reels, threshold: 0.6 });
-    cards.forEach((c) => io.observe(c));
+    initReveal();
   }
 
   chipsWrap.addEventListener("click", (e) => {
@@ -319,7 +328,7 @@ function initVenuePage() {
         <div class="venue-hero-meta">
           <span class="badge-rating" style="position:static;">★ ${v.puan} (${v.yorumSayisi.toLocaleString("tr-TR")} yorum)</span>
           <span>${v.kategori}</span><span>${v.fiyat}</span>
-          ${v.trend ? '<span class="badge-trend" style="position:static;">Bu Hafta Trend</span>' : ""}
+          ${v.michelin ? '<span class="badge-michelin">★ Michelin Yıldızlı</span>' : v.trend ? '<span class="badge-trend" style="position:static;">Bu Hafta Trend</span>' : ""}
         </div>
       </div>
     </div>
@@ -339,21 +348,22 @@ function initVenuePage() {
         </div>
         <div class="venue-block">
           <h2>Menüden Seçmeler</h2>
-          <table class="menu-table">${v.menu.map((m) => `<tr><td>${m.ad}</td><td>${m.fiyat}</td></tr>`).join("")}</table>
+          <div class="feature-list">${v.menu.map((m) => `<span>${m}</span>`).join("")}</div>
         </div>
-        <div class="venue-block">
+        ${v.yorumlar.length ? `<div class="venue-block">
           <h2>Müşteri Yorumlarından</h2>
           ${v.yorumlar.map((y) => `<div class="testimonial">
             <div class="testimonial-head"><span>${y.ad}</span><span class="stars">${starStr(y.puan)}</span></div>
             <p>${y.yorum}</p>
           </div>`).join("")}
-        </div>
+        </div>` : ""}
       </div>
       <div>
         <div class="sidebar-card">
           <h2 style="font-size:1.1rem;">Konum</h2>
+          <iframe class="map-embed" src="https://maps.google.com/maps?q=${encodeURIComponent(v.adres)}&z=15&output=embed" loading="lazy" title="${v.ad} konumu"></iframe>
           <p class="addr">${v.adres}</p>
-          <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(v.adres)}">Haritada Aç</a>
+          <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(v.adres)}">Google Maps'te Aç</a>
           <button class="btn btn-accent" id="favBtn" data-fav="${v.id}">${isFavori(v.id) ? "♥ Favorilerde" : "♡ Favorilere Ekle"}</button>
           <a class="btn btn-ghost" href="sehir.html?il=${il.slug}">${il.ad} Mekanlarına Dön</a>
         </div>
