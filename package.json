@@ -1,0 +1,25 @@
+{
+  "name": "neredenyiyelim-sitesi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/concon016/neredenyiyelim.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/concon016/neredenyiyelim/issues"
+  },
+  "homepage": "https://github.com/concon016/neredenyiyelim#readme",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "dotenv": "^17.4.2"
+  }
+}

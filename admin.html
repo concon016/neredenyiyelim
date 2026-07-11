@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yönetim Paneli | neredenyiyelim</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B4%3C/text%3E%3C/svg%3E">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+  })();
+</script>
+<link rel="stylesheet" href="style.css">
+<style>
+  .admin-wrap { max-width: 900px; margin: 0 auto; padding: 30px 20px 60px; }
+  .admin-list-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; margin-bottom: 8px; background: var(--surface); }
+  .admin-list-row .info { display: flex; flex-direction: column; gap: 2px; }
+  .admin-list-row .info b { font-size: .95rem; }
+  .admin-list-row .info span { font-size: .78rem; color: var(--ink-muted); }
+  .admin-actions { display: flex; gap: 8px; }
+  .admin-actions button { border: none; border-radius: 8px; padding: 7px 12px; font-size: .8rem; font-weight: 700; cursor: pointer; }
+  .btn-edit { background: var(--surface-2); color: var(--ink); }
+  .btn-delete { background: #c0392b; color: #fff; }
+  .admin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .admin-grid .field-full { grid-column: 1 / -1; }
+  @media (max-width: 640px) { .admin-grid { grid-template-columns: 1fr; } }
+  .admin-msg { padding: 10px 14px; border-radius: 8px; font-size: .85rem; font-weight: 600; margin-bottom: 14px; display: none; }
+  .admin-msg.ok { background: #d4edda; color: #155724; display: block; }
+  .admin-msg.err { background: #f8d7da; color: #721c24; display: block; }
+  #adminGate .form-card { max-width: 380px; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">nereden<span class="hl">yiyelim</span></a>
+    <span style="font-weight:700;color:var(--ink-muted);font-size:.85rem;">Yönetim Paneli</span>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Karanlık modu değiştir">
+        <span class="theme-toggle-thumb"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section id="adminGate" class="section">
+    <div class="form-card">
+      <h2 style="margin-bottom:14px;">Yönetim Girişi</h2>
+      <div class="field">
+        <label for="adminPass">Admin Şifresi</label>
+        <input type="password" id="adminPass">
+      </div>
+      <button class="btn btn-accent" id="adminEnterBtn" style="width:100%;">Giriş Yap</button>
+    </div>
+  </section>
+
+  <section id="adminPanel" class="admin-wrap" style="display:none;">
+    <div id="adminMsg" class="admin-msg"></div>
+
+    <div class="form-card" style="max-width:none;margin-bottom:24px;">
+      <h2 id="formTitle" style="margin-bottom:14px;">Yeni Mekan Ekle</h2>
+      <form id="venueForm">
+        <input type="hidden" id="f_id">
+        <div class="admin-grid">
+          <div class="field">
+            <label for="f_il">İl</label>
+            <select id="f_il" required></select>
+          </div>
+          <div class="field">
+            <label for="f_ad">Mekan Adı</label>
+            <input type="text" id="f_ad" required>
+          </div>
+          <div class="field">
+            <label for="f_kategori">Kategori</label>
+            <input type="text" id="f_kategori" placeholder="Örn: Kebap & Izgara">
+          </div>
+          <div class="field">
+            <label for="f_fiyat">Fiyat Seviyesi</label>
+            <select id="f_fiyat">
+              <option value="">—</option>
+              <option value="₺">₺</option>
+              <option value="₺₺">₺₺</option>
+              <option value="₺₺₺">₺₺₺</option>
+              <option value="₺₺₺₺">₺₺₺₺</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f_puan">Puan (0-5)</label>
+            <input type="number" id="f_puan" min="0" max="5" step="0.1">
+          </div>
+          <div class="field">
+            <label for="f_yorumSayisi">Yorum Sayısı</label>
+            <input type="number" id="f_yorumSayisi" min="0">
+          </div>
+          <div class="field field-full">
+            <label for="f_adres">Adres</label>
+            <input type="text" id="f_adres">
+          </div>
+          <div class="field field-full">
+            <label for="f_gorsel">Kapak Görseli (URL)</label>
+            <input type="text" id="f_gorsel" placeholder="https://images.pexels.com/...">
+          </div>
+          <div class="field field-full">
+            <label for="f_galeri">Galeri Görselleri (her satıra bir URL, en fazla 3)</label>
+            <textarea id="f_galeri" rows="3"></textarea>
+          </div>
+          <div class="field field-full">
+            <label for="f_ozellikler">Öne Çıkan Özellikler (virgülle ayır)</label>
+            <input type="text" id="f_ozellikler" placeholder="Boğaz Manzarası, Canlı Müzik, Rezervasyon Şart">
+          </div>
+          <div class="field field-full">
+            <label for="f_alinti">Öne Çıkan Alıntı</label>
+            <input type="text" id="f_alinti">
+          </div>
+          <div class="field field-full">
+            <label for="f_neden">Neden Seçildi?</label>
+            <textarea id="f_neden" rows="3"></textarea>
+          </div>
+          <div class="field field-full">
+            <label for="f_menu">Menüden Seçmeler (her satıra bir ürün)</label>
+            <textarea id="f_menu" rows="3"></textarea>
+          </div>
+          <div class="field field-full">
+            <label for="f_yorumlar">Müşteri Yorumları (satır başına: İsim | Puan | Yorum)</label>
+            <textarea id="f_yorumlar" rows="4" placeholder="Elif K. | 5 | Manzara ve lezzet bir arada."></textarea>
+          </div>
+          <div class="field">
+            <label><input type="checkbox" id="f_trend"> Trend mekan</label>
+            <label><input type="checkbox" id="f_michelin"> Michelin yıldızlı</label>
+            <label>Michelin yıldız sayısı <input type="number" id="f_yildiz" min="1" max="3" style="width:70px;display:inline-block;"></label>
+          </div>
+          <div class="field">
+            <label><input type="checkbox" id="f_bibGourmand"> Bib Gourmand</label>
+            <label><input type="checkbox" id="f_michelinMention"> Michelin Mention</label>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:10px;">
+          <button type="submit" class="btn btn-accent" id="saveBtn">Kaydet</button>
+          <button type="button" class="btn btn-ghost" id="cancelEditBtn" style="display:none;">İptal / Yeni Mekan</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-card" style="max-width:none;">
+      <h2 style="margin-bottom:14px;">Mevcut Mekanlar</h2>
+      <input type="text" id="adminSearch" placeholder="İl veya mekan adına göre ara..." style="width:100%;margin-bottom:14px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);color:var(--ink);">
+      <div id="adminList"></div>
+    </div>
+  </section>
+</main>
+
+<script src="data.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

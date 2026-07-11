@@ -496,16 +496,23 @@ function initFaq() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   initTheme();
   initMobileNav();
   initScrollProgress();
+  initContactForm();
+  initFaq();
+
+  try {
+    await loadMekanlar();
+  } catch (err) {
+    console.error(err);
+  }
+
   initHomePage();
   initCityPage();
   initVenuePage();
   initMichelinPage();
   initFavoritesPage();
-  initContactForm();
-  initFaq();
   initReveal();
 });
