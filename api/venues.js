@@ -17,6 +17,10 @@ function toClient(row) {
     bibGourmand: row.bib_gourmand,
     michelinMention: row.michelin_mention,
     adres: row.adres,
+    lat: row.lat === null ? null : Number(row.lat),
+    lng: row.lng === null ? null : Number(row.lng),
+    calismaSaatleri: row.calisma_saatleri,
+    rezervasyon: row.rezervasyon,
     gorsel: row.gorsel,
     galeri: row.galeri ?? [],
     ozellikler: row.ozellikler ?? [],
@@ -70,12 +74,14 @@ module.exports = async (req, res) => {
         INSERT INTO venues (
           id, il, ad, kategori, puan, yorum_sayisi, fiyat, trend,
           michelin, yildiz, bib_gourmand, michelin_mention,
-          adres, gorsel, galeri, ozellikler, alinti, neden, menu, yorumlar
+          adres, lat, lng, calisma_saatleri, rezervasyon,
+          gorsel, galeri, ozellikler, alinti, neden, menu, yorumlar
         ) VALUES (
           ${id}, ${v.il}, ${v.ad}, ${v.kategori ?? null}, ${v.puan ?? null},
           ${v.yorumSayisi ?? null}, ${v.fiyat ?? null}, ${!!v.trend},
           ${!!v.michelin}, ${v.yildiz ?? null}, ${!!v.bibGourmand}, ${!!v.michelinMention},
-          ${v.adres ?? null}, ${v.gorsel ?? null},
+          ${v.adres ?? null}, ${v.lat ?? null}, ${v.lng ?? null},
+          ${v.calismaSaatleri ?? null}, ${v.rezervasyon ?? null}, ${v.gorsel ?? null},
           ${JSON.stringify(v.galeri ?? [])}, ${JSON.stringify(v.ozellikler ?? [])},
           ${v.alinti ?? null}, ${v.neden ?? null},
           ${JSON.stringify(v.menu ?? [])}, ${JSON.stringify(v.yorumlar ?? [])}
@@ -96,7 +102,9 @@ module.exports = async (req, res) => {
           puan = ${v.puan ?? null}, yorum_sayisi = ${v.yorumSayisi ?? null}, fiyat = ${v.fiyat ?? null},
           trend = ${!!v.trend}, michelin = ${!!v.michelin}, yildiz = ${v.yildiz ?? null},
           bib_gourmand = ${!!v.bibGourmand}, michelin_mention = ${!!v.michelinMention},
-          adres = ${v.adres ?? null}, gorsel = ${v.gorsel ?? null},
+          adres = ${v.adres ?? null}, lat = ${v.lat ?? null}, lng = ${v.lng ?? null},
+          calisma_saatleri = ${v.calismaSaatleri ?? null}, rezervasyon = ${v.rezervasyon ?? null},
+          gorsel = ${v.gorsel ?? null},
           galeri = ${JSON.stringify(v.galeri ?? [])}, ozellikler = ${JSON.stringify(v.ozellikler ?? [])},
           alinti = ${v.alinti ?? null}, neden = ${v.neden ?? null},
           menu = ${JSON.stringify(v.menu ?? [])}, yorumlar = ${JSON.stringify(v.yorumlar ?? [])},

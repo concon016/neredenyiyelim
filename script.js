@@ -385,9 +385,11 @@ function initVenuePage() {
       <div>
         <div class="sidebar-card">
           <h2 style="font-size:1.1rem;">Konum</h2>
-          <iframe class="map-embed" src="https://maps.google.com/maps?q=${encodeURIComponent(v.adres)}&z=15&output=embed" loading="lazy" title="${v.ad} konumu"></iframe>
+          <iframe class="map-embed" src="${v.lat && v.lng ? `https://maps.google.com/maps?q=${v.lat},${v.lng}&z=16&output=embed` : `https://maps.google.com/maps?q=${encodeURIComponent(v.adres)}&z=15&output=embed`}" loading="lazy" title="${v.ad} konumu"></iframe>
           <p class="addr">${v.adres}</p>
-          <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/${encodeURIComponent(v.adres)}">Google Maps'te Aç</a>
+          ${v.calismaSaatleri ? `<p class="addr"><b style="color:var(--ink);">Çalışma Saatleri:</b> ${v.calismaSaatleri}</p>` : ""}
+          ${v.rezervasyon ? `<p class="addr"><b style="color:var(--ink);">Rezervasyon:</b> ${v.rezervasyon}</p>` : ""}
+          <a class="btn btn-secondary" target="_blank" rel="noopener" href="${v.lat && v.lng ? `https://www.google.com/maps/search/?api=1&query=${v.lat},${v.lng}` : `https://www.google.com/maps/search/${encodeURIComponent(v.adres)}`}">Google Maps'te Aç</a>
           <button class="btn btn-accent" id="favBtn" data-fav="${v.id}">${isFavori(v.id) ? "♥ Favorilerde" : "♡ Favorilere Ekle"}</button>
           <a class="btn btn-ghost" href="sehir.html?il=${il.slug}">${il.ad} Mekanlarına Dön</a>
         </div>

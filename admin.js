@@ -79,6 +79,10 @@ function fillForm(v) {
   document.getElementById("f_puan").value = v.puan ?? "";
   document.getElementById("f_yorumSayisi").value = v.yorumSayisi ?? "";
   document.getElementById("f_adres").value = v.adres || "";
+  document.getElementById("f_lat").value = v.lat ?? "";
+  document.getElementById("f_lng").value = v.lng ?? "";
+  document.getElementById("f_calismaSaatleri").value = v.calismaSaatleri || "";
+  document.getElementById("f_rezervasyon").value = v.rezervasyon || "";
   document.getElementById("f_gorsel").value = v.gorsel || "";
   document.getElementById("f_galeri").value = (v.galeri || []).join("\n");
   document.getElementById("f_ozellikler").value = (v.ozellikler || []).join(", ");
@@ -112,6 +116,10 @@ function formToVenue() {
     puan: document.getElementById("f_puan").value ? Number(document.getElementById("f_puan").value) : null,
     yorumSayisi: document.getElementById("f_yorumSayisi").value ? Number(document.getElementById("f_yorumSayisi").value) : null,
     adres: document.getElementById("f_adres").value.trim(),
+    lat: document.getElementById("f_lat").value ? Number(document.getElementById("f_lat").value) : null,
+    lng: document.getElementById("f_lng").value ? Number(document.getElementById("f_lng").value) : null,
+    calismaSaatleri: document.getElementById("f_calismaSaatleri").value.trim(),
+    rezervasyon: document.getElementById("f_rezervasyon").value.trim(),
     gorsel: document.getElementById("f_gorsel").value.trim(),
     galeri: lines(document.getElementById("f_galeri").value).slice(0, 3),
     ozellikler: document.getElementById("f_ozellikler").value.split(",").map((s) => s.trim()).filter(Boolean),
