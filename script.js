@@ -33,7 +33,7 @@ function initScrollProgress() {
     const h = document.documentElement;
     const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight || 1)) * 100;
     bar.style.width = pct + "%";
-  });
+  }, { passive: true });
 }
 
 /* ---------- Reveal-on-scroll ---------- */
