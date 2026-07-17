@@ -100,7 +100,7 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
     border-bottom: 1px solid var(--line); flex-direction: column; gap: 0;
     max-height: 0; overflow: hidden; transition: max-height .25s ease;
   }
-  .nav-links.open { max-height: 480px; }
+  .nav-links.open { max-height: 70vh; overflow-y: auto; }
   .nav-links li { border-top: 1px solid var(--line); }
   .nav-links a { display: block; padding: 14px 20px; }
   .menu-toggle { display: flex; }
