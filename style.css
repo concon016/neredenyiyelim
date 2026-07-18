@@ -184,6 +184,37 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
 .il-card.has-data { border-color: color-mix(in srgb, var(--gold) 55%, var(--line)); }
 .il-card.has-data::before { content: "★"; color: var(--gold); margin-right: 6px; }
 
+/* Türkiye haritası */
+.tr-map-wrap { max-width: 900px; margin: 0 auto; position: relative; }
+.tr-map { width: 100%; height: auto; display: block; }
+.il-path {
+  fill: var(--surface-2);
+  stroke: var(--bg);
+  stroke-width: .6;
+  cursor: pointer;
+  transition: fill .12s ease;
+}
+.il-path.has-data { fill: color-mix(in srgb, var(--gold) 35%, var(--surface-2)); }
+.il-path:hover, .il-path:focus-visible { fill: var(--accent); outline: none; }
+.tr-map-tooltip {
+  position: fixed; z-index: 40; pointer-events: none;
+  background: var(--ink); color: var(--bg); font-size: .82rem; font-weight: 700;
+  padding: 6px 12px; border-radius: var(--radius-sm); box-shadow: var(--shadow-md);
+  transform: translate(-50%, -130%); white-space: nowrap; opacity: 0; transition: opacity .1s ease;
+}
+.tr-map-tooltip.visible { opacity: 1; }
+.tr-map-tooltip .count { color: var(--gold); margin-left: 6px; }
+.tr-map-legend { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin: 18px 0 6px; font-size: .82rem; color: var(--ink-muted); }
+.tr-map-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.tr-map-legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.tr-map-legend .sw-data { background: color-mix(in srgb, var(--gold) 35%, var(--surface-2)); }
+.tr-map-legend .sw-empty { background: var(--surface-2); border: 1px solid var(--line); }
+.tr-map-credit { text-align: center; font-size: .72rem; color: var(--ink-muted); margin-top: 10px; }
+.tr-map-credit a { color: var(--ink-muted); }
+@media (max-width: 640px) {
+  .il-path { stroke-width: .9; }
+}
+
 /* Venue mini cards (home preview) */
 .venue-mini {
   position: relative; border-radius: var(--radius); overflow: hidden; height: 230px; box-shadow: var(--shadow);

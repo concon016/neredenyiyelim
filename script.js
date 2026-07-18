@@ -67,41 +67,49 @@ function starStr(puan) {
 /* ============================================================
    ANA SAYFA — il arama + grid + trend mekanlar
    ============================================================ */
-function initHomePage() {
-  const grid = document.getElementById("ilGrid");
-  if (!grid) return;
+function ilVenueCount(slug) { return MEKANLAR.filter((m) => m.il === slug).length; }
 
-  let activeRegion = "hepsi";
-  let query = "";
+/* ---------- Türkiye haritası (anasayfa il seçimi) ---------- */
+function initTurkeyMap() {
+  const wrap = document.getElementById("trMapWrap");
+  if (!wrap || typeof TURKEY_MAP_SVG === "undefined") return;
 
-  function ilVenueCount(slug) { return MEKANLAR.filter((m) => m.il === slug).length; }
+  wrap.innerHTML = TURKEY_MAP_SVG;
 
-  function draw() {
-    const term = query.trim().toLocaleLowerCase("tr");
-    const filtered = ILLER.filter((i) => {
-      const regionOk = activeRegion === "hepsi" || i.bolge === activeRegion;
-      const searchOk = !term || i.ad.toLocaleLowerCase("tr").includes(term);
-      return regionOk && searchOk;
+  const tooltip = document.createElement("div");
+  tooltip.className = "tr-map-tooltip";
+  document.body.appendChild(tooltip);
+
+  wrap.querySelectorAll(".il-path").forEach((path) => {
+    const slug = path.dataset.il;
+    const ad = path.dataset.ad;
+    const count = ilVenueCount(slug);
+    if (count) path.classList.add("has-data");
+
+    path.setAttribute("tabindex", "0");
+    path.setAttribute("role", "button");
+    path.setAttribute("aria-label", `${ad}${count ? " — " + count + " mekan" : ""}`);
+
+    const go = () => { window.location.href = `sehir.html?il=${slug}`; };
+    path.addEventListener("click", go);
+    path.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); }
     });
-    grid.innerHTML = filtered.map((i) => {
-      const count = ilVenueCount(i.slug);
-      return `<a class="il-card${count ? " has-data" : ""}" href="sehir.html?il=${i.slug}">
-        <span>${i.ad}</span>
-        <span class="count">${count ? count + " mekan" : BOLGE_ADI[i.bolge]}</span>
-      </a>`;
-    }).join("") || `<p style="grid-column:1/-1;text-align:center;">"${query}" ile eşleşen il bulunamadı.</p>`;
-  }
 
-  document.querySelectorAll(".region-tab").forEach((tab) => {
-    tab.addEventListener("click", () => {
-      document.querySelectorAll(".region-tab").forEach((t) => t.classList.remove("active"));
-      tab.classList.add("active");
-      activeRegion = tab.dataset.region;
-      draw();
+    path.addEventListener("mouseenter", () => {
+      tooltip.innerHTML = `${ad}${count ? `<span class="count">${count} mekan</span>` : ""}`;
+      tooltip.classList.add("visible");
     });
+    path.addEventListener("mousemove", (e) => {
+      tooltip.style.left = e.clientX + "px";
+      tooltip.style.top = e.clientY + "px";
+    });
+    path.addEventListener("mouseleave", () => tooltip.classList.remove("visible"));
   });
+}
 
-  function bestMatch() {
+function initHomePage() {
+  function bestMatch(query) {
     const term = query.trim().toLocaleLowerCase("tr");
     if (!term) return null;
     const exact = ILLER.find((i) => i.ad.toLocaleLowerCase("tr") === term);
@@ -109,14 +117,16 @@ function initHomePage() {
     return ILLER.find((i) => i.ad.toLocaleLowerCase("tr").includes(term)) || null;
   }
 
+  let query = "";
+
   function goToMatch() {
-    const match = bestMatch();
+    const match = bestMatch(query);
     if (match) window.location.href = `sehir.html?il=${match.slug}`;
   }
 
   const searchInput = document.getElementById("ilSearch");
   if (searchInput) {
-    searchInput.addEventListener("input", (e) => { query = e.target.value; draw(); });
+    searchInput.addEventListener("input", (e) => { query = e.target.value; });
     searchInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         e.preventDefault();
@@ -130,7 +140,7 @@ function initHomePage() {
     searchBtn.addEventListener("click", goToMatch);
   }
 
-  draw();
+  initTurkeyMap();
 
   // Trend mekanlar
   const trendGrid = document.getElementById("trendGrid");

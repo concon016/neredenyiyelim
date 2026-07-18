@@ -93,21 +93,15 @@
   <div class="section-head center reveal">
     <p class="eyebrow">81 İl</p>
     <h2>Şehrini seç</h2>
-    <p>Bölgeye göre filtrele ya da doğrudan ara — her ilde en özel mekanlar seni bekliyor.</p>
+    <p>Haritada gezin, gitmek istediğin ili tıkla — her ilde en özel mekanlar seni bekliyor.</p>
   </div>
 
-  <div class="region-tabs">
-    <button class="region-tab active" data-region="hepsi">Tümü</button>
-    <button class="region-tab" data-region="marmara">Marmara</button>
-    <button class="region-tab" data-region="ege">Ege</button>
-    <button class="region-tab" data-region="akdeniz">Akdeniz</button>
-    <button class="region-tab" data-region="icanadolu">İç Anadolu</button>
-    <button class="region-tab" data-region="karadeniz">Karadeniz</button>
-    <button class="region-tab" data-region="doguanadolu">Doğu Anadolu</button>
-    <button class="region-tab" data-region="guneydogu">Güneydoğu Anadolu</button>
+  <div class="tr-map-wrap" id="trMapWrap"></div>
+  <div class="tr-map-legend">
+    <span><i class="sw-data"></i> Mekan eklendi</span>
+    <span><i class="sw-empty"></i> Henüz eklenmedi</span>
   </div>
-
-  <div class="il-grid" id="ilGrid"></div>
+  <p class="tr-map-credit">Harita verisi: <a href="https://www.amcharts.com" target="_blank" rel="noopener">amCharts</a></p>
 </section>
 
 <section class="section">
@@ -155,6 +149,7 @@
 </footer>
 
 <script src="data.js"></script>
+<script src="turkey-map-data.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
