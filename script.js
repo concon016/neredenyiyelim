@@ -72,15 +72,68 @@ function ilVenueCount(slug) { return MEKANLAR.filter((m) => m.il === slug).lengt
 /* ---------- Türkiye haritası (anasayfa il seçimi) ---------- */
 function initTurkeyMap() {
   const wrap = document.getElementById("trMapWrap");
-  if (!wrap || typeof TURKEY_MAP_SVG === "undefined") return;
+  const svgSlot = document.getElementById("trMapSvgSlot");
+  if (!wrap || !svgSlot || typeof TURKEY_MAP_SVG === "undefined") return;
 
-  wrap.innerHTML = TURKEY_MAP_SVG;
+  svgSlot.innerHTML = TURKEY_MAP_SVG;
+
+  const svg = svgSlot.querySelector(".tr-map");
+  const zoomGroup = svgSlot.querySelector("#trMapZoomGroup");
+  const [, , viewW, viewH] = svg.getAttribute("viewBox").split(" ").map(Number);
+
+  const backBtn = document.getElementById("trMapBackBtn");
+  const cityPanel = document.getElementById("trMapCityPanel");
+  const cityNameEl = document.getElementById("trMapCityName");
+  const cityCountEl = document.getElementById("trMapCityCount");
+  const cityGoEl = document.getElementById("trMapCityGo");
+
+  let selectedPath = null;
+
+  function zoomOut() {
+    zoomGroup.style.transform = "";
+    if (selectedPath) selectedPath.classList.remove("selected");
+    selectedPath = null;
+    backBtn.classList.remove("visible");
+    cityPanel.classList.remove("visible");
+  }
+
+  function zoomTo(path) {
+    if (selectedPath) selectedPath.classList.remove("selected");
+    selectedPath = path;
+    path.classList.add("selected");
+
+    const slug = path.dataset.il;
+    const ad = path.dataset.ad;
+    const count = ilVenueCount(slug);
+
+    const bbox = path.getBBox();
+    const PADDING = 2.6; // il çevresinde biraz bağlam görünsün diye
+    const targetW = bbox.width * PADDING;
+    const targetH = bbox.height * PADDING;
+    let scale = Math.min(viewW / targetW, viewH / targetH);
+    scale = Math.min(scale, 9); // çok küçük iller için aşırı yakınlaşmayı sınırla
+
+    const cx = bbox.x + bbox.width / 2;
+    const cy = bbox.y + bbox.height / 2;
+    const translateX = viewW / 2 - scale * cx;
+    const translateY = viewH / 2 - scale * cy;
+
+    zoomGroup.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+
+    backBtn.classList.add("visible");
+    cityNameEl.textContent = ad;
+    cityCountEl.textContent = count ? `${count} mekan bulundu` : "Henüz mekan eklenmedi";
+    cityGoEl.href = `sehir.html?il=${slug}`;
+    cityPanel.classList.add("visible");
+  }
+
+  backBtn.addEventListener("click", zoomOut);
 
   const tooltip = document.createElement("div");
   tooltip.className = "tr-map-tooltip";
   document.body.appendChild(tooltip);
 
-  wrap.querySelectorAll(".il-path").forEach((path) => {
+  svgSlot.querySelectorAll(".il-path").forEach((path) => {
     const slug = path.dataset.il;
     const ad = path.dataset.ad;
     const count = ilVenueCount(slug);
@@ -90,10 +143,13 @@ function initTurkeyMap() {
     path.setAttribute("role", "button");
     path.setAttribute("aria-label", `${ad}${count ? " — " + count + " mekan" : ""}`);
 
-    const go = () => { window.location.href = `sehir.html?il=${slug}`; };
-    path.addEventListener("click", go);
+    const activate = () => {
+      if (selectedPath === path) { window.location.href = `sehir.html?il=${slug}`; return; }
+      zoomTo(path);
+    };
+    path.addEventListener("click", activate);
     path.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); }
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); activate(); }
     });
 
     path.addEventListener("mouseenter", () => {

@@ -190,15 +190,39 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
   border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);
 }
 .tr-map { width: 100%; height: auto; display: block; }
+.tr-map-zoom-group { transform-origin: 0 0; transition: transform .7s cubic-bezier(.22,.61,.36,1); }
 .il-path {
   fill: rgba(0,0,0,0);
   stroke: rgba(255,255,255,.65);
   stroke-width: .6;
   cursor: pointer;
   transition: fill .12s ease;
+  vector-effect: non-scaling-stroke;
 }
 .il-path.has-data { fill: color-mix(in srgb, var(--gold) 40%, transparent); }
 .il-path:hover, .il-path:focus-visible { fill: color-mix(in srgb, var(--accent) 55%, transparent); outline: none; }
+.il-path.selected { fill: color-mix(in srgb, var(--accent) 30%, transparent); stroke: var(--accent); stroke-width: 1.4; }
+
+.tr-map-back-btn {
+  position: absolute; top: 14px; left: 14px; z-index: 10;
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(20,14,10,.55); color: #fff; border: none; border-radius: 999px;
+  padding: 8px 16px; font-size: .82rem; font-weight: 700; cursor: pointer;
+  opacity: 0; pointer-events: none; transition: opacity .25s ease;
+  backdrop-filter: blur(4px);
+}
+.tr-map-back-btn.visible { opacity: 1; pointer-events: auto; }
+
+.tr-map-city-panel {
+  position: absolute; left: 50%; bottom: 16px; z-index: 10;
+  transform: translate(-50%, 12px); background: rgba(20,14,10,.72); backdrop-filter: blur(6px);
+  color: #fff; border-radius: var(--radius); padding: 14px 20px; text-align: center;
+  opacity: 0; pointer-events: none; transition: opacity .3s ease .25s, transform .3s ease .25s;
+}
+.tr-map-city-panel.visible { opacity: 1; pointer-events: auto; transform: translate(-50%, 0); }
+.tr-map-city-panel h3 { margin: 0 0 2px; font-size: 1.05rem; }
+.tr-map-city-panel p { margin: 0 0 10px; font-size: .8rem; color: rgba(255,255,255,.75); }
+.tr-map-city-panel a { display: inline-block; }
 .tr-map-tooltip {
   position: fixed; z-index: 40; pointer-events: none;
   background: var(--ink); color: var(--bg); font-size: .82rem; font-weight: 700;
