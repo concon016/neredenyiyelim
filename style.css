@@ -228,8 +228,20 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
 .tr-map-legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
 .tr-map-legend .sw-data { background: var(--gold); }
 .tr-map-legend .sw-empty { background: transparent; border: 1px solid var(--ink-muted); }
-.tr-map-credit { text-align: center; font-size: .72rem; color: var(--ink-muted); margin-top: 10px; }
-.tr-map-credit a { color: var(--ink-muted); }
+.tr-map-info-btn {
+  position: absolute; top: 12px; right: 12px; z-index: 10;
+  width: 26px; height: 26px; border-radius: 50%; border: none;
+  background: rgba(20,14,10,.55); color: #fff; font-size: .8rem; font-weight: 700; font-style: italic;
+  cursor: pointer; backdrop-filter: blur(4px); line-height: 1;
+}
+.tr-map-credit-pop {
+  position: absolute; top: 44px; right: 12px; z-index: 10;
+  max-width: 220px; background: rgba(20,14,10,.85); backdrop-filter: blur(6px);
+  color: #fff; font-size: .74rem; border-radius: var(--radius-sm); padding: 10px 12px;
+  opacity: 0; pointer-events: none; transform: translateY(-6px); transition: opacity .18s ease, transform .18s ease;
+}
+.tr-map-credit-pop.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.tr-map-credit-pop a { color: #fff; text-decoration: underline; }
 @media (max-width: 640px) {
   .il-path { stroke-width: .9; }
 }

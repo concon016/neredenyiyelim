@@ -79,6 +79,18 @@ function initTurkeyMap() {
 
   const zoomGroup = svgSlot.querySelector("#trMapZoomGroup");
 
+  const infoBtn = document.getElementById("trMapInfoBtn");
+  const creditPop = document.getElementById("trMapCreditPop");
+  if (infoBtn && creditPop) {
+    infoBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      creditPop.classList.toggle("visible");
+    });
+    document.addEventListener("click", (e) => {
+      if (!creditPop.contains(e.target) && e.target !== infoBtn) creditPop.classList.remove("visible");
+    });
+  }
+
   const tooltip = document.createElement("div");
   tooltip.className = "tr-map-tooltip";
   document.body.appendChild(tooltip);
