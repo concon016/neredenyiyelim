@@ -259,7 +259,7 @@ function initCityPage() {
   }
 
   let activeCat = "hepsi";
-  let activeView = "reels";
+  let activeView = "list";
 
   const categories = [...new Set(venues.map((v) => v.kategori))];
   const hasMichelin = venues.some((v) => v.michelin);
@@ -298,26 +298,16 @@ function initCityPage() {
   }
 
   function listRowHtml(v) {
-    const fav = isFavori(v.id);
-    return `<div class="list-row reveal in">
-      <a class="thumb" href="mekan.html?id=${v.id}"><img src="${v.gorsel || NO_IMG}" alt="${v.ad}" loading="lazy"></a>
-      <div class="body">
-        <div class="list-row-head">
-          <div>
-            <div class="cat">${v.kategori}</div>
-            <h3><a href="mekan.html?id=${v.id}">${v.ad}</a></h3>
-          </div>
-          <span class="rating-pill">★ ${v.puan}</span>
-        </div>
-        <p style="margin:0;font-size:.85rem;">${v.adres} · ${v.fiyat}</p>
-        <div class="tags">${v.ozellikler.slice(0, 3).map((o) => `<span>${o}</span>`).join("")}</div>
-        <p style="margin:0;font-size:.8rem;color:var(--ink-muted);"><b style="color:var(--ink);">Menüden:</b> ${v.menu.slice(0, 3).join(", ")}</p>
-        <div class="list-row-foot">
-          <a class="btn btn-secondary btn-sm" href="mekan.html?id=${v.id}">Detayları Gör</a>
-          <button class="reel-fav${fav ? " active" : ""}" data-fav="${v.id}" aria-label="Favorilere ekle" style="background:var(--surface-2);color:${fav ? "#fff" : "var(--ink)"};">${fav ? "♥" : "♡"}</button>
-        </div>
+    return `<a class="list-row reveal in" href="mekan.html?id=${v.id}">
+      <div class="row-main">
+        <h3>${v.ad}</h3>
+        <div class="cat">${v.kategori} · ${v.fiyat}</div>
       </div>
-    </div>`;
+      <div class="row-right">
+        <span class="rating-pill">★ ${v.puan}</span>
+        <span class="chevron">›</span>
+      </div>
+    </a>`;
   }
 
   const reels = document.getElementById("reels");
@@ -458,15 +448,14 @@ function initMichelinPage() {
 
   function rowHtml(v) {
     const il = ilGetir(v.il);
-    return `<a class="list-row reveal in" href="mekan.html?id=${v.id}" style="text-decoration:none;color:inherit;">
-      <div class="thumb"><img src="${v.gorsel || NO_IMG}" alt="${v.ad}" loading="lazy"></div>
-      <div class="body">
-        <div class="list-row-head">
-          <div><div class="cat">${v.kategori}</div><h3>${v.ad}</h3></div>
-          <span class="badge-michelin">${"★".repeat(v.yildiz || 1)} ${v.yildiz || 1} Yıldız</span>
-        </div>
-        <p style="margin:0;font-size:.85rem;">${v.adres} · ${il ? il.ad : ""}</p>
-        <div class="tags">${v.ozellikler.slice(0, 3).map((o) => `<span>${o}</span>`).join("")}</div>
+    return `<a class="list-row reveal in" href="mekan.html?id=${v.id}">
+      <div class="row-main">
+        <h3>${v.ad}</h3>
+        <div class="cat">${v.kategori} · ${il ? il.ad : ""}</div>
+      </div>
+      <div class="row-right">
+        <span class="badge-michelin" style="position:static;">${"★".repeat(v.yildiz || 1)}</span>
+        <span class="chevron">›</span>
       </div>
     </a>`;
   }
@@ -495,18 +484,14 @@ function initFavoritesPage() {
     return;
   }
   root.innerHTML = `<div class="list-view" style="padding:0;">${venues.map((v) => `
-    <div class="list-row reveal in">
-      <a class="thumb" href="mekan.html?id=${v.id}"><img src="${v.gorsel || NO_IMG}" alt="${v.ad}" loading="lazy"></a>
-      <div class="body">
-        <div class="list-row-head">
-          <div><div class="cat">${v.kategori} · ${ilGetir(v.il).ad}</div><h3><a href="mekan.html?id=${v.id}">${v.ad}</a></h3></div>
-          <span class="rating-pill">★ ${v.puan}</span>
-        </div>
-        <p style="margin:0;font-size:.85rem;">${v.adres}</p>
-        <div class="list-row-foot">
-          <a class="btn btn-secondary btn-sm" href="mekan.html?id=${v.id}">Detayları Gör</a>
-          <button class="reel-fav active" data-fav="${v.id}" style="background:var(--surface-2);">♥</button>
-        </div>
+    <div class="list-row reveal in" style="cursor:default;">
+      <a class="row-main" href="mekan.html?id=${v.id}" style="text-decoration:none;color:inherit;">
+        <h3>${v.ad}</h3>
+        <div class="cat">${v.kategori} · ${ilGetir(v.il).ad}</div>
+      </a>
+      <div class="row-right">
+        <span class="rating-pill">★ ${v.puan}</span>
+        <button class="reel-fav active" data-fav="${v.id}" aria-label="Favorilerden çıkar" style="background:var(--surface-2);flex-shrink:0;">♥</button>
       </div>
     </div>`).join("")}</div>`;
 

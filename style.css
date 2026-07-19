@@ -248,7 +248,7 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
 
 /* Venue mini cards (home preview) */
 .venue-mini {
-  position: relative; border-radius: var(--radius); overflow: hidden; height: 230px; box-shadow: var(--shadow);
+  position: relative; border-radius: var(--radius); overflow: hidden; height: 110px; box-shadow: var(--shadow);
 }
 .venue-mini img { width: 100%; height: 100%; object-fit: cover; }
 .venue-mini .overlay {
@@ -350,28 +350,31 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
 }
 
 /* --- List view (booking-style rows) --- */
-.list-view { max-width: var(--max); margin: 0 auto; padding: 0 20px 60px; display: flex; flex-direction: column; gap: 16px; }
+.list-view { max-width: var(--max); margin: 0 auto; padding: 0 20px 60px; display: flex; flex-direction: column; gap: 8px; }
 .list-row {
-  display: grid; grid-template-columns: 220px 1fr; gap: 0; background: var(--surface); border: 1px solid var(--line);
-  border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 14px 16px; text-decoration: none; color: inherit; cursor: pointer;
+  transition: border-color .15s, transform .15s;
 }
-.list-row .thumb { position: relative; }
-.list-row .thumb img { width: 100%; height: 100%; object-fit: cover; min-height: 170px; }
-.list-row .body { padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; }
-.list-row-head { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
-.list-row h3 { font-size: 1.15rem; margin-bottom: 0; }
+.list-row:hover { border-color: var(--accent); }
+.list-row .row-main { min-width: 0; flex: 1; }
+.list-row h3 { font-size: 1rem; margin: 0 0 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .rating-pill {
   display: inline-flex; align-items: center; gap: 4px; background: var(--good-bg); color: var(--good);
   font-weight: 800; font-size: .82rem; padding: 4px 10px; border-radius: 999px; flex: none;
 }
-.list-row .cat { font-size: .82rem; color: var(--accent); font-weight: 700; }
-.list-row .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
-.list-row .tags span { background: var(--surface-2); padding: 4px 10px; border-radius: 999px; font-size: .72rem; font-weight: 600; color: var(--ink-muted); }
-.list-row-foot { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 6px; }
+.list-row .cat { font-size: .8rem; color: var(--accent); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.list-row .row-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.list-row .chevron {
+  width: 24px; height: 24px; border-radius: 50%; background: var(--surface-2); color: var(--ink-muted);
+  display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; flex-shrink: 0;
+}
 
 @media (max-width: 620px) {
-  .list-row { grid-template-columns: 1fr; }
-  .list-row .thumb img { min-height: 160px; }
+  .list-row h3 { font-size: .92rem; }
+  .list-row .cat { display: none; }
 }
 
 .empty-state { max-width: 480px; margin: 60px auto; text-align: center; padding: 30px; }
@@ -380,7 +383,7 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
 /* ============================================================
    MEKAN DETAY SAYFASI
    ============================================================ */
-.venue-hero { position: relative; height: 46vh; min-height: 320px; }
+.venue-hero { position: relative; height: 150px; min-height: 150px; }
 .venue-hero img { width: 100%; height: 100%; object-fit: cover; }
 .venue-hero .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,.65) 100%); }
 .venue-hero-content { position: absolute; left: 0; right: 0; bottom: 0; max-width: var(--max); margin: 0 auto; padding: 0 20px 26px; color: #fff; }
