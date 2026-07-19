@@ -259,19 +259,33 @@ function initCityPage() {
   }
 
   let activeCat = "hepsi";
+  let michelinOnly = false;
+  let activeSort = "puan-desc";
   let activeView = "list";
 
-  const categories = [...new Set(venues.map((v) => v.kategori))];
+  const categories = [...new Set(venues.map((v) => v.kategori))].sort((a, b) => a.localeCompare(b, "tr"));
   const hasMichelin = venues.some((v) => v.michelin);
-  const chipsWrap = document.getElementById("chips");
-  chipsWrap.innerHTML = `<button class="chip active" data-cat="hepsi">Hepsi</button>` +
-    (hasMichelin ? `<button class="chip chip-michelin" data-cat="michelin">★ Michelin Yıldızlı</button>` : "") +
-    categories.map((c) => `<button class="chip" data-cat="${c}">${c}</button>`).join("");
+
+  const catFilter = document.getElementById("catFilter");
+  catFilter.innerHTML = `<option value="hepsi">Tüm Kategoriler</option>` +
+    categories.map((c) => `<option value="${c}">${c}</option>`).join("");
+
+  const michelinToggle = document.getElementById("michelinToggle");
+  if (!hasMichelin) michelinToggle.style.display = "none";
+
+  const priceRank = { "₺": 1, "₺₺": 2, "₺₺₺": 3, "₺₺₺₺": 4 };
 
   function filtered() {
-    if (activeCat === "hepsi") return venues;
-    if (activeCat === "michelin") return venues.filter((v) => v.michelin);
-    return venues.filter((v) => v.kategori === activeCat);
+    let list = venues;
+    if (activeCat !== "hepsi") list = list.filter((v) => v.kategori === activeCat);
+    if (michelinOnly) list = list.filter((v) => v.michelin);
+    list = [...list];
+    if (activeSort === "puan-desc") list.sort((a, b) => b.puan - a.puan);
+    else if (activeSort === "puan-asc") list.sort((a, b) => a.puan - b.puan);
+    else if (activeSort === "ad-asc") list.sort((a, b) => a.ad.localeCompare(b.ad, "tr"));
+    else if (activeSort === "fiyat-asc") list.sort((a, b) => (priceRank[a.fiyat] || 0) - (priceRank[b.fiyat] || 0));
+    else if (activeSort === "fiyat-desc") list.sort((a, b) => (priceRank[b.fiyat] || 0) - (priceRank[a.fiyat] || 0));
+    return list;
   }
 
   function reelCardHtml(v) {
@@ -320,12 +334,19 @@ function initCityPage() {
     initReveal();
   }
 
-  chipsWrap.addEventListener("click", (e) => {
-    const btn = e.target.closest(".chip");
-    if (!btn) return;
-    chipsWrap.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
-    btn.classList.add("active");
-    activeCat = btn.dataset.cat;
+  catFilter.addEventListener("change", () => {
+    activeCat = catFilter.value;
+    draw();
+  });
+
+  document.getElementById("sortSelect").addEventListener("change", (e) => {
+    activeSort = e.target.value;
+    draw();
+  });
+
+  michelinToggle.addEventListener("click", () => {
+    michelinOnly = !michelinOnly;
+    michelinToggle.classList.toggle("active", michelinOnly);
     draw();
   });
 

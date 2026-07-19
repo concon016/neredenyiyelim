@@ -58,7 +58,15 @@
 
 <div id="cityRoot">
   <div class="filter-bar" id="filterBar">
-    <div id="chips" style="display:contents;"></div>
+    <select class="filter-select" id="catFilter"></select>
+    <select class="filter-select" id="sortSelect">
+      <option value="puan-desc">Puan: Yüksek → Düşük</option>
+      <option value="puan-asc">Puan: Düşük → Yüksek</option>
+      <option value="ad-asc">İsim: A → Z</option>
+      <option value="fiyat-asc">Fiyat: Ucuz → Pahalı</option>
+      <option value="fiyat-desc">Fiyat: Pahalı → Ucuz</option>
+    </select>
+    <button class="chip chip-michelin" id="michelinToggle">★ Michelin</button>
     <div class="view-toggle">
       <button data-view="reels">🎞️ Reels</button>
       <button class="active" data-view="list">☰ Liste</button>
