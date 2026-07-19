@@ -1,5 +1,8 @@
 /* neredenyiyelim — ortak script dosyası */
 
+/* Görseli olmayan mekanlar için nötr yer tutucu (bozuk resim ikonu göstermesin) */
+const NO_IMG = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23eee'/%3E%3C/svg%3E";
+
 /* ---------- Tema (dark/light) ---------- */
 function initTheme() {
   const toggle = document.getElementById("themeToggle");
@@ -177,7 +180,7 @@ function initHomePage() {
     const trend = MEKANLAR.filter((m) => m.trend).slice(0, 6);
     trendGrid.innerHTML = trend.map((m) => `
       <a class="venue-mini reveal" href="mekan.html?id=${m.id}">
-        <img src="${m.gorsel}" alt="${m.ad}" loading="lazy">
+        <img src="${m.gorsel || NO_IMG}" alt="${m.ad}" loading="lazy">
         <span class="badge-trend">Trend</span>
         <span class="badge-rating">★ ${m.puan}</span>
         <div class="overlay">
@@ -197,7 +200,7 @@ function initHomePage() {
       michelinSection.style.display = "";
       michelinGrid.innerHTML = michelinList.map((m) => `
         <a class="venue-mini reveal" href="mekan.html?id=${m.id}">
-          <img src="${m.gorsel}" alt="${m.ad}" loading="lazy">
+          <img src="${m.gorsel || NO_IMG}" alt="${m.ad}" loading="lazy">
           <span class="badge-michelin" style="position:absolute;top:10px;left:10px;">${"★".repeat(m.yildiz || 1)} Michelin</span>
           <span class="badge-rating">★ ${m.puan}</span>
           <div class="overlay">
@@ -274,7 +277,7 @@ function initCityPage() {
   function reelCardHtml(v) {
     const fav = isFavori(v.id);
     return `<div class="reel-card reveal" data-id="${v.id}">
-      <img src="${v.gorsel}" alt="${v.ad}" loading="lazy">
+      <img src="${v.gorsel || NO_IMG}" alt="${v.ad}" loading="lazy">
       <div class="scrim"></div>
       <div class="reel-top">
         ${v.michelin ? `<span class="badge-michelin">${"★".repeat(v.yildiz || 1)} Michelin</span>` : v.trend ? '<span class="badge-trend">Bu Hafta Trend</span>' : "<span></span>"}
@@ -297,7 +300,7 @@ function initCityPage() {
   function listRowHtml(v) {
     const fav = isFavori(v.id);
     return `<div class="list-row reveal in">
-      <a class="thumb" href="mekan.html?id=${v.id}"><img src="${v.gorsel}" alt="${v.ad}" loading="lazy"></a>
+      <a class="thumb" href="mekan.html?id=${v.id}"><img src="${v.gorsel || NO_IMG}" alt="${v.ad}" loading="lazy"></a>
       <div class="body">
         <div class="list-row-head">
           <div>
@@ -378,7 +381,7 @@ function initVenuePage() {
 
   root.innerHTML = `
     <div class="venue-hero">
-      <img src="${v.gorsel}" alt="${v.ad}">
+      <img src="${v.gorsel || NO_IMG}" alt="${v.ad}">
       <div class="scrim"></div>
       <div class="venue-hero-content">
         <div class="city-head" style="padding:0;margin-bottom:8px;">
@@ -456,7 +459,7 @@ function initMichelinPage() {
   function rowHtml(v) {
     const il = ilGetir(v.il);
     return `<a class="list-row reveal in" href="mekan.html?id=${v.id}" style="text-decoration:none;color:inherit;">
-      <div class="thumb"><img src="${v.gorsel}" alt="${v.ad}" loading="lazy"></div>
+      <div class="thumb"><img src="${v.gorsel || NO_IMG}" alt="${v.ad}" loading="lazy"></div>
       <div class="body">
         <div class="list-row-head">
           <div><div class="cat">${v.kategori}</div><h3>${v.ad}</h3></div>
@@ -493,7 +496,7 @@ function initFavoritesPage() {
   }
   root.innerHTML = `<div class="list-view" style="padding:0;">${venues.map((v) => `
     <div class="list-row reveal in">
-      <a class="thumb" href="mekan.html?id=${v.id}"><img src="${v.gorsel}" alt="${v.ad}" loading="lazy"></a>
+      <a class="thumb" href="mekan.html?id=${v.id}"><img src="${v.gorsel || NO_IMG}" alt="${v.ad}" loading="lazy"></a>
       <div class="body">
         <div class="list-row-head">
           <div><div class="cat">${v.kategori} · ${ilGetir(v.il).ad}</div><h3><a href="mekan.html?id=${v.id}">${v.ad}</a></h3></div>
