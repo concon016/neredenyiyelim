@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" role="img" aria-label="neredenyiyelim logo">
+  <path d="M20 3C13.37 3 8 8.37 8 15c0 9 12 22 12 22s12-13 12-22c0-6.63-5.37-12-12-12z" fill="#D94F30"/>
+  <g stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" fill="none">
+    <!-- fork -->
+    <line x1="15.5" y1="9" x2="15.5" y2="15.5"/>
+    <line x1="14.2" y1="9" x2="14.2" y2="12"/>
+    <line x1="16.8" y1="9" x2="16.8" y2="12"/>
+    <line x1="15.5" y1="15.5" x2="15.5" y2="21.5"/>
+    <!-- knife -->
+    <path d="M24.5 9v6.2c0 1.1-.9 2-2 2v4.3"/>
+  </g>
+</svg>
