@@ -174,50 +174,12 @@ function initHomePage() {
 
   initTurkeyMap();
 
-  // Trend mekanlar
-  const trendGrid = document.getElementById("trendGrid");
-  if (trendGrid) {
-    const trend = MEKANLAR.filter((m) => m.trend).slice(0, 6);
-    trendGrid.innerHTML = trend.map((m) => `
-      <a class="venue-mini reveal" href="mekan.html?id=${m.id}">
-        <img src="${m.gorsel || NO_IMG}" alt="${m.ad}" loading="lazy">
-        <span class="badge-trend">Trend</span>
-        <span class="badge-rating">★ ${m.puan}</span>
-        <div class="overlay">
-          <h3>${m.ad}</h3>
-          <div class="meta">${m.kategori} · ${ilGetir(m.il).ad}</div>
-        </div>
-      </a>`).join("");
-    initReveal();
-  }
-
-  // Michelin yıldızlı mekanlar (öne çıkan birkaçı, tamamı michelin.html'de)
-  const michelinSection = document.getElementById("michelinSection");
-  const michelinGrid = document.getElementById("michelinGrid");
-  if (michelinGrid) {
-    const michelinList = MEKANLAR.filter((m) => m.michelin).sort((a, b) => (b.yildiz || 0) - (a.yildiz || 0)).slice(0, 6);
-    if (michelinList.length) {
-      michelinSection.style.display = "";
-      michelinGrid.innerHTML = michelinList.map((m) => `
-        <a class="venue-mini reveal" href="mekan.html?id=${m.id}">
-          <img src="${m.gorsel || NO_IMG}" alt="${m.ad}" loading="lazy">
-          <span class="badge-michelin" style="position:absolute;top:10px;left:10px;">${"★".repeat(m.yildiz || 1)} Michelin</span>
-          <span class="badge-rating">★ ${m.puan}</span>
-          <div class="overlay">
-            <h3>${m.ad}</h3>
-            <div class="meta">${m.kategori} · ${ilGetir(m.il).ad}</div>
-          </div>
-        </a>`).join("");
-      initReveal();
-    }
-  }
-
   // "Bugün nereye gitsem?" rastgele mekan
   const zarBtn = document.getElementById("zarBtn");
   if (zarBtn) {
     zarBtn.addEventListener("click", () => {
       const secim = MEKANLAR[Math.floor(Math.random() * MEKANLAR.length)];
-      window.location.href = `mekan.html?id=${secim.id}`;
+      window.location.href = `${secim.id}-mekan.html`;
     });
   }
 }
@@ -304,7 +266,7 @@ function initCityPage() {
         <div class="reel-tags">${v.ozellikler.map((o) => `<span>${o}</span>`).join("")}</div>
         <div class="reel-menu"><b>Menüden:</b> ${v.menu.slice(0, 3).join(", ")}</div>
         <div class="reel-actions">
-          <a class="btn btn-accent" href="mekan.html?id=${v.id}">Detayları Gör</a>
+          <a class="btn btn-accent" href="${v.id}-mekan.html">Detayları Gör</a>
           <button class="reel-fav${fav ? " active" : ""}" data-fav="${v.id}" aria-label="Favorilere ekle">${fav ? "♥" : "♡"}</button>
         </div>
       </div>
@@ -312,7 +274,7 @@ function initCityPage() {
   }
 
   function listRowHtml(v) {
-    return `<a class="list-row reveal in" href="mekan.html?id=${v.id}">
+    return `<a class="list-row reveal in" href="${v.id}-mekan.html">
       <div class="row-main">
         <h3>${v.ad}</h3>
         <div class="cat">${v.kategori} · ${v.fiyat}</div>
@@ -469,7 +431,7 @@ function initMichelinPage() {
 
   function rowHtml(v) {
     const il = ilGetir(v.il);
-    return `<a class="list-row reveal in" href="mekan.html?id=${v.id}">
+    return `<a class="list-row reveal in" href="${v.id}-mekan.html">
       <div class="row-main">
         <h3>${v.ad}</h3>
         <div class="cat">${v.kategori} · ${il ? il.ad : ""}</div>
@@ -506,7 +468,7 @@ function initFavoritesPage() {
   }
   root.innerHTML = `<div class="list-view" style="padding:0;">${venues.map((v) => `
     <div class="list-row reveal in" style="cursor:default;">
-      <a class="row-main" href="mekan.html?id=${v.id}" style="text-decoration:none;color:inherit;">
+      <a class="row-main" href="${v.id}-mekan.html" style="text-decoration:none;color:inherit;">
         <h3>${v.ad}</h3>
         <div class="cat">${v.kategori} · ${ilGetir(v.il).ad}</div>
       </a>
