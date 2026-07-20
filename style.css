@@ -285,7 +285,7 @@ p { line-height: 1.6; margin: 0 0 1em; color: var(--ink-muted); }
 .foot-links a { font-size: .85rem; color: var(--ink-muted); font-weight: 600; }
 .foot-links a:hover { color: var(--accent); }
 .footer p { font-size: .8rem; margin: 4px 0; }
-.disclaimer { max-width: 640px; margin: 10px auto 0; font-size: .75rem; opacity: .75; }
+.footer p.disclaimer { max-width: 640px; margin: 10px auto 0; font-size: .75rem; opacity: .75; }
 
 /* ============================================================
    ŞEHİR SAYFASI — Reels görünümü
