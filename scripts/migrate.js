@@ -1,6 +1,6 @@
 // One-off: create the venues table and load MEKANLAR from data.js into Postgres.
 // Usage: node scripts/migrate.js
-require("dotenv").config({ path: ".env.local" });
+require("dotenv").config({ path: ".env.local", quiet: true });
 const fs = require("fs");
 const path = require("path");
 const vm = require("vm");
